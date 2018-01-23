@@ -1,0 +1,580 @@
+fileFormatVersion: 2
+guid: 227f0f334f776854b95512d3b1883a88
+timeCreated: 1516735214
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: daftman_spritesheet_transparent_0
+    21300002: daftman_spritesheet_transparent_1
+    21300004: daftman_spritesheet_transparent_2
+    21300006: daftman_spritesheet_transparent_3
+    21300008: daftman_spritesheet_transparent_4
+    21300010: daftman_spritesheet_transparent_5
+    21300012: daftman_spritesheet_transparent_6
+    21300014: daftman_spritesheet_transparent_7
+    21300016: daftman_spritesheet_transparent_8
+    21300018: daftman_spritesheet_transparent_9
+    21300020: daftman_spritesheet_transparent_10
+    21300022: daftman_spritesheet_transparent_11
+    21300024: daftman_spritesheet_transparent_12
+    21300026: daftman_spritesheet_transparent_13
+    21300028: daftman_spritesheet_transparent_14
+    21300030: daftman_spritesheet_transparent_15
+    21300032: daftman_spritesheet_transparent_16
+    21300034: daftman_spritesheet_transparent_17
+    21300036: daftman_spritesheet_transparent_18
+    21300038: daftman_spritesheet_transparent_19
+    21300040: daftman_spritesheet_transparent_20
+    21300042: daftman_spritesheet_transparent_21
+    21300044: daftman_spritesheet_transparent_22
+    21300046: daftman_spritesheet_transparent_23
+    21300048: daftman_spritesheet_transparent_24
+    21300050: daftman_spritesheet_transparent_25
+    21300052: daftman_spritesheet_transparent_26
+    21300054: daftman_spritesheet_transparent_27
+    21300056: daftman_spritesheet_transparent_28
+    21300058: daftman_spritesheet_transparent_29
+    21300060: daftman_spritesheet_transparent_30
+    21300062: daftman_spritesheet_transparent_31
+    21300064: daftman_spritesheet_transparent_32
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: daftman_spritesheet_transparent_0
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 702
+        width: 26
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: daftman_spritesheet_transparent_1
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 793
+        width: 30
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: daftman_spritesheet_transparent_2
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 763
+        width: 84
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: daftman_spritesheet_transparent_3
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 702
+        width: 79
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: daftman_spritesheet_transparent_4
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 702
+        width: 84
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: daftman_spritesheet_transparent_5
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 702
+        width: 84
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: daftman_spritesheet_transparent_6
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 599
+        width: 76
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: daftman_spritesheet_transparent_7
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 599
+        width: 91
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: daftman_spritesheet_transparent_8
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 599
+        width: 60
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: daftman_spritesheet_transparent_9
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 599
+        width: 80
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: daftman_spritesheet_transparent_10
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 477
+        width: 98
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: daftman_spritesheet_transparent_11
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 477
+        width: 91
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: daftman_spritesheet_transparent_12
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 477
+        width: 110
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: daftman_spritesheet_transparent_13
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 368
+        width: 117
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: daftman_spritesheet_transparent_14
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 368
+        width: 110
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: daftman_spritesheet_transparent_15
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 368
+        width: 91
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: daftman_spritesheet_transparent_16
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 368
+        width: 106
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: daftman_spritesheet_transparent_17
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 250
+        width: 98
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: daftman_spritesheet_transparent_18
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 250
+        width: 98
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: daftman_spritesheet_transparent_19
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 250
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: daftman_spritesheet_transparent_20
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 250
+        width: 61
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: daftman_spritesheet_transparent_21
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 250
+        width: 91
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: daftman_spritesheet_transparent_22
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 250
+        width: 99
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: daftman_spritesheet_transparent_23
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 138
+        width: 94
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: daftman_spritesheet_transparent_24
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 128
+        width: 103
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: daftman_spritesheet_transparent_25
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 128
+        width: 114
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: daftman_spritesheet_transparent_26
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 128
+        width: 80
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: daftman_spritesheet_transparent_27
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 128
+        width: 99
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: daftman_spritesheet_transparent_28
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 26
+        width: 79
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: daftman_spritesheet_transparent_29
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 26
+        width: 79
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: daftman_spritesheet_transparent_30
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 26
+        width: 57
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: daftman_spritesheet_transparent_31
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 26
+        width: 110
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: daftman_spritesheet_transparent_32
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 589
+        width: 376
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
