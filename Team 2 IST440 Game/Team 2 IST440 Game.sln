@@ -1,7 +1,7 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Team 2 IST440 Game", "Assembly-CSharp.csproj", "{F6852381-FAEA-0FC0-8F71-D3ED1D0D8409}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Team 2 IST440 Game", "Team 2 IST440 Game.csproj", "{C5BA21D7-021C-1159-109E-81AFE17C8ACC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,15 +9,12 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F6852381-FAEA-0FC0-8F71-D3ED1D0D8409}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F6852381-FAEA-0FC0-8F71-D3ED1D0D8409}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F6852381-FAEA-0FC0-8F71-D3ED1D0D8409}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F6852381-FAEA-0FC0-8F71-D3ED1D0D8409}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5BA21D7-021C-1159-109E-81AFE17C8ACC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5BA21D7-021C-1159-109E-81AFE17C8ACC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5BA21D7-021C-1159-109E-81AFE17C8ACC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5BA21D7-021C-1159-109E-81AFE17C8ACC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
 EndGlobal
