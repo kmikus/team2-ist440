@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerRun : MonoBehaviour {
 
     private Rigidbody2D playerBody2d;
-    private float speed = 4.0f;
+    public float speed = 0.1f;
 
 	// Use this for initialization
 	void Start () {
@@ -14,6 +14,8 @@ public class PlayerRun : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.anyKey) { this.transform.Translate(0.1f*Input.GetAxis("Horizontal"), 0, 0); }
+        if (Input.anyKey) {
+            this.transform.Translate(0.02f*speed*Input.GetAxis("Horizontal"), 0, 0);
+        }
     }
 }
