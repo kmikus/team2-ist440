@@ -18,7 +18,9 @@ public class destroyCoinOnPlayerCollide : MonoBehaviour {
         
         if (coinCollider.IsTouching(playerCollider))
         {
+            Score.scoreValue += 1;
             Object.Destroy(this.gameObject);
+     
         }
 	}
 }
