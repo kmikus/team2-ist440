@@ -681,8 +681,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 230.0062, y: 117.8}
-  m_SizeDelta: {x: 154.7, y: 30}
+  m_AnchoredPosition: {x: 277, y: 123.382835}
+  m_SizeDelta: {x: 196.6, y: 17.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1273596848
 MonoBehaviour:
@@ -730,7 +730,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '[Timer text will appear here]'
+  m_Text: '[Timer text]'
 --- !u!222 &1273596850
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System;
+using UnityEngine.SceneManagement;
+
 
 public class GameManager : MonoBehaviour {
 
@@ -14,6 +16,12 @@ public class GameManager : MonoBehaviour {
     public Text countdownTime;
     private float timeElapsed = 60f;
 
+    // This adds an additional 5 seconds after time runs out until it switches to the next scene
+    // During this 5 seconds the player should not be able to move and the Spawner should stop
+    // It is just so the transition is more smooth so it does not abrupty switch to the next scene
+    private float timeOnGame = 65f;
+
+
     // Use this for initialization
     void Start() {
         score = GetComponent<Text>();
@@ -24,20 +32,35 @@ public class GameManager : MonoBehaviour {
 
         score.text = "SCORE: $" + scoreValue;
 
+        timeOnGame -= Time.deltaTime;
+
         timeElapsed -= Time.deltaTime;
-        countdownTime.text = "TIME: " + FormatTime(timeElapsed);
+        countdownTime.text = "TIME: " + FormatTime(value: timeElapsed);
+
+        if (timeElapsed <= 0)
+        {
+            countdownTime.text = "TIME: 00:00";
+            // Make Spawner stop
+            Spawner.active = false;
+
+            // Load next Scene after 5 seconds of game/round/level ending
+            if (timeOnGame <= 0)
+            {
+                // Currently will load a high score scene
+                // When more levels/rounds are added, update Build Settings to go to next appropriate Scene
+                SceneManager.LoadScene("HighScore");
+
+            }
+        }
+
     }
 
-    void ResetGame()
-    {
-        timeElapsed = 0;
-    }
-
-    string FormatTime (float value)
+    string FormatTime(float value)
     {
         TimeSpan t = TimeSpan.FromSeconds(value);
         return string.Format("{0:D2}:{1:D2}", t.Minutes, t.Seconds);
     }
+
 }
 
     

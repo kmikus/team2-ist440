@@ -6,7 +6,7 @@ public class Spawner : MonoBehaviour {
 
     public GameObject[] prefabs;
     public float delay = 2.0f;
-    public bool active = true;
+    public static bool active = true;
     public Vector2 delayRange = new Vector2(1, 2);
 
 	// Use this for initialization

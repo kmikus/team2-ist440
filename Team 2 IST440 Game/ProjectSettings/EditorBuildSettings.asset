@@ -6,11 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Scenes_Kate/SplashScreen.unity
+    path: Assets/Scenes/Scenes_Kate (menus)/SplashScreen.unity
     guid: 66ce9981263f05140816b9515d86017e
   - enabled: 1
-    path: Assets/Scenes/Scenes_Kate/Menu_Main.unity
+    path: Assets/Scenes/Scenes_Kate (menus)/Menu_Main.unity
     guid: 01605ef6bffd38244b733f6f3cebbb54
   - enabled: 1
     path: Assets/Scenes/MainScene.unity
     guid: b6845b3e708ead7478b83b09a06018be
+  - enabled: 1
+    path: Assets/Scenes/HighScore.unity
+    guid: 60f04811316487546a1fc1c865248d15
