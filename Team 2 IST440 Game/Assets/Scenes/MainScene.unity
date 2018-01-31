@@ -176,7 +176,6 @@ Camera:
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -503,9 +502,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 2
   m_Convex: 0
-  m_CookingOptions: 14
+  m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!33 &747210281
@@ -863,15 +862,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4161658661890864, guid: 2552926d441c2904498fe4381e451920, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 9.414917
+      value: 5.72
       objectReference: {fileID: 0}
     - target: {fileID: 4161658661890864, guid: 2552926d441c2904498fe4381e451920, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 7.396731
+      value: 6.44
       objectReference: {fileID: 0}
     - target: {fileID: 4161658661890864, guid: 2552926d441c2904498fe4381e451920, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 4161658661890864, guid: 2552926d441c2904498fe4381e451920, type: 2}
       propertyPath: m_LocalRotation.x
