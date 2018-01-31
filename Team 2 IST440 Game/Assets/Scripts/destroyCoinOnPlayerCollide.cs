@@ -20,7 +20,7 @@ public class destroyCoinOnPlayerCollide : MonoBehaviour {
         {
             GameManager.scoreValue += 1;
             Object.Destroy(this.gameObject);
-     
         }
+
 	}
 }
