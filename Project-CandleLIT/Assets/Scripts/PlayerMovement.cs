@@ -2,47 +2,70 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour {
+public class PlayerMovement : MonoBehaviour
+{
 
-    private Rigidbody2D body2d;
-    private Animator animator;
+    public float moveSpeed;
+    private float moveVelocity;
+    public float jumpHeight;
 
-    public float xVelocity = 0.2f;
+    public Transform groundCheck;
+    public float groundChckRadius;
+    public LayerMask whatIsGround;
+    private bool grounded;
 
-	// Use this for initialization
-	void Start () {
-        body2d = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
-	}
-	
-	// Update is called once per frame
-	void FixedUpdate () {
+    private bool doubleJumped;
+    // Use this for initialization
+    void Start()
+    {
 
-        var direction = Input.GetAxis("Horizontal");
+    }
 
-        if (direction != 0)
+    void FixedUpdate()
+    {
+
+        grounded = Physics2D.OverlapCircle(groundCheck.position, groundChckRadius, whatIsGround);
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+        if (grounded)
+            doubleJumped = false;
+
+        if (Input.GetKeyDown(KeyCode.Space) && grounded)
         {
-            if (direction > 0)
-            {
-                body2d.transform.Translate(new Vector3(direction * xVelocity * Time.deltaTime,0,0));
-                body2d.transform.Rotate(0, 0, 0);
-            }
-
-            if (direction < 0)
-            {
-                body2d.transform.Translate(new Vector3(direction * xVelocity * Time.deltaTime,0,0));
-                
-                if (body2d.transform.localRotation.y == 0)
-                {
-                    body2d.transform.Rotate(0, 180, 0);
-                }
-            }
-
-            animator.SetBool("Walking", true);
-
-        } else
-        {
-            animator.SetBool("Walking", false);
+            //GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, jumpHeight);
+            Jump();
         }
+
+        if (Input.GetKeyDown(KeyCode.Space) && !doubleJumped && !grounded)
+        {
+            //GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, jumpHeight);
+            Jump();
+            doubleJumped = true;
+        }
+
+        moveVelocity = 0f;
+
+        if (Input.GetKey(KeyCode.D))
+        {
+            //GetComponent<Rigidbody2D>().velocity = new Vector2(moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+            moveVelocity = moveSpeed;
+        }
+
+        if (Input.GetKey(KeyCode.A))
+        {
+            //GetComponent<Rigidbody2D>().velocity = new Vector2(-moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+            moveVelocity = -moveSpeed;
+        }
+
+        GetComponent<Rigidbody2D>().velocity = new Vector2(moveVelocity, GetComponent<Rigidbody2D>().velocity.y);
+    }
+
+    public void Jump()
+    {
+        GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, jumpHeight);
     }
 }
