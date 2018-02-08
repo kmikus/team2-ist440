@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     public float groundChckRadius;
     public LayerMask whatIsGround;
     private bool grounded;
+    private bool facingRight = true;
 
     private bool doubleJumped;
     // Use this for initialization
@@ -25,6 +26,17 @@ public class PlayerMovement : MonoBehaviour
     {
 
         grounded = Physics2D.OverlapCircle(groundCheck.position, groundChckRadius, whatIsGround);
+
+        float h = Input.GetAxis("Horizontal");
+
+        if (h > 0 && !facingRight)
+        {
+            Flip();
+        }
+        else if (h < 0 && facingRight)
+        {
+            Flip();
+        }
     }
 
     // Update is called once per frame
@@ -38,6 +50,7 @@ public class PlayerMovement : MonoBehaviour
         {
             //GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, jumpHeight);
             Jump();
+            grounded = false;
         }
 
         if (Input.GetKeyDown(KeyCode.Space) && !doubleJumped && !grounded)
@@ -67,5 +80,13 @@ public class PlayerMovement : MonoBehaviour
     public void Jump()
     {
         GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, jumpHeight);
+    }
+
+    void Flip()
+    {
+        facingRight = !facingRight;
+        Vector3 theScale = transform.localScale;
+        theScale.x *= -1;
+        transform.localScale = theScale;
     }
 }
