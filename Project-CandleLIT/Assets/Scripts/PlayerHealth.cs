@@ -8,14 +8,13 @@ public class PlayerHealth : MonoBehaviour {
     [SerializeField]
     private Stat health;
 
-    [SerializeField]
-    private Stat Energy;
+
 
 
 	// Use this for initialization
 	private void Awake () {
         health.Initialize();
-        Energy.Initialize();
+       
 	}
 	
 	// Update is called once per frame
@@ -28,13 +27,6 @@ public class PlayerHealth : MonoBehaviour {
         {
             health.CurrentVal += 10;
         }
-        if (Input.GetKeyDown(KeyCode.C))
-        {
-            Energy.CurrentVal -= 10;
-        }
-        if (Input.GetKeyDown(KeyCode.V))
-        {
-            Energy.CurrentVal += 10;
-        }
+
     }
 }

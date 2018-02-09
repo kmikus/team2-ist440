@@ -4513,46 +4513,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114747383161034558, guid: 11145d1591661784982f855c11d35767,
+        type: 2}
+      propertyPath: Energy.bar
+      value: 
+      objectReference: {fileID: 732032692}
     - target: {fileID: 114017436506335112, guid: 11145d1591661784982f855c11d35767,
         type: 2}
       propertyPath: health.bar
       value: 
       objectReference: {fileID: 854167824}
-    - target: {fileID: 114017436506335112, guid: 11145d1591661784982f855c11d35767,
-        type: 2}
-      propertyPath: Energy.bar
-      value: 
-      objectReference: {fileID: 732032692}
-    - target: {fileID: 114803435998055090, guid: 11145d1591661784982f855c11d35767,
-        type: 2}
-      propertyPath: groundChckRadius
-      value: 0.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 50580789953059912, guid: 11145d1591661784982f855c11d35767,
-        type: 2}
-      propertyPath: m_UseAutoMass
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 50580789953059912, guid: 11145d1591661784982f855c11d35767,
-        type: 2}
-      propertyPath: m_Mass
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 50580789953059912, guid: 11145d1591661784982f855c11d35767,
-        type: 2}
-      propertyPath: m_GravityScale
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114803435998055090, guid: 11145d1591661784982f855c11d35767,
-        type: 2}
-      propertyPath: jumpHeight
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 108603213063843106, guid: 11145d1591661784982f855c11d35767,
-        type: 2}
-      propertyPath: m_Lightmapping
-      value: 4
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 11145d1591661784982f855c11d35767, type: 2}
   m_IsPrefabParent: 0
