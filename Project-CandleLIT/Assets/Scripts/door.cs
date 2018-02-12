@@ -19,8 +19,8 @@ public class door : MonoBehaviour {
     {
         if (collision.CompareTag("Player"))
         {
-            gm.DoorText.text = ("[e] to Enter");
-            if (Input.GetKeyDown("e"))
+            gm.DoorText.text = ("[d] to Enter");
+            if (Input.GetKeyDown("d"))
             {
                 SceneManager.LoadScene(LevelToLoad);
             }
@@ -31,7 +31,7 @@ public class door : MonoBehaviour {
     {
         if (collision.CompareTag("Player"))
         {
-            if (Input.GetKeyDown("e"))
+            if (Input.GetKeyDown("d"))
             {
                 SceneManager.LoadScene(LevelToLoad);
             }
