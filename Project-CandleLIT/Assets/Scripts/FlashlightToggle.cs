@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class FlashlightToggle : MonoBehaviour {
 
+
+
     private Light flashlightLight;
     private bool lightOn = false;
 
