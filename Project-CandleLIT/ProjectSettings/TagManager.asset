@@ -16,7 +16,7 @@ TagManager:
   - 
   - Ground
   - Front
-  - 
+  - Player
   - 
   - 
   - 
@@ -44,4 +44,7 @@ TagManager:
     locked: 0
   - name: Front
     uniqueID: 4102386055
+    locked: 0
+  - name: Player
+    uniqueID: 1339688855
     locked: 0
