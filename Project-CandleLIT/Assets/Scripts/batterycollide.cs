@@ -2,32 +2,26 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class batterycollide : MonoBehaviour {
+public class batterycollide : MonoBehaviour
+{
 
-    private BoxCollider2D batteryCollider;
-    private BoxCollider2D playerCollider;
+    flashlightHealth flashlighthealth;
 
-    private float Energy;
+    public float boost = 50f;
 
-
-
-
-    // Use this for initialization
-    void Start()
+    void Awake()
     {
-        batteryCollider = GetComponent<BoxCollider2D>();
-        playerCollider = GameObject.Find("Player").GetComponent<BoxCollider2D>();
+        flashlighthealth = FindObjectOfType<flashlightHealth>();
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnTriggerEnter2D(Collider2D col)
     {
-
-        if (batteryCollider.IsTouching(playerCollider))
+        if (flashlightHealth.CurrentHealth < flashlightHealth.MaxHealth)
         {
-            Energy += 10;
-            Object.Destroy(this.gameObject);
+            flashlightHealth.CurrentHealth = flashlightHealth.CurrentHealth + boost;
         }
-
+        Destroy(this.gameObject);
     }
+
+
 }

@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System;
@@ -21,7 +20,7 @@ public class TimeManager : MonoBehaviour
     // During this 5 seconds the player should not be able to move and the Spawner should stop
     // It is just so the transition is more smooth so it does not abrupty switch to the next scene
     private float timeOnGame = 65f;
-
+    public bool pauseTimer = false;
 
     // Use this for initialization
     void Start()
@@ -54,6 +53,18 @@ public class TimeManager : MonoBehaviour
             }*/
         }
 
+        //if (timeElapsed > 0)
+        //{
+
+        //        scoreManager.score += 10;
+        //}
+
+
+
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            pauseTimer = true;
+        }
     }
 
     string FormatTime(float value)
