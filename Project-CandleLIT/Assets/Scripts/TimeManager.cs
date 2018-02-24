@@ -14,12 +14,12 @@ public class TimeManager : MonoBehaviour
 
     // For Timer
     public Text countdownTime;
-    private float timeElapsed = 180f;
+    private float timeElapsed = 10f;
 
     // This adds an additional 5 seconds after time runs out until it switches to the next scene
     // During this 5 seconds the player should not be able to move and the Spawner should stop
     // It is just so the transition is more smooth so it does not abrupty switch to the next scene
-    private float timeOnGame = 65f;
+    private float timeOnGame = 0f;
     public bool pauseTimer = false;
 
     // Use this for initialization
@@ -43,6 +43,7 @@ public class TimeManager : MonoBehaviour
         {
             countdownTime.text = "TIME: 00:00";
 
+            gameController.instance.EndGame();
             // Load next Scene after 5 seconds of game/round/level ending
             /*if (timeOnGame <= 0)
             {

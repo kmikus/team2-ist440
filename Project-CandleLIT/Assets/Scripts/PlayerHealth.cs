@@ -27,6 +27,10 @@ public class PlayerHealth : MonoBehaviour
             DealDamage(10);
         }
 
+        if (CurrentHealth <= 0)
+        {
+            gameController.instance.EndGame();
+        }
     }
 
     void DealDamage(float damageValue)
@@ -44,5 +48,6 @@ public class PlayerHealth : MonoBehaviour
     void Die()
     {
         CurrentHealth = 0;
+
     }
 }
