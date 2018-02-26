@@ -22,10 +22,7 @@ public class gameController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(gameOver == true)
-        {
-                SceneManager.LoadScene(sceneName);
-        }
+
 	}
 
     public void EndGame()
