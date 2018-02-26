@@ -5125,6 +5125,24 @@ Sprite:
     - {x: 0.5, y: -0.5}
     - {x: 0.5, y: 0.5}
     - {x: -0.5, y: 0.5}
+--- !u!1 &572776251 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1175360521324340, guid: 8bb4e04f53a3c0045adf52c9dad85849,
+    type: 2}
+  m_PrefabInternal: {fileID: 1653873923}
+--- !u!114 &572776252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 572776251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0a4a5c179e2e674dae2a3a0f7445abb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DoorText: {fileID: 1743054009}
+  tempPos: {x: 0, y: 0, z: 0}
 --- !u!114 &710210044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7042,48 +7060,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1266202136}
---- !u!1 &1280998447 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 100002, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
-  m_PrefabInternal: {fileID: 1390360128}
---- !u!114 &1280998455
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1280998447}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0a4a5c179e2e674dae2a3a0f7445abb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DoorText: {fileID: 1743054009}
-  tempPos: {x: 0, y: 0, z: 0}
---- !u!61 &1280998456
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1280998447}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.006353259, y: -0.057173505}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.375, y: 1.375}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.345881, y: 1.08278}
-  m_EdgeRadius: 0
 --- !u!1 &1307350782
 GameObject:
   m_ObjectHideFlags: 0
