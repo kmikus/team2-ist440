@@ -7,8 +7,10 @@ public class Door : MonoBehaviour {
 
   
     public Text DoorText;
-    public Vector3 tempPos;
-    
+    public Transform TransformDestination;
+
+  
+
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
@@ -17,10 +19,13 @@ public class Door : MonoBehaviour {
 
             if (Input.GetKeyDown("t"))
             {
+                
                 var player = GameObject.Find("CharacterRobotBoy");
-                tempPos = player.transform.position;
-                tempPos = new Vector3(-39.7f, 13.1f, 0f);
-                player.transform.position = tempPos;
+
+                if (TransformDestination != null) {
+                    var destination = TransformDestination.GetComponent<Transform>();
+                    player.transform.position = destination.position;
+                }
 
             }
         }
@@ -32,10 +37,14 @@ public class Door : MonoBehaviour {
         {
             if (Input.GetKeyDown("t"))
             {
+                
                 var player = GameObject.Find("CharacterRobotBoy");
-                tempPos = player.transform.position;
-                tempPos = new Vector3(-39.7f, 13.1f, 0f);
-                player.transform.position = tempPos;
+
+                if (TransformDestination != null)
+                {
+                    var destination = TransformDestination.GetComponent<Transform>();
+                    player.transform.position = destination.position;
+                }
             }
     }
         }
