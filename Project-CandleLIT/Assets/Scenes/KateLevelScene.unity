@@ -3832,7 +3832,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &374127252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5141,8 +5141,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0a4a5c179e2e674dae2a3a0f7445abb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DoorText: {fileID: 1743054009}
-  tempPos: {x: 0, y: 0, z: 0}
 --- !u!114 &710210044
 MonoBehaviour:
   m_ObjectHideFlags: 0
