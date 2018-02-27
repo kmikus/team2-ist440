@@ -24,7 +24,12 @@ public class Door : MonoBehaviour {
 
                 if (TransformDestination != null) {
                     var destination = TransformDestination.GetComponent<Transform>();
+                    var startPosition = player.transform.position;
                     player.transform.position = destination.position;
+
+
+                    var moveDelta = player.transform.position - startPosition;
+                    Camera.main.transform.position += moveDelta;
                 }
 
             }
@@ -37,17 +42,22 @@ public class Door : MonoBehaviour {
         {
             if (Input.GetKeyDown("t"))
             {
-                
+
                 var player = GameObject.Find("CharacterRobotBoy");
 
                 if (TransformDestination != null)
                 {
                     var destination = TransformDestination.GetComponent<Transform>();
+                    var startPosition = player.transform.position;
                     player.transform.position = destination.position;
+
+
+                    var moveDelta = player.transform.position - startPosition;
+                    Camera.main.transform.position += moveDelta;
                 }
             }
-    }
         }
+    }
 
     void OnTriggerExit2D(Collider2D collision)
     {
