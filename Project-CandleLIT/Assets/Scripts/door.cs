@@ -8,8 +8,8 @@ public class Door : MonoBehaviour {
   
     public Text DoorText;
     public Transform TransformDestination;
+    public Transform cameraTransform;
 
-  
 
     void OnTriggerEnter2D(Collider2D collision)
     {
@@ -19,7 +19,6 @@ public class Door : MonoBehaviour {
 
             if (Input.GetKeyDown("t"))
             {
-                
                 var player = GameObject.Find("CharacterRobotBoy");
 
                 if (TransformDestination != null) {
@@ -27,11 +26,10 @@ public class Door : MonoBehaviour {
                     var startPosition = player.transform.position;
                     player.transform.position = destination.position;
 
-
-                    var moveDelta = player.transform.position - startPosition;
-                    Camera.main.transform.position += moveDelta;
+                    var cameraDestination = cameraTransform.GetComponent<Transform>();
+                    var camStartPosition = Camera.main.transform.position;
+                    Camera.main.transform.position = cameraDestination.position;
                 }
-
             }
         }
     }
@@ -42,7 +40,6 @@ public class Door : MonoBehaviour {
         {
             if (Input.GetKeyDown("t"))
             {
-
                 var player = GameObject.Find("CharacterRobotBoy");
 
                 if (TransformDestination != null)
@@ -51,9 +48,12 @@ public class Door : MonoBehaviour {
                     var startPosition = player.transform.position;
                     player.transform.position = destination.position;
 
+                    var cameraDestination = cameraTransform.GetComponent<Transform>();
+                    var camStartPosition = Camera.main.transform.position;
+                    Camera.main.transform.position = cameraDestination.position;
 
-                    var moveDelta = player.transform.position - startPosition;
-                    Camera.main.transform.position += moveDelta;
+                    //var moveDelta = player.transform.position - startPosition;
+                    //Camera.main.transform.position += moveDelta;
                 }
             }
         }
