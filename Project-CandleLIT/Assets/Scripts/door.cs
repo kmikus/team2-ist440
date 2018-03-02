@@ -51,9 +51,6 @@ public class Door : MonoBehaviour {
                     var cameraDestination = cameraTransform.GetComponent<Transform>();
                     var camStartPosition = Camera.main.transform.position;
                     Camera.main.transform.position = cameraDestination.position;
-
-                    //var moveDelta = player.transform.position - startPosition;
-                    //Camera.main.transform.position += moveDelta;
                 }
             }
         }
