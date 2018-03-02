@@ -7,7 +7,7 @@ public class batterycollide : MonoBehaviour
 
     flashlightHealth flashlighthealth;
 
-    public float boost = 50f;
+    public float boost = 500f;
 
     void Awake()
     {

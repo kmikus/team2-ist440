@@ -14,7 +14,7 @@ public class flashlightHealth : MonoBehaviour
 
     void Start()
     {
-        MaxHealth = 1000f;
+        MaxHealth = 5000f;
         CurrentHealth = MaxHealth;
 
         healthbar.value = CalculateHealth();

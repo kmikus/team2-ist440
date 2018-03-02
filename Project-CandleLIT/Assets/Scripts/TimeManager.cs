@@ -14,7 +14,7 @@ public class TimeManager : MonoBehaviour
 
     // For Timer
     public Text countdownTime;
-    private float timeElapsed = 10f;
+    private float timeElapsed = 30f;
 
     // This adds an additional 5 seconds after time runs out until it switches to the next scene
     // During this 5 seconds the player should not be able to move and the Spawner should stop
