@@ -548,9 +548,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Convex: 0
-  m_InflateMesh: 0
+  m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!33 &221652276
@@ -604,10 +604,10 @@ RectTransform:
   m_Father: {fileID: 1218038949}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -136.18, y: 115.67}
-  m_SizeDelta: {x: 171.1, y: 22.56}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 85.55, y: -11.279999}
+  m_SizeDelta: {x: 171.1, y: 22.559998}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &409049381
 MonoBehaviour:
@@ -912,10 +912,10 @@ RectTransform:
   m_Father: {fileID: 1218038949}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -136.18, y: 102}
-  m_SizeDelta: {x: 171.1, y: 22.56}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 85.55, y: -24}
+  m_SizeDelta: {x: 171.1, y: 22.559998}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &560573600
 MonoBehaviour:
@@ -1271,9 +1271,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Convex: 0
-  m_InflateMesh: 0
+  m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!33 &770452770
