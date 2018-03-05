@@ -24,14 +24,14 @@ public class EnemyPatrol : MonoBehaviour {
         RaycastHit2D hit2 = Physics2D.Raycast(originPoint2.position, dir, range);
         if (hit2 == true)
         {
-            if (hit.collider.CompareTag("Ground"))
+            if (hit.collider == null || hit.collider.CompareTag("Ground"))
             {
                 Flip();
                 speed *= -1;
                 dir *= -1;
             }
         }
-        if(hit == false || hit.collider.CompareTag("Player"))
+        if(hit == false)
         {
             Flip();
             speed *= -1;

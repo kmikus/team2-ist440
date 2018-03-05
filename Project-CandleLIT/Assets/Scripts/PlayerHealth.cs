@@ -22,6 +22,7 @@ public class PlayerHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // FOR TESTING ONLY
         if (Input.GetKeyDown(KeyCode.Z))
         {
             DealDamage(10);
@@ -33,7 +34,7 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
-    void DealDamage(float damageValue)
+    public void DealDamage(float damageValue)
     {
         CurrentHealth -= damageValue;
         healthbar.value = CalculateHealth();

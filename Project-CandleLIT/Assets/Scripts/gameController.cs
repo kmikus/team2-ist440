@@ -8,7 +8,7 @@ public class gameController : MonoBehaviour {
     public static gameController instance;
     public GameObject gameOverText;
     public bool gameOver = false;
-    public string sceneName;
+    public Scene scene;
 	// Use this for initialization
 	void Awake () {
 		if(instance == null)

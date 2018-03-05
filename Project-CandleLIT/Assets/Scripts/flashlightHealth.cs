@@ -7,14 +7,13 @@ public class flashlightHealth : MonoBehaviour
 {
 
     public static float CurrentHealth { get; set; }
-    public static float MaxHealth { get; set; }
+    public static float MaxHealth = 1000f;
 
     public Slider healthbar;
 
 
     void Start()
     {
-        MaxHealth = 5000f;
         CurrentHealth = MaxHealth;
 
         healthbar.value = CalculateHealth();
