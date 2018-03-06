@@ -19,6 +19,6 @@ public class splahsscript : MonoBehaviour {
     {
         yield return new WaitForSeconds(4f);
 
-        SceneManager.LoadScene("Menu_Main");
+        SceneManager.LoadScene("MainMenu");
     }
 }
