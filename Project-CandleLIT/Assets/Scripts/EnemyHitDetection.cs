@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerHitDetection : MonoBehaviour {
+public class EnemyHitDetection : MonoBehaviour {
 
-    private PlayerHealth ph;
-    private Flashlight fl;
+    private GameObject player;
     private SpriteRenderer sr;
+    private PlayerHealth ph;
+    public float damageAmount = 10f;
 
     private bool recentlyHit = false;
     private float recentlyHitTimer = 0f;
@@ -18,13 +19,13 @@ public class PlayerHitDetection : MonoBehaviour {
     private Color visible = new Color(1f, 1f, 1f, 1f);
     private bool isVisible = true;
 
-    void Start()
-    {
-        ph = GetComponent<PlayerHealth>();
-        fl = GetComponent<Flashlight>();
-        sr = GetComponent<SpriteRenderer>();
-    }
+    private BoxCollider2D enemyCol;
+	// Use this for initialization
+	void Start () {
+        enemyCol = GetComponent<BoxCollider2D>();
+	}
 
+    // Update is called once per frame
     private void Update()
     {
         if (recentlyHit)
@@ -48,21 +49,17 @@ public class PlayerHitDetection : MonoBehaviour {
         }
     }
 
-    void OnTriggerEnter2D(Collider2D col)
+    private void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.gameObject.layer == 11 && !recentlyHit) // Layer 11 is enemy
+        if (col.gameObject.tag == "Player" && !recentlyHit)
         {
-            Debug.Log("Player collided with enemy");
-            ph.DealDamage(10);
-            //TODO Currently this hits both colliders and will deal double damage.
-            recentlyHit = true;
-        }
+            player = col.gameObject;
+            ph = player.GetComponent<PlayerHealth>();
+            sr = player.GetComponent<SpriteRenderer>();
 
-        if (col.gameObject.layer == 13) // Layer 13 is battery
-        {
-            Debug.Log("Collided with battery");
-            fl.Recharge(fl.batteryRechargeVal);
-            Destroy(col.gameObject);
+            ph.DealDamage(damageAmount);
+            Debug.Log("Enemy collision- Player health: " + ph.CurrentHealth);
+            recentlyHit = true;
         }
     }
 }

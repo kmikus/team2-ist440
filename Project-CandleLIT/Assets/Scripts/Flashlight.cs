@@ -8,13 +8,21 @@ public class Flashlight : MonoBehaviour {
     public float maxHealth = 2000f;
     public Slider energyBar;
     public Light flLight;
-    public float flIntensity = 30f;
+    public float flIntensity = 10f;
     public float drainVal = 5f;
     public float rechargeVal = 0.5f;
     public float batteryRechargeVal = 500f;
 
     private float currentHealth;
     private bool lightOn = false;
+
+    public float CurrentHealth
+    {
+        get
+        {
+            return currentHealth;
+        }
+    }
 
     private void Start()
     {

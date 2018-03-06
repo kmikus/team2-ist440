@@ -31,7 +31,6 @@ GameObject:
   - component: {fileID: 11400000}
   - component: {fileID: 6100000}
   - component: {fileID: 114378362345478474}
-  - component: {fileID: 114660880459984918}
   - component: {fileID: 114563992128895908}
   m_Layer: 10
   m_Name: CharacterRobotBoy
@@ -75,7 +74,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -35.49, y: -0.88, z: 0}
+  m_LocalPosition: {x: -21.89, y: 12.47, z: 0}
   m_LocalScale: {x: 1.7715329, y: 1.7715304, z: 1}
   m_Children:
   - {fileID: 400000}
@@ -146,7 +145,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.06476323}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -157,7 +156,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.25, y: 0.68}
+  m_Size: {x: 0.25, y: 0.6976788}
   m_EdgeRadius: 0
 --- !u!95 &9500000
 Animator:
@@ -317,7 +316,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1773818721808740}
   m_LocalRotation: {x: -0.003961987, y: 0.63271886, z: -0.0032372656, w: 0.77436477}
-  m_LocalPosition: {x: -0.6999587, y: -0.15805528, z: 0.16}
+  m_LocalPosition: {x: -0.08, y: -0.24, z: -0.36}
   m_LocalScale: {x: 0.98265547, y: 0.56452924, z: 0.5817824}
   m_Children: []
   m_Father: {fileID: 400002}
@@ -343,7 +342,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1244961799925574}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.19750357, y: -0.11150503, z: 1}
+  m_LocalPosition: {x: -0.19750357, y: -0.11150503, z: 0}
   m_LocalScale: {x: 9.457286, y: 2.0563636, z: 1}
   m_Children: []
   m_Father: {fileID: 400002}
@@ -414,9 +413,9 @@ Light:
   serializedVersion: 8
   m_Type: 0
   m_Color: {r: 0.9191176, g: 0.9163211, b: 0.8177444, a: 1}
-  m_Intensity: 10
+  m_Intensity: 4.96
   m_Range: 5
-  m_SpotAngle: 58.552433
+  m_SpotAngle: 82
   m_CookieSize: 10
   m_Shadows:
     m_Type: 0
@@ -451,8 +450,8 @@ Light:
   m_Type: 0
   m_Color: {r: 0.92046297, g: 0.9411765, b: 0.7266436, a: 1}
   m_Intensity: 0
-  m_Range: 10
-  m_SpotAngle: 41.1
+  m_Range: 15
+  m_SpotAngle: 54
   m_CookieSize: 10
   m_Shadows:
     m_Type: 0
@@ -499,19 +498,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16c19661502d83d4cb60b09e2838b51f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 1000
+  maxHealth: 2000
   energyBar: {fileID: 0}
   flLight: {fileID: 108891311596473034}
-  flIntensity: 30
-  drainVal: 2
---- !u!114 &114660880459984918
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100002}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aaf38d8174f776a47b80ac59b337efad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  flIntensity: 10
+  drainVal: 5
+  rechargeVal: 0.5
+  batteryRechargeVal: 500
