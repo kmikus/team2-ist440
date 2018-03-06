@@ -32,6 +32,7 @@ public class Flashlight : MonoBehaviour {
         if (lightOn)
         {
             Drain(drainVal);
+            if (currentHealth == 0) { ToggleLight(); }
         } else
         {
             Recharge(rechargeVal);
