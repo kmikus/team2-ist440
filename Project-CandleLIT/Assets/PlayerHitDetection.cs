@@ -6,14 +6,23 @@ public class PlayerHitDetection : MonoBehaviour {
 
     private PlayerHealth ph;
     private Flashlight fl;
+    private SpriteRenderer sr;
+
     private bool recentlyHit = false;
     private float recentlyHitTimer = 0f;
-    private float recentlyHitTimeout = 5f;
+    public float recentlyHitTimeout = 3f;
+
+    private float flickerTimer = 0f;
+    public float flickerInterval = 0.07f;
+    private Color transparent = new Color(1f, 1f, 1f, 0f);
+    private Color visible = new Color(1f, 1f, 1f, 1f);
+    private bool isVisible = true;
 
     void Start()
     {
         ph = GetComponent<PlayerHealth>();
         fl = GetComponent<Flashlight>();
+        sr = GetComponent<SpriteRenderer>();
     }
 
     private void Update()
@@ -21,12 +30,21 @@ public class PlayerHitDetection : MonoBehaviour {
         if (recentlyHit)
         {
             recentlyHitTimer += Time.deltaTime;
+            flickerTimer += Time.deltaTime;
+        }
+
+        if (flickerTimer > flickerInterval)
+        {
+            sr.color = isVisible ? transparent : visible;
+            isVisible = !isVisible;
+            flickerTimer = 0f;
         }
 
         if (recentlyHitTimer > recentlyHitTimeout)
         {
             recentlyHit = false;
             recentlyHitTimer = 0f;
+            sr.color = visible;
         }
     }
 
