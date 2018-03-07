@@ -74,7 +74,6 @@ GameObject:
   - component: {fileID: 61882846579587142}
   - component: {fileID: 114914010390444398}
   - component: {fileID: 114837552977408400}
-  - component: {fileID: 81670303568897048}
   - component: {fileID: 82310823495952512}
   - component: {fileID: 114124266633087536}
   m_Layer: 10
@@ -229,28 +228,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.25, y: 0.6976788}
   m_EdgeRadius: 0
---- !u!81 &81670303568897048
-AudioListener:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1429633305013002}
-  m_Enabled: 1
 --- !u!82 &82310823495952512
 AudioSource:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1429633305013002}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 243838534485868634, guid: 851390e8dc2394aa1970611f882464ee,
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 851390e8dc2394aa1970611f882464ee,
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 27110b7054da94345bf8852cacbf53fb, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -423,7 +415,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1429633305013002}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c5d168a5b732c4977a7c72c74feb5549, type: 3}
   m_Name: 
@@ -462,8 +454,8 @@ MonoBehaviour:
   maxHealth: 2000
   energyBar: {fileID: 0}
   flLight: {fileID: 108737806140002004}
-  flIntensity: 10
-  drainVal: 5
+  flIntensity: 40
+  drainVal: 3
   rechargeVal: 0.5
   batteryRechargeVal: 500
 --- !u!114 &114914010390444398
