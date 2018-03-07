@@ -1,12 +1,11 @@
 fileFormatVersion: 2
-guid: 4721846c07eea2f4ba2245128f32009b
-timeCreated: 1520445358
+guid: af21f7d57b9377e4789a1deb78f8e3df
+timeCreated: 1520449760
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: runman_0
-    21300002: runman_1
-    21300004: runman_2
+    21300000: EyeballShot_0
+    21300002: EyeballShot_1
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -34,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -1
     wrapU: 1
@@ -49,7 +48,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 10
+  spritePixelsToUnits: 35
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -90,13 +89,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: runman_0
+      name: EyeballShot_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 117
-        width: 28
-        height: 55
+        x: 3
+        y: 42
+        width: 27
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -104,27 +103,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: runman_1
+      name: EyeballShot_1
       rect:
         serializedVersion: 2
-        x: 42
-        y: 123
-        width: 46
-        height: 49
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: runman_2
-      rect:
-        serializedVersion: 2
-        x: 101
-        y: 120
-        width: 58
-        height: 49
+        x: 3
+        y: 10
+        width: 27
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

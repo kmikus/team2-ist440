@@ -1,12 +1,13 @@
 fileFormatVersion: 2
-guid: 4721846c07eea2f4ba2245128f32009b
-timeCreated: 1520445358
+guid: 6ee46457064ab47a8b9df7d365ac61c6
+timeCreated: 1520451574
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: runman_0
-    21300002: runman_1
-    21300004: runman_2
+    21300000: fireman_0
+    21300002: fireman_1
+    21300004: fireman_2
+    21300006: fireman_3
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -34,7 +35,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -1
     wrapU: 1
@@ -49,7 +50,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 10
+  spritePixelsToUnits: 100
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -68,6 +69,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    androidETC2FallbackOverride: 0
   - buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -77,26 +79,46 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-  - buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: runman_0
+      name: fireman_0
       rect:
         serializedVersion: 2
-        x: 5
+        x: 135
+        y: 693
+        width: 216
+        height: 441
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireman_1
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 693
+        width: 216
+        height: 441
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireman_2
+      rect:
+        serializedVersion: 2
+        x: 135
         y: 117
-        width: 28
-        height: 55
+        width: 216
+        height: 423
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -104,27 +126,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: runman_1
+      name: fireman_3
       rect:
         serializedVersion: 2
-        x: 42
-        y: 123
-        width: 46
-        height: 49
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: runman_2
-      rect:
-        serializedVersion: 2
-        x: 101
-        y: 120
-        width: 58
-        height: 49
+        x: 711
+        y: 117
+        width: 216
+        height: 423
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
