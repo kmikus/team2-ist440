@@ -113,6 +113,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &7579914 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114056825922929966, guid: 366520817c30f4c4f8c130506a50023c,
+    type: 2}
+  m_PrefabInternal: {fileID: 1392619384}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &13513490
 GameObject:
   m_ObjectHideFlags: 0
@@ -207,6 +213,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -271,6 +278,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -364,6 +372,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -428,6 +437,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -583,6 +593,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -647,6 +658,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -740,6 +752,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -804,6 +817,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -903,6 +917,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -967,6 +982,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -1060,6 +1076,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -1124,6 +1141,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -1217,6 +1235,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -1281,6 +1300,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -1374,6 +1394,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -1438,6 +1459,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -1689,6 +1711,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -1753,6 +1776,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -1846,6 +1870,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -1910,6 +1935,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -2110,6 +2136,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -2174,6 +2201,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -2321,6 +2349,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -2385,6 +2414,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -2511,6 +2541,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -2575,6 +2606,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -2668,6 +2700,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -2732,6 +2765,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -2825,6 +2859,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -2889,6 +2924,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -3015,6 +3051,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -3079,6 +3116,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -3172,6 +3210,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -3236,6 +3275,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -3329,6 +3369,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -3393,6 +3434,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -3486,6 +3528,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -3550,6 +3593,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -3826,6 +3870,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -3890,6 +3935,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -4082,6 +4128,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -4146,6 +4193,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -4371,6 +4419,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -4435,6 +4484,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -18868,6 +18918,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -18932,6 +18983,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -19025,6 +19077,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -19089,6 +19142,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -19182,6 +19236,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -19246,6 +19301,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -19339,6 +19395,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -19403,6 +19460,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -19496,6 +19554,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -19560,6 +19619,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -19712,6 +19772,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -19776,6 +19837,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -20090,6 +20152,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -20154,6 +20217,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -20289,6 +20353,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -20353,6 +20418,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -20624,6 +20690,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -20688,6 +20755,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -20814,6 +20882,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -20878,6 +20947,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -21054,6 +21124,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -21118,6 +21189,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -21265,6 +21337,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -21329,6 +21402,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -21460,6 +21534,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -21524,6 +21599,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -21617,6 +21693,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -21681,6 +21758,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -21774,6 +21852,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -21838,6 +21917,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -22063,6 +22143,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -22127,6 +22208,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -22253,6 +22335,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -22317,6 +22400,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -22495,7 +22579,7 @@ Prefab:
         type: 2}
       propertyPath: DoorText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 7579914}
     - target: {fileID: 114713515663813200, guid: 7cb3bd2c8a59bfa4dbbb9eeb97b2fb0c,
         type: 2}
       propertyPath: TransformDestination
@@ -22613,6 +22697,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -22677,6 +22762,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -22770,6 +22856,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -22834,6 +22921,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -22960,6 +23048,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -23024,6 +23113,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -23117,6 +23207,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -23181,6 +23272,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -23345,6 +23437,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -23409,6 +23502,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -23502,6 +23596,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -23566,6 +23661,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -23746,6 +23842,7 @@ Camera:
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -24048,6 +24145,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -24112,6 +24210,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -24358,6 +24457,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -24422,6 +24522,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -24548,6 +24649,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -24612,6 +24714,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -24738,6 +24841,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -24802,6 +24906,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -24895,6 +25000,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -24959,6 +25065,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -25052,6 +25159,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -25116,6 +25224,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -25242,6 +25351,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -25306,6 +25416,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -25487,6 +25598,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -25551,6 +25663,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -25677,6 +25790,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -25741,6 +25855,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -25834,6 +25949,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -25898,6 +26014,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -25996,6 +26113,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -26060,6 +26178,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -26186,6 +26305,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -26250,6 +26370,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -26343,6 +26464,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -26407,6 +26529,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -26533,6 +26656,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -26597,6 +26721,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -26690,6 +26815,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -26754,6 +26880,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -26913,6 +27040,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -26977,6 +27105,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -37634,6 +37763,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -37698,6 +37828,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -37801,7 +37932,7 @@ Prefab:
         type: 2}
       propertyPath: DoorText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 7579914}
     - target: {fileID: 114347539196105278, guid: dd28b98e012be8545bccbe8c8fd459c3,
         type: 2}
       propertyPath: TransformDestination
@@ -37881,6 +38012,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -37945,6 +38077,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -38038,6 +38171,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -38102,6 +38236,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -38223,6 +38358,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -38287,6 +38423,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -38520,6 +38657,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -38584,6 +38722,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -38891,6 +39030,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -38955,6 +39095,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -39076,6 +39217,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -39140,6 +39282,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -39711,6 +39854,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -39775,6 +39919,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -39868,6 +40013,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -39932,6 +40078,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -40025,6 +40172,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -40089,6 +40237,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -40418,6 +40567,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:
@@ -40482,6 +40632,7 @@ Sprite:
       firstByte: 0
       indexCount: 6
       topology: 0
+      baseVertex: 0
       firstVertex: 0
       vertexCount: 4
       localAABB:

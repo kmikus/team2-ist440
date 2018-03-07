@@ -19,7 +19,7 @@ public class Door : MonoBehaviour {
 
             if (Input.GetKeyDown("t"))
             {
-                var player = GameObject.Find("CharacterRobotBoy");
+                var player = collision.gameObject;
 
                 if (TransformDestination != null) {
                     var destination = TransformDestination.GetComponent<Transform>();
@@ -40,7 +40,7 @@ public class Door : MonoBehaviour {
         {
             if (Input.GetKeyDown("t"))
             {
-                var player = GameObject.Find("CharacterRobotBoy");
+                var player = collision.gameObject;
 
                 if (TransformDestination != null)
                 {
