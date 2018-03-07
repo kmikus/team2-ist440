@@ -1,9 +1,13 @@
 fileFormatVersion: 2
-guid: e32e98f74b5e8894bbc47092c9f26bda
-timeCreated: 1519741605
+guid: 6ee46457064ab47a8b9df7d365ac61c6
+timeCreated: 1520451574
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: fireman_0
+    21300002: fireman_1
+    21300004: fireman_2
+    21300006: fireman_3
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -78,7 +82,63 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: fireman_0
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 693
+        width: 216
+        height: 441
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireman_1
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 693
+        width: 216
+        height: 441
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireman_2
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 117
+        width: 216
+        height: 423
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireman_3
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 117
+        width: 216
+        height: 423
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
     outline: []
     physicsShape: []
   spritePackingTag: 
