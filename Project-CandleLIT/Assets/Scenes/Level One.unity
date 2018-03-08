@@ -113,12 +113,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!114 &7579914 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114056825922929966, guid: 366520817c30f4c4f8c130506a50023c,
-    type: 2}
-  m_PrefabInternal: {fileID: 1392619384}
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &13513490
 GameObject:
   m_ObjectHideFlags: 0
@@ -954,9 +948,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0a4a5c179e2e674dae2a3a0f7445abb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DoorText: {fileID: 7579914}
-  TransformDestination: {fileID: 590551714}
-  cameraTransform: {fileID: 1092501465}
 --- !u!61 &1189982245
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1067,6 +1058,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3664157343550254626, guid: 4555a9b33172f74498ad3156b8a13791,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bcb93f4c9ebc6604684430dfb0c76d26, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4555a9b33172f74498ad3156b8a13791, type: 2}
   m_IsPrefabParent: 0
@@ -1167,6 +1163,7 @@ Camera:
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -1521,6 +1518,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3664157344859349558, guid: 69d2f96721aaa9f42981740f5d98b4af,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bcb93f4c9ebc6604684430dfb0c76d26, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 69d2f96721aaa9f42981740f5d98b4af, type: 2}
   m_IsPrefabParent: 0
@@ -1857,9 +1859,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0a4a5c179e2e674dae2a3a0f7445abb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DoorText: {fileID: 7579914}
-  TransformDestination: {fileID: 896187291}
-  cameraTransform: {fileID: 1092501465}
 --- !u!212 &1871734750
 SpriteRenderer:
   m_ObjectHideFlags: 0
