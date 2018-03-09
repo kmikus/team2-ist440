@@ -10,9 +10,16 @@ public class DiamondHitDetection : MonoBehaviour {
     {
         if (col.gameObject.tag == "Player")
         {
+			FindObjectOfType<CollectDiamond> ().playDiamondCollect ();
             Scoring.increaseScore(pointAmount);
-            Destroy(this.gameObject);
+			Invoke ("destroyObject",1);
+            //Destroy(this.gameObject);
             Debug.Log("Score: " + Scoring.getScore());
         }
     }
+
+	void destroyObject()
+	{
+		Destroy (this.gameObject);
+	}
 }

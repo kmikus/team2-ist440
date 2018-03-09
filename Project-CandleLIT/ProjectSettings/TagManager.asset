@@ -9,6 +9,7 @@ TagManager:
   - Ground
   - Enemy
   - Activation
+  - Diamond
   layers:
   - Default
   - TransparentFX
