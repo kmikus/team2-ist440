@@ -24,6 +24,14 @@ public class Flashlight : MonoBehaviour {
         }
     }
 
+    public bool LightOn
+    {
+        get
+        {
+            return lightOn;
+        }
+    }
+
     private void Start()
     {
         currentHealth = maxHealth;
