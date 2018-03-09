@@ -8,6 +8,7 @@ TagManager:
   - Door
   - Ground
   - Enemy
+  - Activation
   layers:
   - Default
   - TransparentFX

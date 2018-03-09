@@ -19,7 +19,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4905679445738758}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: ProjectileSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
@@ -36,9 +36,10 @@ GameObject:
   - component: {fileID: 4268162230710532}
   - component: {fileID: 61722595605687108}
   - component: {fileID: 114387106598321670}
-  m_Layer: 11
+  - component: {fileID: 50618793232979458}
+  m_Layer: 0
   m_Name: Activation
-  m_TagString: Untagged
+  m_TagString: Activation
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -111,6 +112,26 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1587780306257574}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!50 &50618793232979458
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1550515054349102}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0

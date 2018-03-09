@@ -17,7 +17,7 @@ public class FlaslightDamageEnemy : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (!enemy.activeSelf)
+		if (enemy != null && !enemy.activeSelf)
         {
             t += Time.deltaTime;
         }

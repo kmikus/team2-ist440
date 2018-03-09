@@ -28,10 +28,10 @@ public class EyeballActivation : MonoBehaviour {
 
     private void Update()
     {
-        Debug.Log("Active: " + active);
+        //Debug.Log("Active: " + active);
         if (active)
         {
-            Debug.Log(fireTimer);
+            //Debug.Log(fireTimer);
             fireTimer += Time.deltaTime;
             if (fireTimer > intervalBetweenFiring)
             {
