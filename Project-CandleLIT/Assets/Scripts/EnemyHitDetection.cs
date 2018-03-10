@@ -58,7 +58,7 @@ public class EnemyHitDetection : MonoBehaviour {
             sr = player.GetComponent<SpriteRenderer>();
 
             ph.DealDamage(damageAmount);
-            Debug.Log("Enemy collision- Player health: " + ph.CurrentHealth);
+            Debug.Log("Current object: " + this.gameObject.ToString() + " Enemy collision: " + col.gameObject.ToString() + "Player health: " + ph.CurrentHealth);
             recentlyHit = true;
         }
     }

@@ -10,6 +10,8 @@ TagManager:
   - Enemy
   - Activation
   - Diamond
+  - Projectile
+  - Battery
   layers:
   - Default
   - TransparentFX
