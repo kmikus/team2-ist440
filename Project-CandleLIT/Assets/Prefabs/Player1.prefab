@@ -78,8 +78,8 @@ GameObject:
   - component: {fileID: 114685426015663598}
   - component: {fileID: 114925988131115830}
   - component: {fileID: 82983577553836798}
-  - component: {fileID: 81112021067289596}
-  - component: {fileID: 114973058865245364}
+  - component: {fileID: 114207411270327610}
+  - component: {fileID: 114539073840952970}
   m_Layer: 10
   m_Name: Player1
   m_TagString: Player
@@ -306,13 +306,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.25, y: 0.6976788}
   m_EdgeRadius: 0
---- !u!81 &81112021067289596
-AudioListener:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1940583601647994}
-  m_Enabled: 1
 --- !u!82 &82983577553836798
 AudioSource:
   m_ObjectHideFlags: 1
@@ -501,6 +494,35 @@ MonoBehaviour:
   m_WhatIsGround:
     serializedVersion: 2
     m_Bits: 256
+--- !u!114 &114207411270327610
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1940583601647994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e5d0f126a791544ab58523b7f4472ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageAmount: 20
+  recentlyHitTimeout: 3
+  flickerInterval: 0.07
+--- !u!114 &114539073840952970
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1940583601647994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cfc3a0e817a74a0191fb4e2d3fe11d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grounded: 0
+  ground:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!114 &114685426015663598
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -552,17 +574,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c3d7b34a3bb2d4e4b926e7e729d3d410, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114973058865245364
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1940583601647994}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 037a68ba12f6f41928ffff82205a8518, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!212 &212081602379762992
