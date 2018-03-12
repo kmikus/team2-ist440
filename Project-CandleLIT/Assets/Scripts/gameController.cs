@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class gameController : MonoBehaviour {
 
@@ -9,6 +10,7 @@ public class gameController : MonoBehaviour {
     public GameObject gameOverText;
     public bool gameOver = false;
     public Scene scene;
+    public InputField highScoreInput;
 	// Use this for initialization
 	void Awake () {
 		if(instance == null)
@@ -29,5 +31,13 @@ public class gameController : MonoBehaviour {
     {
         gameOverText.SetActive(true);
         gameOver = true;
+
+    }
+
+    public void HighScoreInput()
+    {
+        string newInput = highScoreInput.text;
+        PlayerPrefs.SetString("highscoreName", newInput);
+        PlayerPrefs.SetInt("highscore", scoreManager.score);
     }
 }

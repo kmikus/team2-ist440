@@ -26,6 +26,15 @@ public class scoreManager : MonoBehaviour
     void UpdateScore()
     {
         scoreText.text = "SCORE: " + score;
+    }
 
+    public bool CheckForHighScore(int score)
+    {
+        int highScore = PlayerPrefs.GetInt("highscore");
+        if(score > highScore)
+        {
+            return true;
+        }
+        return false;
     }
 }
