@@ -9,7 +9,7 @@ public class Door : MonoBehaviour {
     public Text DoorText;
     public Transform TransformDestination;
     public Transform cameraTransform;
-
+    
 
     void OnTriggerEnter2D(Collider2D collision)
     {
