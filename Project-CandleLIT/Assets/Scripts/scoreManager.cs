@@ -7,7 +7,7 @@ public class scoreManager : MonoBehaviour
 {
 
     public static int score;
-    public Text scoreText;
+    public static Text scoreText;
     // Use this for initialization
     void Start()
     {
@@ -28,13 +28,4 @@ public class scoreManager : MonoBehaviour
         scoreText.text = "SCORE: " + score;
     }
 
-    public bool CheckForHighScore(int score)
-    {
-        int highScore = PlayerPrefs.GetInt("highscore");
-        if(score > highScore)
-        {
-            return true;
-        }
-        return false;
-    }
 }

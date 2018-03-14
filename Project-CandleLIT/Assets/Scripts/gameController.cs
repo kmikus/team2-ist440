@@ -7,10 +7,9 @@ using UnityEngine.UI;
 public class gameController : MonoBehaviour {
 
     public static gameController instance;
-    public GameObject gameOverText;
+    public GameObject gameover;
     public bool gameOver = false;
     public Scene scene;
-    public InputField highScoreInput;
 	// Use this for initialization
 	void Awake () {
 		if(instance == null)
@@ -29,15 +28,10 @@ public class gameController : MonoBehaviour {
 
     public void EndGame()
     {
-        gameOverText.SetActive(true);
+        gameover.SetActive(true);
         gameOver = true;
+        Time.timeScale = 0f;
 
     }
 
-    public void HighScoreInput()
-    {
-        string newInput = highScoreInput.text;
-        PlayerPrefs.SetString("highscoreName", newInput);
-        PlayerPrefs.SetInt("highscore", scoreManager.score);
-    }
 }

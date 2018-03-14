@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Scoring : MonoBehaviour {
 
-    private static float score = 0;
+    public static float score = 0;
     public static Text scoreText;
     public string scoreTextName = "ScoreValue";
     public static float diamondPickupValue = 50f;
