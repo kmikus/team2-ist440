@@ -30,7 +30,7 @@ public class gameController : MonoBehaviour {
     {
         gameover.SetActive(true);
         gameOver = true;
-        Time.timeScale = 0f;
+        //Time.timeScale = 0f;
 
     }
 

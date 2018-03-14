@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/PSUScreen.unity
+    guid: f99f710c8a3d9e34fa39892b93a6b961
+  - enabled: 1
     path: Assets/Scenes/SplashScreen1.unity
     guid: 4f1d505bbf6546e4e814f131d219b9a9
   - enabled: 1
@@ -16,4 +19,7 @@ EditorBuildSettings:
     guid: 99c0c2452ff4d4d409341530ee76785d
   - enabled: 1
     path: Assets/Scenes/HighScore.unity
-    guid: 65b085d1b6d972d4b8457391c2abc273
+    guid: 1b3e0170027197c4b9a4a3055539c93f
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000

@@ -9,6 +9,12 @@ public class menuController : MonoBehaviour {
 	public void LoadScene(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
+
+    }
+
+    public void loadMenu()
+    {
+        Application.LoadLevel("HighScore");
         Time.timeScale = 1f;
     }
 }
