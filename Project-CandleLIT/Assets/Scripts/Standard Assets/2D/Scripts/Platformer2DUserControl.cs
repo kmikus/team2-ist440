@@ -29,6 +29,10 @@ namespace UnityStandardAssets._2D
                     // Read the jump input in Update so button presses aren't missed.
                     m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
                 }
+                if (Input.GetKeyDown("e"))
+                {
+                    fl.ToggleLight();
+                }
             }
             else if(selectplayer.isPlayer2)
             {
@@ -36,6 +40,10 @@ namespace UnityStandardAssets._2D
                 {
                     // Read the jump input in Update so button presses aren't missed.
                     m_Jump = CrossPlatformInputManager.GetButtonDown("p2jump");
+                }
+                if (Input.GetKeyDown("k"))
+                {
+                    fl.ToggleLight();
                 }
             }
         }
@@ -51,10 +59,7 @@ namespace UnityStandardAssets._2D
                 // Pass all parameters to the character control script.
                 m_Character.Move(h, crouch, m_Jump);
                 m_Jump = false;
-                if (Input.GetKey("f"))
-                {
-                    fl.ToggleLight();
-                }
+                
             }
             else if(selectplayer.isPlayer2)
             {
@@ -64,10 +69,7 @@ namespace UnityStandardAssets._2D
                 // Pass all parameters to the character control script.
                 m_Character.Move(h, crouch, m_Jump);
                 m_Jump = false;
-                if (Input.GetKey("k"))
-                {
-                    fl.ToggleLight();
-                }
+                
             }
         }
     }

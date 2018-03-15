@@ -90,7 +90,7 @@ Grid:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1112539006323944}
   m_Enabled: 1
-  m_CellSize: {x: 1.28, y: 1.28, z: 0}
+  m_CellSize: {x: 1, y: 1, z: 0}
   m_CellGap: {x: 0, y: 0, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
@@ -396,11 +396,11 @@ Tilemap:
   - first: {x: -4, y: -2, z: 0}
     second:
       m_TileIndex: 18
-      m_TileSpriteIndex: 18
+      m_TileSpriteIndex: 52
       m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
+      m_TileColorIndex: 1
       m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
+      m_TileFlags: 3
       m_ColliderType: 1
   - first: {x: -3, y: -2, z: 0}
     second:
@@ -477,11 +477,11 @@ Tilemap:
   - first: {x: -4, y: -1, z: 0}
     second:
       m_TileIndex: 16
-      m_TileSpriteIndex: 16
+      m_TileSpriteIndex: 53
       m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
+      m_TileColorIndex: 2
       m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
+      m_TileFlags: 3
       m_ColliderType: 1
   - first: {x: -3, y: -1, z: 0}
     second:
@@ -558,11 +558,11 @@ Tilemap:
   - first: {x: -4, y: 0, z: 0}
     second:
       m_TileIndex: 14
-      m_TileSpriteIndex: 14
+      m_TileSpriteIndex: 54
       m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
+      m_TileColorIndex: 3
       m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
+      m_TileFlags: 3
       m_ColliderType: 1
   - first: {x: -3, y: 0, z: 0}
     second:
@@ -667,15 +667,15 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 40992fa6b0455ed428e3332cfcb404e8, type: 2}
   - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: b2838c25d3994cc4bb61e36bf4e3b39d, type: 2}
+    m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 5d7a81b75de523249947aa18b18617f6, type: 2}
   - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: c3b69486abd37f44c854a4a53e9bf149, type: 2}
+    m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 8fc0a774a0ba4a94a8427bc29968ba60, type: 2}
   - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: 9daee8ae32ff7e84b87d7b23ea877aa7, type: 2}
+    m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 68126e7703264bf4ea36b0554ca313d2, type: 2}
   - m_RefCount: 1
@@ -777,15 +777,15 @@ Tilemap:
     m_Data: {fileID: 21300000, guid: b6627598be1be524bbbf2d39ed3806dd, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: 74530a95b63a24448af71a2823cb0e1e, type: 3}
-  - m_RefCount: 2
+  - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: 5894c44572fd1364287debccac989dbc, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: 463c8aa85e5442a4f8848ba8047aa9fa, type: 3}
-  - m_RefCount: 2
+  - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: 10820f76308e6ea4e8b83f7513b16574, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: dc42bf54c303abe418e73a9555e1afa8, type: 3}
-  - m_RefCount: 2
+  - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: 6c30ec4e118a2fb439433c46e589bf03, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: 74d770b5bfae97441849e0c9b4f102f8, type: 3}
@@ -853,6 +853,12 @@ Tilemap:
     m_Data: {fileID: 21300000, guid: cc703a4a149fe9945b3badcbcfc21435, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: 23bd57bdc747ee744a3cf8f3a9cce536, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 0}
   m_TileMatrixArray:
   - m_RefCount: 55
     m_Data:
@@ -873,8 +879,14 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 55
+  - m_RefCount: 52
     m_Data: {r: 1, g: 1, b: 1, a: 1}
+  - m_RefCount: 1
+    m_Data: {r: 0.99489915, g: 0.47873774, b: 0.52097917, a: 1}
+  - m_RefCount: 1
+    m_Data: {r: 0.9435058, g: 0.46925637, b: 0.6224855, a: 1}
+  - m_RefCount: 1
+    m_Data: {r: 0.9698174, g: 0.39689016, b: 0.4724496, a: 1}
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Origin: {x: -4, y: -6, z: 0}
@@ -928,15 +940,15 @@ Tilemap:
   - serializedVersion: 1
     m_DirtyIndex: 0
   - serializedVersion: 1
-    m_DirtyIndex: 0
+    m_DirtyIndex: 1
   - serializedVersion: 1
     m_DirtyIndex: 0
   - serializedVersion: 1
-    m_DirtyIndex: 0
+    m_DirtyIndex: 1
   - serializedVersion: 1
     m_DirtyIndex: 0
   - serializedVersion: 1
-    m_DirtyIndex: 0
+    m_DirtyIndex: 1
   - serializedVersion: 1
     m_DirtyIndex: 0
   - serializedVersion: 1
