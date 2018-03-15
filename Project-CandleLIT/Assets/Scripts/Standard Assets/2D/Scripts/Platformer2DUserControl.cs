@@ -10,11 +10,13 @@ namespace UnityStandardAssets._2D
         private PlatformerCharacter2D m_Character;
         private bool m_Jump;
         private selectplayer selectplayer;
+        private Flashlight fl;
 
         private void Awake()
         {
             m_Character = GetComponent<PlatformerCharacter2D>();
             selectplayer = GetComponent<selectplayer>();
+            fl = GetComponent<Flashlight>();
         }
 
 
@@ -45,19 +47,27 @@ namespace UnityStandardAssets._2D
             {
                 // Read the inputs.
                 bool crouch = Input.GetKey(KeyCode.LeftControl);
-                float h = CrossPlatformInputManager.GetAxis("Horizontal");
+                float h = CrossPlatformInputManager.GetAxisRaw("Horizontal");
                 // Pass all parameters to the character control script.
                 m_Character.Move(h, crouch, m_Jump);
                 m_Jump = false;
+                if (Input.GetKey("f"))
+                {
+                    fl.ToggleLight();
+                }
             }
             else if(selectplayer.isPlayer2)
             {
                 // Read the inputs.
                 bool crouch = Input.GetKey(KeyCode.LeftControl);
-                float h = CrossPlatformInputManager.GetAxis("P2Horizontal");
+                float h = CrossPlatformInputManager.GetAxisRaw("P2Horizontal");
                 // Pass all parameters to the character control script.
                 m_Character.Move(h, crouch, m_Jump);
                 m_Jump = false;
+                if (Input.GetKey("k"))
+                {
+                    fl.ToggleLight();
+                }
             }
         }
     }

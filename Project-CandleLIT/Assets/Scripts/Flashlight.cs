@@ -40,10 +40,6 @@ public class Flashlight : MonoBehaviour {
 
     private void Update()
     {
-        if (Input.GetKeyDown("e"))
-        {
-            ToggleLight();
-        }
 
         if (lightOn)
         {
