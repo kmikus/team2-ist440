@@ -126,7 +126,7 @@ AudioMixerGroupController:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: New Group
+  m_Name: Jump
   m_AudioMixer: {fileID: 24100000}
   m_GroupID: 263c83ae4717c47a98db9a80e620e2b8
   m_Children: []

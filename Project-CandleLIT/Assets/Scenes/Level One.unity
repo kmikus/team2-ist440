@@ -362,6 +362,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 114462398225747462, guid: 73dcd60b04503714fabdca8d4bbfd202,
+        type: 2}
+      propertyPath: DoorWithKeyText
+      value: 
+      objectReference: {fileID: 1904016462}
     - target: {fileID: 114197614324588240, guid: 73dcd60b04503714fabdca8d4bbfd202,
         type: 2}
       propertyPath: energyBar
@@ -372,11 +377,6 @@ Prefab:
       propertyPath: healthbar
       value: 
       objectReference: {fileID: 2035775226}
-    - target: {fileID: 114462398225747462, guid: 73dcd60b04503714fabdca8d4bbfd202,
-        type: 2}
-      propertyPath: DoorWithKeyText
-      value: 
-      objectReference: {fileID: 1904016462}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 73dcd60b04503714fabdca8d4bbfd202, type: 2}
   m_IsPrefabParent: 0
@@ -1208,13 +1208,7 @@ Prefab:
       propertyPath: healthbar
       value: 
       objectReference: {fileID: 1640019367}
-    - target: {fileID: 114439239240239878, guid: 145f1d7b5e53d477185614c130eab5c0,
-        type: 2}
-      propertyPath: DoorWithKeyText
-      value: 
-      objectReference: {fileID: 1904016462}
-    m_RemovedComponents:
-    - {fileID: 114439239240239878, guid: 145f1d7b5e53d477185614c130eab5c0, type: 2}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 145f1d7b5e53d477185614c130eab5c0, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &324348334 stripped
@@ -3906,7 +3900,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player1: {fileID: 324348334}
   player2: {fileID: 1386764835}
-  percentToShift: 0.8
+  shiftThreshold: 0.7
+  sizeIncrease: 1.25
 --- !u!1 &1336082520
 GameObject:
   m_ObjectHideFlags: 0
