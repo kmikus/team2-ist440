@@ -9,4 +9,10 @@ public class SoundEffects : MonoBehaviour {
     public AudioClip hitByEnemy;
     public AudioClip batteryPickup;
     public AudioClip hitByProjectile;
+	public AudioClip HealthPickup;
+	public AudioClip OpenDoor;
+	public AudioClip ExitDoor;
+	public AudioClip Trapdoor;
+	public AudioClip FlashLight;
+	public AudioClip KeyPickup;
 }

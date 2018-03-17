@@ -37,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1920406665490190}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.489246, y: 11.795131, z: -0.08080713}
+  m_LocalPosition: {x: -6.51, y: 23.68, z: -0.08080713}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -51,7 +51,8 @@ AudioSource:
   m_GameObject: {fileID: 1920406665490190}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 243013643432630066, guid: 5cd80abbc87704249b8abbf32ab1f185,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: c145197cec752464990b17ff0d49029c, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -110,7 +111,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -190,7 +191,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -231,3 +232,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   diamondPickup: {fileID: 8300000, guid: 7b34a1c3f2d86478f8ece94c4c46c8dd, type: 3}
   hitByEnemy: {fileID: 8300000, guid: 9ae32f8e1a94c486c9929faca77ff03b, type: 3}
+  batteryPickup: {fileID: 8300000, guid: a2ae90e42daaf4723a539c25867d37fd, type: 3}
+  hitByProjectile: {fileID: 8300000, guid: 6ae649c910b754b3087ded9716c83c1b, type: 3}
+  HealthPickup: {fileID: 8300000, guid: 4cd309cfb5e2e4ce9b434214c46a516b, type: 3}
+  OpenDoor: {fileID: 8300000, guid: f1bad44d1844c44af9722fcdc3343e0e, type: 3}
+  ExitDoor: {fileID: 0}
+  Trapdoor: {fileID: 8300000, guid: 1689b1b8a5075405f9fcb328f0d532a0, type: 3}
+  FlashLight: {fileID: 8300000, guid: c8c5fe57ffa114f03955d2e5f9c80e60, type: 3}
+  KeyPickup: {fileID: 8300000, guid: 8a08ad63df70c49d0a3826b1cf222eb0, type: 3}
