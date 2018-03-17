@@ -10,6 +10,7 @@ public class gameController : MonoBehaviour {
     public GameObject gameover;
     public bool gameOver = false;
     public Scene scene;
+    //public InputField playerName;
 	// Use this for initialization
 	void Awake () {
 		if(instance == null)
@@ -30,8 +31,13 @@ public class gameController : MonoBehaviour {
     {
         gameover.SetActive(true);
         gameOver = true;
-        //Time.timeScale = 0f;
-
+        Time.timeScale = 0f;
+        
     }
+
+    //public void InitialsEntered()
+    //{
+    //    GetComponent<inputfield>().CheckForHighScore(Scoring.score, playerName.text);
+    //}
 
 }

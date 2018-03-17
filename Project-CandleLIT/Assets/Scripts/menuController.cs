@@ -6,15 +6,21 @@ using UnityEngine.SceneManagement;
 
 public class menuController : MonoBehaviour {
 
-	public void LoadScene(string sceneName)
+    public void loadLevel1()
     {
-        SceneManager.LoadScene(sceneName);
-
+        Application.LoadLevel("Level One");
+        Time.timeScale = 1f;
     }
 
     public void loadMenu()
     {
         Application.LoadLevel("HighScore");
+        Time.timeScale = 1f;
+    }
+
+    public void loadSplash()
+    {
+        Application.LoadLevel("PSUScreen");
         Time.timeScale = 1f;
     }
 }
