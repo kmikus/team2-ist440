@@ -26,14 +26,14 @@ public class ChangeCameraSizeDynamic : MonoBehaviour {
         camHeight = cam.orthographicSize * 2;
         camWidth = cam.orthographicSize * 2 * cam.aspect;
 
-        Debug.Log("Height: " + camHeight);
-        Debug.Log("Width: " + camWidth);
+        //Debug.Log("Height: " + camHeight);
+        //Debug.Log("Width: " + camWidth);
 
         playerDistanceX = Mathf.Abs(player1.position.x - player2.position.x);
         playerDistanceY = Mathf.Abs(player1.position.y - player2.position.y);
 
-        Debug.Log("Player X dist: " + playerDistanceX);
-        Debug.Log("Player Y dist: " + playerDistanceY);
+        //Debug.Log("Player X dist: " + playerDistanceX);
+        //Debug.Log("Player Y dist: " + playerDistanceY);
 
         if (playerDistanceX > shiftThreshold * camWidth)
         {

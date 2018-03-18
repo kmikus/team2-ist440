@@ -21,7 +21,7 @@ public class EyeballActivation : MonoBehaviour {
         eyeballAnim = GetComponentInParent<Animator>();
         eyeballTransform = GetComponentInParent<Transform>();
         direction = -eyeballTransform.localScale.x;
-        Debug.Log("Direction of projectile: " + direction);
+        //Debug.Log("Direction of projectile: " + direction);
         //direction is opposite of the way the sprite is facing
         instantiationPosition = new Vector3(spawnPos.position.x, spawnPos.position.y, spawnPos.position.z);
     }

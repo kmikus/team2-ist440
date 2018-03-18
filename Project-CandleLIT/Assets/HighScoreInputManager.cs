@@ -15,10 +15,24 @@ public class HighScoreInputManager : MonoBehaviour {
         initial1 = GameObject.Find("InputInit1").GetComponent<Text>();
         initial2 = GameObject.Find("InputInit2").GetComponent<Text>();
         initial3 = GameObject.Find("InputInit3").GetComponent<Text>();
+
+        Scoring.LoadHighScores();
+
+        if (Scoring.highScores.Count > 0)
+        {
+            GameObject.Find("InitialsTest").GetComponent<Text>().text = Scoring.highScores[Scoring.highScores.Count - 1];
+        }
     }
 	
 	// Update is called once per frame
 	void Update () {
+
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            string initials = initial1.text.ToCharArray()[0].ToString() + initial2.text.ToCharArray()[0].ToString() + initial3.text.ToCharArray()[0].ToString();
+            Scoring.UpdateHighScore(initials, Scoring.score);
+            Scoring.resetScore();
+        }
 
 		if (Input.GetKeyDown(KeyCode.RightArrow))
         {
