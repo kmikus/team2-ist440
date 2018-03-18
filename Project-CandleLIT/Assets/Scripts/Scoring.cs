@@ -10,8 +10,12 @@ public class Scoring : MonoBehaviour {
     public string scoreTextName = "ScoreValue";
     public static float diamondPickupValue = 50f;
 
+    public static List<string> initials = new List<string>();
+    public static List<float> highScores = new List<float>();
+
     private void Start()
     {
+        DontDestroyOnLoad(gameObject);
         scoreText = GameObject.Find(scoreTextName).GetComponent<Text>();
         scoreText.text = score.ToString();
     }
@@ -37,5 +41,10 @@ public class Scoring : MonoBehaviour {
     public static void resetScore()
     {
         score = 0;
+    }
+
+    public static void AddNewScore(float score)
+    {
+
     }
 }
