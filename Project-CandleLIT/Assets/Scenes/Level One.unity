@@ -1502,8 +1502,8 @@ GameObject:
   m_Component:
   - component: {fileID: 252538518}
   - component: {fileID: 252538521}
-  - component: {fileID: 252538520}
   - component: {fileID: 252538519}
+  - component: {fileID: 252538520}
   m_Layer: 0
   m_Name: FlashlightHitbox
   m_TagString: Untagged
@@ -1549,8 +1549,7 @@ Rigidbody2D:
 --- !u!114 &252538520
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114815475504143340, guid: 145f1d7b5e53d477185614c130eab5c0,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 252538517}
   m_Enabled: 1
@@ -1558,6 +1557,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bffc3dae5cd668c4cb04d513659ba808, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  respawnParticle: {fileID: 1518381401331266, guid: 6c5cc6e8565be3c47b32c28b9c681515,
+    type: 2}
   deathParticle: {fileID: 1476739399110890, guid: 65a77d90cd561254da9c051229198c34,
     type: 2}
   enemyPosition: {fileID: 0}
@@ -3172,8 +3173,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1593218580}
   - component: {fileID: 1593218583}
-  - component: {fileID: 1593218582}
   - component: {fileID: 1593218581}
+  - component: {fileID: 1593218582}
   m_Layer: 0
   m_Name: FlashlightHitbox
   m_TagString: Untagged
@@ -3219,18 +3220,19 @@ Rigidbody2D:
 --- !u!114 &1593218582
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114978644040905752, guid: 73dcd60b04503714fabdca8d4bbfd202,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1593218579}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e64d094627dfc7341b74884dd25e2361, type: 3}
+  m_Script: {fileID: 11500000, guid: bffc3dae5cd668c4cb04d513659ba808, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 0}
-  fl: {fileID: 0}
-  t: 0
+  respawnParticle: {fileID: 1518381401331266, guid: 6c5cc6e8565be3c47b32c28b9c681515,
+    type: 2}
+  deathParticle: {fileID: 1476739399110890, guid: 65a77d90cd561254da9c051229198c34,
+    type: 2}
+  enemyPosition: {fileID: 0}
   disableTime: 10
 --- !u!61 &1593218583
 BoxCollider2D:

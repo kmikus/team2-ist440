@@ -10,6 +10,7 @@ public class FlaslightDamageEnemy : MonoBehaviour {
 
     private float particleTimer = 0f;
     private bool particleAdded = false;
+    public GameObject respawnParticle;
     public GameObject deathParticle;
     public Transform enemyPosition;
     public float disableTime = 10f;
@@ -28,6 +29,8 @@ public class FlaslightDamageEnemy : MonoBehaviour {
 
         if (t > disableTime)
         {
+            enemyPosition = enemy.GetComponent<Transform>();
+            Instantiate(respawnParticle, new Vector3(enemyPosition.position.x, enemyPosition.position.y + 1, enemyPosition.position.z), Quaternion.identity);
             enemy.SetActive(true);
             t = 0;
         }
@@ -37,6 +40,7 @@ public class FlaslightDamageEnemy : MonoBehaviour {
         }
         if(particleTimer > 2f)
         {
+            Destroy(respawnParticle);
             Destroy(deathParticle);
             particleTimer = 0f;
         }
