@@ -99,7 +99,8 @@ GameObject:
   - component: {fileID: 114550760441036040}
   - component: {fileID: 114621804940835776}
   - component: {fileID: 82579024876227716}
-  - component: {fileID: 114629408758885926}
+  - component: {fileID: 114563490315225856}
+  - component: {fileID: 114383336113827784}
   m_Layer: 10
   m_Name: Player2
   m_TagString: Player
@@ -321,7 +322,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 243175539370577826, guid: 5cd80abbc87704249b8abbf32ab1f185,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: 42fa304323a90412a8ffdb1f31280051, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 55f2c52673aad45fcae2edceb22ae162, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -592,6 +593,21 @@ MonoBehaviour:
   drainVal: 1
   rechargeVal: 0.5
   batteryRechargeVal: 500
+--- !u!114 &114383336113827784
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1871411480528398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34f30f57441d54127b480e8e6c2c3fca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grounded: 0
+  ground:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!114 &114412202022375668
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -638,6 +654,17 @@ MonoBehaviour:
   currentInterObjScript: {fileID: 0}
   inventory: {fileID: 0}
   DoorWithKeyText: {fileID: 0}
+--- !u!114 &114563490315225856
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1871411480528398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114621804940835776
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -651,21 +678,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlayer1: 0
   isPlayer2: 1
---- !u!114 &114629408758885926
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1871411480528398}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58fd794e72be44540b0388398006c9d7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  grounded: 0
-  ground:
-    serializedVersion: 2
-    m_Bits: 256
 --- !u!114 &114798505187927972
 MonoBehaviour:
   m_ObjectHideFlags: 1

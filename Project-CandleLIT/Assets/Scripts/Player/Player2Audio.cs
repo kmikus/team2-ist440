@@ -1,8 +1,8 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FootstepsAudio : MonoBehaviour {
+public class Player2Audio : MonoBehaviour {
 
 	public bool grounded;
 	public LayerMask ground;
@@ -36,7 +36,7 @@ public class FootstepsAudio : MonoBehaviour {
 	{
 		grounded = playerCollider.IsTouchingLayers (ground);
 
-		if ((Input.GetKey (KeyCode.D) || Input.GetKey (KeyCode.A) || Input.GetKey (KeyCode.LeftArrow) || Input.GetKey (KeyCode.RightArrow)) && grounded) {
+		if ((Input.GetKey (KeyCode.C) || Input.GetKey (KeyCode.V)) && grounded) {
 
 			if (!allSources[0].isPlaying)
 				allSources[0].Play ();
@@ -53,7 +53,7 @@ public class FootstepsAudio : MonoBehaviour {
 	{
 		grounded = playerCollider.IsTouchingLayers (ground);
 
-		if ((Input.GetKey (KeyCode.Space)) && grounded) {
+		if ((Input.GetKey (KeyCode.J)) && grounded) {
 			if(!allSources[1].isPlaying)
 				allSources[1].Play ();
 		} 
