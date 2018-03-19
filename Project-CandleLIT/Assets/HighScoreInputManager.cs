@@ -22,6 +22,18 @@ public class HighScoreInputManager : MonoBehaviour {
         {
             GameObject.Find("InitialsTest").GetComponent<Text>().text = Scoring.highScores[Scoring.highScores.Count - 1];
         }
+
+        int sizeOfHighScores = Scoring.highScores.Count;
+
+        for (int i = 1; i <= sizeOfHighScores; i++)
+        {
+            var initials1 = GameObject.Find("Initials" + i).GetComponent<Text>();
+            var initial1 = GameObject.Find("Initial" + i).GetComponent<Text>();
+            initials1.text = Scoring.highScores[sizeOfHighScores - i].Substring(8);
+            initial1.text = Scoring.highScores[sizeOfHighScores - i].Substring(0, 8);
+        }
+
+
     }
 	
 	// Update is called once per frame
