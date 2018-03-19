@@ -8,6 +8,10 @@ public class FlaslightDamageEnemy : MonoBehaviour {
     private Flashlight fl;
     private float t = 0f;
 
+    private float particleTimer = 0f;
+    private bool particleAdded = false;
+    public GameObject deathParticle;
+    public Transform enemyPosition;
     public float disableTime = 10f;
 
 	// Use this for initialization
@@ -27,6 +31,15 @@ public class FlaslightDamageEnemy : MonoBehaviour {
             enemy.SetActive(true);
             t = 0;
         }
+        if (particleAdded)
+        {
+            particleTimer += Time.deltaTime;
+        }
+        if(particleTimer > 2f)
+        {
+            Destroy(deathParticle);
+            particleTimer = 0f;
+        }
 	}
 
     private void OnTriggerEnter2D(Collider2D collider)
@@ -34,7 +47,10 @@ public class FlaslightDamageEnemy : MonoBehaviour {
         if (collider.gameObject.tag == "Enemy" && fl.LightOn)
         {
             enemy = collider.gameObject;
+            enemyPosition = enemy.GetComponent<Transform>();
+            Instantiate(deathParticle, new Vector3(enemyPosition.position.x, enemyPosition.position.y, enemyPosition.position.z), Quaternion.identity);
             enemy.SetActive(false);
+            particleAdded = true;
         }
     }
 }
