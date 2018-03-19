@@ -3013,7 +3013,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e28cc12621829f4da433ee1d1fa2aa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseMenuUI: {fileID: 1865929013538830}
+  pauseMenuUI: {fileID: 0}
 --- !u!114 &114895778411839906
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3025,7 +3025,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80aac46d2a1031142b9df93b41570ba2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeElapsed: 30
+  timeElapsed: 60
 --- !u!114 &114902892699962938
 MonoBehaviour:
   m_ObjectHideFlags: 1
