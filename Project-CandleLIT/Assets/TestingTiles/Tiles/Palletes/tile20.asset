@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: tile20
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 21300000, guid: 05ae9523e8cf4bc468b6631b520709b4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 412af3df28d385142802a8e3c37bde2f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
