@@ -6,12 +6,10 @@ public class ChangeCameraSizeDynamic : MonoBehaviour {
 
     public Transform player1;
     public Transform player2;
-    public float shiftThreshold = 0.7f;
-    public float sizeIncrease = 1.25f;
+    public float baseCameraSize = 10f;
+    public float scalingFactor = 0.2f;
 
     private Camera cam;
-    private float camHeight;
-    private float camWidth;
 
     private float playerDistanceX;
     private float playerDistanceY;
@@ -23,25 +21,18 @@ public class ChangeCameraSizeDynamic : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        camHeight = cam.orthographicSize * 2;
-        camWidth = cam.orthographicSize * 2 * cam.aspect;
-
-        //Debug.Log("Height: " + camHeight);
-        //Debug.Log("Width: " + camWidth);
 
         playerDistanceX = Mathf.Abs(player1.position.x - player2.position.x);
         playerDistanceY = Mathf.Abs(player1.position.y - player2.position.y);
+        Vector2 playerDistVector = new Vector2(playerDistanceX, playerDistanceY);
+        float playerDistMagnitude = playerDistVector.magnitude;
 
         //Debug.Log("Player X dist: " + playerDistanceX);
         //Debug.Log("Player Y dist: " + playerDistanceY);
 
-        if (playerDistanceX > shiftThreshold * camWidth)
-        {
-            cam.orthographicSize *= sizeIncrease;
-        } else if (playerDistanceY > shiftThreshold * camHeight)
-        {
-            cam.orthographicSize *= sizeIncrease;
-        }
+        //Debug.Log("Distance: " + playerDistMagnitude);
+        cam.orthographicSize = baseCameraSize + scalingFactor * playerDistMagnitude;
+        //Debug.Log("Camera size: " + cam.orthographicSize);
 
     }
 }
