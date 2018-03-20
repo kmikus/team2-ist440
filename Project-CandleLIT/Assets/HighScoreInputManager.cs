@@ -18,10 +18,10 @@ public class HighScoreInputManager : MonoBehaviour {
 
         Scoring.LoadHighScores();
 
-        if (Scoring.highScores.Count > 0)
+       /* if (Scoring.highScores.Count > 0)
         {
             GameObject.Find("InitialsTest").GetComponent<Text>().text = Scoring.highScores[Scoring.highScores.Count - 1];
-        }
+        }*/
 
         UpdateHighScoreUI();
 
