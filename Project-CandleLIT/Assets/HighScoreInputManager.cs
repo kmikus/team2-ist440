@@ -23,16 +23,7 @@ public class HighScoreInputManager : MonoBehaviour {
             GameObject.Find("InitialsTest").GetComponent<Text>().text = Scoring.highScores[Scoring.highScores.Count - 1];
         }
 
-        int sizeOfHighScores = Scoring.highScores.Count;
-
-        for (int i = 1; i <= sizeOfHighScores; i++)
-        {
-            var initials1 = GameObject.Find("Initials" + i).GetComponent<Text>();
-            var initial1 = GameObject.Find("Initial" + i).GetComponent<Text>();
-            initials1.text = Scoring.highScores[sizeOfHighScores - i].Substring(8);
-            initial1.text = Scoring.highScores[sizeOfHighScores - i].Substring(0, 8);
-        }
-
+        UpdateHighScoreUI();
 
     }
 	
@@ -44,6 +35,7 @@ public class HighScoreInputManager : MonoBehaviour {
             string initials = initial1.text.ToCharArray()[0].ToString() + initial2.text.ToCharArray()[0].ToString() + initial3.text.ToCharArray()[0].ToString();
             Scoring.UpdateHighScore(initials, Scoring.score);
             Scoring.resetScore();
+            UpdateHighScoreUI();
         }
 
 		if (Input.GetKeyDown(KeyCode.RightArrow))
@@ -155,4 +147,17 @@ public class HighScoreInputManager : MonoBehaviour {
             }
         }
 	}
+
+    private void UpdateHighScoreUI()
+    {
+        int sizeOfHighScores = Scoring.highScores.Count;
+
+        for (int i = 1; i <= sizeOfHighScores; i++)
+        {
+            var initials1 = GameObject.Find("Initials" + i).GetComponent<Text>();
+            var initial1 = GameObject.Find("Initial" + i).GetComponent<Text>();
+            initials1.text = Scoring.highScores[sizeOfHighScores - i].Substring(8);
+            initial1.text = Scoring.highScores[sizeOfHighScores - i].Substring(0, 8);
+        }
+    }
 }
