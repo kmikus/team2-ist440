@@ -20,8 +20,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4923836621858250}
   - component: {fileID: 61035496114631588}
-  - component: {fileID: 114978644040905752}
   - component: {fileID: 50173019459958172}
+  - component: {fileID: 114142385645849396}
   m_Layer: 0
   m_Name: FlashlightHitbox
   m_TagString: Untagged
@@ -99,8 +99,8 @@ GameObject:
   - component: {fileID: 114550760441036040}
   - component: {fileID: 114621804940835776}
   - component: {fileID: 82579024876227716}
-  - component: {fileID: 114563490315225856}
   - component: {fileID: 114383336113827784}
+  - component: {fileID: 114794992021576398}
   m_Layer: 10
   m_Name: Player2
   m_TagString: Player
@@ -157,7 +157,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1871411480528398}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -37.99, y: 11.3, z: 0}
+  m_LocalPosition: {x: -24.7, y: 11.08, z: 0}
   m_LocalScale: {x: 1.7715329, y: 1.7715304, z: 1}
   m_Children:
   - {fileID: 4868896531191672}
@@ -575,6 +575,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthbar: {fileID: 0}
+--- !u!114 &114142385645849396
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1146265316359872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bffc3dae5cd668c4cb04d513659ba808, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  respawnParticle: {fileID: 1518381401331266, guid: 6c5cc6e8565be3c47b32c28b9c681515,
+    type: 2}
+  deathParticle: {fileID: 1476739399110890, guid: 65a77d90cd561254da9c051229198c34,
+    type: 2}
+  enemyPosition: {fileID: 0}
+  disableTime: 10
 --- !u!114 &114197614324588240
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -654,17 +671,6 @@ MonoBehaviour:
   currentInterObjScript: {fileID: 0}
   inventory: {fileID: 0}
   DoorWithKeyText: {fileID: 0}
---- !u!114 &114563490315225856
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1871411480528398}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114621804940835776
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -678,6 +684,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlayer1: 0
   isPlayer2: 1
+--- !u!114 &114794992021576398
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1871411480528398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd484fcf6254443cba86cbe153922f5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageAmount: 20
+  recentlyHitTimeout: 3
+  flickerInterval: 0.07
 --- !u!114 &114798505187927972
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -706,18 +726,6 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
---- !u!114 &114978644040905752
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1146265316359872}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e64d094627dfc7341b74884dd25e2361, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  disableTime: 10
 --- !u!114 &114991735481916760
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerHitDetection : MonoBehaviour {
+public class PlayerHitDetection : MonoBehaviour
+{
 
     private SoundEffects sfx;
     private GameObject otherCol;
@@ -20,24 +21,25 @@ public class PlayerHitDetection : MonoBehaviour {
     private Color transparent = new Color(1f, 1f, 1f, 0f);
     private Color visible = new Color(1f, 1f, 1f, 1f);
     private bool isVisible = true;
-    
-	bool isCollidingDoor;
-	bool isDoorOpened;
-	bool isCollidingWithTrapDoor;
-	bool isCollidingWithKey;
-	bool isCollidingWithHealth;
+    private bool recentlyHit = false;
 
-	AudioSource[] allSource; 
+    bool isCollidingDoor;
+    bool isDoorOpened;
+    bool isCollidingWithTrapDoor;
+    bool isCollidingWithKey;
+    bool isCollidingWithHealth;
+
+    AudioSource[] allSource;
 
     void Start()
     {
-		isCollidingWithHealth = false;
-		isCollidingWithKey = false;
-		isCollidingWithTrapDoor = false;
-		isCollidingDoor = false;
-		isDoorOpened = false;
+        isCollidingWithHealth = false;
+        isCollidingWithKey = false;
+        isCollidingWithTrapDoor = false;
+        isCollidingDoor = false;
+        isDoorOpened = false;
 
-		allSource = GetComponents<AudioSource> ();
+        allSource = GetComponents<AudioSource>();
 
         sfx = SoundManager.instance.GetComponent<SoundEffects>();
         sr = GetComponent<SpriteRenderer>();
@@ -45,14 +47,14 @@ public class PlayerHitDetection : MonoBehaviour {
         fl = GetComponent<Flashlight>();
     }
 
-	void Update ()
+    void Update()
     {
-		keyPickupAudio ();
-		playDoorOpenClose ();
-		flashLightAudio ();
-		healthPickUpAudio ();
+        keyPickupAudio();
+        playDoorOpenClose();
+        flashLightAudio();
+        healthPickUpAudio();
 
-        if (PlayerManager.RecentlyHit)
+        if (recentlyHit)
         {
             recentlyHitTimer += Time.deltaTime;
             flickerTimer += Time.deltaTime;
@@ -67,7 +69,7 @@ public class PlayerHitDetection : MonoBehaviour {
 
         if (recentlyHitTimer > recentlyHitTimeout)
         {
-            PlayerManager.RecentlyHit = false;
+            recentlyHit = false;
             recentlyHitTimer = 0f;
             sr.color = visible;
         }
@@ -76,15 +78,15 @@ public class PlayerHitDetection : MonoBehaviour {
     private void OnTriggerStay2D(Collider2D col)
     {
         //Enemy Case
-        if (col.gameObject.tag == "Enemy" && !PlayerManager.RecentlyHit)
+        if (col.gameObject.tag == "Enemy" && !recentlyHit)
         {
-            if (!PlayerManager.RecentlyHit)
+            if (!recentlyHit)
             {
                 ph.DealDamage(damageAmount);
                 SoundManager.instance.PlaySingle(sfx.hitByEnemy);
             }
             Debug.Log("Enemy collision: " + col.gameObject.ToString() + " Player health: " + ph.CurrentHealth);
-            PlayerManager.RecentlyHit = true;
+            recentlyHit = true;
         }
 
         //Diamond Case
@@ -108,9 +110,9 @@ public class PlayerHitDetection : MonoBehaviour {
         }
 
         //Projectile Case
-        if (col.gameObject.tag == "Projectile" && !PlayerManager.RecentlyHit)
+        if (col.gameObject.tag == "Projectile" && !recentlyHit)
         {
-            if (!PlayerManager.RecentlyHit)
+            if (!recentlyHit)
             {
                 ph.DealDamage(damageAmount);
                 SoundManager.instance.PlaySingle(sfx.hitByProjectile);
@@ -118,109 +120,124 @@ public class PlayerHitDetection : MonoBehaviour {
                 if (!col.gameObject.GetComponent<ProjectileHitDetection>().passthrough) { Destroy(col.gameObject); }
             }
             Debug.Log("Enemy collision: " + col.gameObject.ToString() + " Player health: " + ph.CurrentHealth);
-            PlayerManager.RecentlyHit = true;
+            recentlyHit = true;
         }
 
-		if (col.gameObject.tag == "Door") {
+        if (col.gameObject.tag == "Door")
+        {
 
-			isCollidingDoor = true;
-			
-		}
+            isCollidingDoor = true;
 
-		if (col.gameObject.tag == "Trapdoor") {
+        }
 
-			isCollidingWithTrapDoor = true;
+        if (col.gameObject.tag == "Trapdoor")
+        {
 
-		}
+            isCollidingWithTrapDoor = true;
 
-		if (col.gameObject.tag == "Key") {
+        }
 
-			isCollidingWithKey = true;
+        if (col.gameObject.tag == "Key")
+        {
 
-		}
+            isCollidingWithKey = true;
 
-		if (col.gameObject.tag == "Health") {
+        }
 
-			isCollidingWithKey = true;
+        if (col.gameObject.tag == "Health")
+        {
 
-		}
+            isCollidingWithKey = true;
+
+        }
     }
 
-	void OnTriggerExit2D(Collider2D col)
-	{
-		if (col.gameObject.tag == "Door") {
-		
-			isCollidingDoor = false;
-		}
+    void OnTriggerExit2D(Collider2D col)
+    {
+        if (col.gameObject.tag == "Door")
+        {
 
-		if (col.gameObject.tag == "Trapdoor") {
+            isCollidingDoor = false;
+        }
 
-			isCollidingWithTrapDoor = false;
+        if (col.gameObject.tag == "Trapdoor")
+        {
 
-		}
+            isCollidingWithTrapDoor = false;
 
-		if (col.gameObject.tag == "Key") {
+        }
 
-			isCollidingWithKey = false;
+        if (col.gameObject.tag == "Key")
+        {
 
-		}
+            isCollidingWithKey = false;
 
-		if (col.gameObject.tag == "Health") {
+        }
 
-			isCollidingWithKey = false;
+        if (col.gameObject.tag == "Health")
+        {
 
-		}
-	}
+            isCollidingWithKey = false;
 
-	void playDoorOpenClose()
-	{
-		if (isCollidingDoor && Input.GetKeyDown (KeyCode.P)) {
-		
-			isDoorOpened = true;
-			SoundManager.instance.PlaySingle(sfx.OpenDoor);
-			
-		} else if (!isCollidingDoor && isDoorOpened) {
-		   
-			isDoorOpened = false;
-			SoundManager.instance.PlaySingle(sfx.ExitDoor);
-		
-		}
-			
-	}
+        }
+    }
 
-	void flashLightAudio()
-	{
-		if ((Input.GetKey (KeyCode.E))) {
+    void playDoorOpenClose()
+    {
+        if (isCollidingDoor && Input.GetKeyDown(KeyCode.P))
+        {
 
-			SoundManager.instance.PlaySingle(sfx.FlashLight);
+            isDoorOpened = true;
+            SoundManager.instance.PlaySingle(sfx.OpenDoor);
 
-		}
-	}
+        }
+        else if (!isCollidingDoor && isDoorOpened)
+        {
 
-	void trapDoorSound()
-	{
-		if (isCollidingWithTrapDoor && Input.GetKeyDown (KeyCode.P)) {
-		
-			SoundManager.instance.PlaySingle(sfx.Trapdoor);
-		
-		}
-	}
+            isDoorOpened = false;
+            SoundManager.instance.PlaySingle(sfx.ExitDoor);
 
-	void keyPickupAudio()
-	{
-		if (isCollidingWithKey && Input.GetKeyDown (KeyCode.P)) {
+        }
 
-			SoundManager.instance.PlaySingle(sfx.KeyPickup);
+    }
 
-		}
-	}
+    void flashLightAudio()
+    {
+        if ((Input.GetKey(KeyCode.E)))
+        {
 
-	void healthPickUpAudio()
-	{
-		if (isCollidingWithHealth && Input.GetKeyDown (KeyCode.P)) {
+            SoundManager.instance.PlaySingle(sfx.FlashLight);
 
-			SoundManager.instance.PlaySingle(sfx.HealthPickup);
+        }
+    }
 
-		}
-	}
+    void trapDoorSound()
+    {
+        if (isCollidingWithTrapDoor && Input.GetKeyDown(KeyCode.P))
+        {
+
+            SoundManager.instance.PlaySingle(sfx.Trapdoor);
+
+        }
+    }
+
+    void keyPickupAudio()
+    {
+        if (isCollidingWithKey && Input.GetKeyDown(KeyCode.P))
+        {
+
+            SoundManager.instance.PlaySingle(sfx.KeyPickup);
+
+        }
+    }
+
+    void healthPickUpAudio()
+    {
+        if (isCollidingWithHealth && Input.GetKeyDown(KeyCode.P))
+        {
+
+            SoundManager.instance.PlaySingle(sfx.HealthPickup);
+
+        }
+    }
 }

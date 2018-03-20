@@ -36,8 +36,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4962338687119884}
   - component: {fileID: 61174546084894900}
-  - component: {fileID: 114815475504143340}
   - component: {fileID: 50902116182606406}
+  - component: {fileID: 114008836747386764}
   m_Layer: 0
   m_Name: FlashlightHitbox
   m_TagString: Untagged
@@ -78,14 +78,12 @@ GameObject:
   - component: {fileID: 114685426015663598}
   - component: {fileID: 114925988131115830}
   - component: {fileID: 82983577553836798}
-  - component: {fileID: 114207411270327610}
-  - component: {fileID: 114539073840952970}
   - component: {fileID: 114758180065442916}
   - component: {fileID: 114481898300117710}
   - component: {fileID: 114999165316617498}
   - component: {fileID: 82514550470977134}
-  - component: {fileID: 82349401470724538}
   - component: {fileID: 114004147389567876}
+  - component: {fileID: 114320105097380842}
   m_Layer: 10
   m_Name: Player1
   m_TagString: Player
@@ -157,7 +155,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1940583601647994}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -39.98, y: 13.39, z: 0}
+  m_LocalPosition: {x: -29.04, y: 13.1, z: 0}
   m_LocalScale: {x: 1.7715329, y: 1.7715304, z: 1}
   m_Children:
   - {fileID: 4751520317817478}
@@ -274,7 +272,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.1169043, y: -0.1308088}
+  m_Offset: {x: 0.16121149, y: -0.1308088}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -285,7 +283,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.2275872, y: 0.7383824}
+  m_Size: {x: 0.3162017, y: 0.7383824}
   m_EdgeRadius: 0
 --- !u!61 &61255590838388278
 BoxCollider2D:
@@ -312,86 +310,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.25, y: 0.6976788}
   m_EdgeRadius: 0
---- !u!82 &82349401470724538
-AudioSource:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1940583601647994}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - serializedVersion: 2
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
 --- !u!82 &82514550470977134
 AudioSource:
   m_ObjectHideFlags: 1
@@ -402,7 +320,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 243175539370577826, guid: 5cd80abbc87704249b8abbf32ab1f185,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: 42fa304323a90412a8ffdb1f31280051, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 55f2c52673aad45fcae2edceb22ae162, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -672,11 +590,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58fd794e72be44540b0388398006c9d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  grounded: 0
+  grounded: 1
   ground:
     serializedVersion: 2
     m_Bits: 256
---- !u!114 &114207411270327610
+--- !u!114 &114008836747386764
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1430061906567760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bffc3dae5cd668c4cb04d513659ba808, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  respawnParticle: {fileID: 1518381401331266, guid: 6c5cc6e8565be3c47b32c28b9c681515,
+    type: 2}
+  deathParticle: {fileID: 1476739399110890, guid: 65a77d90cd561254da9c051229198c34,
+    type: 2}
+  enemyPosition: {fileID: 0}
+  disableTime: 10
+--- !u!114 &114320105097380842
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -684,7 +619,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1940583601647994}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e5d0f126a791544ab58523b7f4472ff, type: 3}
+  m_Script: {fileID: 11500000, guid: cd484fcf6254443cba86cbe153922f5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   damageAmount: 20
@@ -707,21 +642,6 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
---- !u!114 &114539073840952970
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1940583601647994}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6cfc3a0e817a74a0191fb4e2d3fe11d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  grounded: 0
-  ground:
-    m_Bits: 256
-  playerCollider: {fileID: 0}
 --- !u!114 &114685426015663598
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -750,18 +670,6 @@ MonoBehaviour:
   currentInterObjScript: {fileID: 0}
   inventory: {fileID: 114481898300117710}
   DoorWithKeyText: {fileID: 0}
---- !u!114 &114815475504143340
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1430061906567760}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e64d094627dfc7341b74884dd25e2361, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  disableTime: 10
 --- !u!114 &114925988131115830
 MonoBehaviour:
   m_ObjectHideFlags: 1
