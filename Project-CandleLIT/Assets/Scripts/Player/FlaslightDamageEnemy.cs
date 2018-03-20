@@ -34,16 +34,7 @@ public class FlaslightDamageEnemy : MonoBehaviour {
             enemy.SetActive(true);
             t = 0;
         }
-        if (particleAdded)
-        {
-            particleTimer += Time.deltaTime;
-        }
-        if(particleTimer > 2f)
-        {
-            Destroy(respawnParticle);
-            Destroy(deathParticle);
-            particleTimer = 0f;
-        }
+
 	}
 
     private void OnTriggerEnter2D(Collider2D collider)
@@ -52,9 +43,8 @@ public class FlaslightDamageEnemy : MonoBehaviour {
         {
             enemy = collider.gameObject;
             enemyPosition = enemy.GetComponent<Transform>();
-            Instantiate(deathParticle, new Vector3(enemyPosition.position.x, enemyPosition.position.y, enemyPosition.position.z), Quaternion.identity);
+            var particle = Instantiate(deathParticle, new Vector3(enemyPosition.position.x, enemyPosition.position.y, enemyPosition.position.z), Quaternion.identity);
             enemy.SetActive(false);
-            particleAdded = true;
         }
     }
 }
