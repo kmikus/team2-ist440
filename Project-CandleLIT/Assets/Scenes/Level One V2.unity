@@ -291,7 +291,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4843249827771524, guid: 145f1d7b5e53d477185614c130eab5c0, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -29.04
+      value: 12.98
       objectReference: {fileID: 0}
     - target: {fileID: 4843249827771524, guid: 145f1d7b5e53d477185614c130eab5c0, type: 2}
       propertyPath: m_LocalPosition.y
@@ -6706,23 +6706,8 @@ Prefab:
         type: 2}
       propertyPath: itemNeeded
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114627940899710772, guid: 6493cb72087837e49bb66e6d03ccb539,
-        type: 2}
-      propertyPath: TransformDestination
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114627940899710772, guid: 6493cb72087837e49bb66e6d03ccb539,
-        type: 2}
-      propertyPath: cameraTransform
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1575858457213148, guid: 6493cb72087837e49bb66e6d03ccb539, type: 2}
-      propertyPath: m_TagString
-      value: Key
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 114627940899710772, guid: 6493cb72087837e49bb66e6d03ccb539, type: 2}
+      objectReference: {fileID: 2144534180}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6493cb72087837e49bb66e6d03ccb539, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &404441546
