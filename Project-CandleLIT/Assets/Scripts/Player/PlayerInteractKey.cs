@@ -1,15 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PlayerInteractKey : MonoBehaviour {
 
     public GameObject currentKey = null;
-    public Collider2D collision;
     public InteractionKey currentInterObjScript = null;
     public Inventory inventory;
     public Text DoorWithKeyText;
+    public int LevelToLoad;
 
     void Update()
     {
@@ -42,7 +43,6 @@ public class PlayerInteractKey : MonoBehaviour {
                             inventory.RemoveItem(currentKey);
                         }
 
-                        // Transform player and camera to destination
                         
                     }
                     else
@@ -55,6 +55,7 @@ public class PlayerInteractKey : MonoBehaviour {
                 {
                     // Door is not locked  - open it
                     Debug.Log(currentInterObjScript.name + " is unlocked");
+                    SceneManager.LoadScene(LevelToLoad);
 
                     //currentInterObjScript.Open(); --> add animation for door opening here
 
