@@ -14151,6 +14151,11 @@ Prefab:
       propertyPath: Volume
       value: 
       objectReference: {fileID: 478136486}
+    - target: {fileID: 114758651871889444, guid: 692ece9a6b7f4f340afdd00e2e49b228,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 692ece9a6b7f4f340afdd00e2e49b228, type: 2}
   m_IsPrefabParent: 0
