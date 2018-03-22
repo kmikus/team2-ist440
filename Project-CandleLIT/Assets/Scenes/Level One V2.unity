@@ -9798,29 +9798,6 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 825130612}
---- !u!1 &857324287 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1920406665490190, guid: 692ece9a6b7f4f340afdd00e2e49b228,
-    type: 2}
-  m_PrefabInternal: {fileID: 1795632105}
---- !u!82 &857324289 stripped
-AudioSource:
-  m_PrefabParentObject: {fileID: 82375784618348384, guid: 692ece9a6b7f4f340afdd00e2e49b228,
-    type: 2}
-  m_PrefabInternal: {fileID: 1795632105}
---- !u!114 &857324290
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 857324287}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03427fadcb3e6df40a072cc48b762fc2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Volume: {fileID: 478136486}
-  myMusic: {fileID: 857324289}
 --- !u!1001 &882829722
 Prefab:
   m_ObjectHideFlags: 0
@@ -14169,13 +14146,12 @@ Prefab:
       propertyPath: m_RootOrder
       value: 14
       objectReference: {fileID: 0}
-    - target: {fileID: 114621432340935602, guid: 692ece9a6b7f4f340afdd00e2e49b228,
+    - target: {fileID: 114758651871889444, guid: 692ece9a6b7f4f340afdd00e2e49b228,
         type: 2}
-      propertyPath: OpenDoor
+      propertyPath: Volume
       value: 
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 82482719528374514, guid: 692ece9a6b7f4f340afdd00e2e49b228, type: 2}
+      objectReference: {fileID: 478136486}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 692ece9a6b7f4f340afdd00e2e49b228, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1803338821
