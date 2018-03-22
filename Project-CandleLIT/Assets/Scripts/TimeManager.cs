@@ -47,5 +47,10 @@ public class TimeManager : MonoBehaviour
         TimeSpan t = TimeSpan.FromSeconds(value);
         return string.Format("{0:D2}:{1:D2}", t.Minutes, t.Seconds);
     }
+    
+    public void ResetTime()
+    {
+        timeElapsed = 60f;
+    }
 
 }

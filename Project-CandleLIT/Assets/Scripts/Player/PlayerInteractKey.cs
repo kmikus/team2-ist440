@@ -10,7 +10,7 @@ public class PlayerInteractKey : MonoBehaviour {
     public InteractionKey currentInterObjScript = null;
     public Inventory inventory;
     public Text DoorWithKeyText;
-    public int LevelToLoad;
+    public int LevelToLoad = 4;
 
     void Update()
     {
@@ -56,6 +56,9 @@ public class PlayerInteractKey : MonoBehaviour {
                     // Door is not locked  - open it
                     Debug.Log(currentInterObjScript.name + " is unlocked");
                     SceneManager.LoadScene(LevelToLoad);
+                    DoorWithKeyText.text = "";
+                    LevelToLoad++;
+                    GameObject.Find("Timer").GetComponent<TimeManager>().ResetTime();
 
                     //currentInterObjScript.Open(); --> add animation for door opening here
 
