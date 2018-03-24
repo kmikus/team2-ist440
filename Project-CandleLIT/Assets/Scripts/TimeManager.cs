@@ -13,11 +13,12 @@ public class TimeManager : MonoBehaviour
     private Text countdownTime;
     public float timeElapsed;
     public GameObject gameover;
+    public bool gameOver = false;
 
     // This adds an additional 5 seconds after time runs out until it switches to the next scene
     // During this 5 seconds the player should not be able to move and the Spawner should stop
     // It is just so the transition is more smooth so it does not abrupty switch to the next scene
-   // private float timeOnGame = 0f;
+    // private float timeOnGame = 0f;
 
     // Use this for initialization
     void Start()
@@ -40,7 +41,8 @@ public class TimeManager : MonoBehaviour
 
             gameController.instance.EndGame();
             gameover.SetActive(true);
-            Time.timeScale = 0f;
+            gameOver = true;
+
         }
     }
 

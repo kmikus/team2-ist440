@@ -333,7 +333,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeElapsed: 60
-  gameover: {fileID: 0}
+  gameover: {fileID: 2142555195}
+  gameOver: 0
 --- !u!114 &30363137
 MonoBehaviour:
   m_ObjectHideFlags: 0
