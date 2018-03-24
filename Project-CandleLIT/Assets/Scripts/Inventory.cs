@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour {
 
 
     public GameObject[] inventory = new GameObject[5];
+    public Button[] inventorybutton = new Button[5];
 
     public void AddItem(GameObject item)
     {
@@ -18,6 +20,7 @@ public class Inventory : MonoBehaviour {
             {
                 inventory[i] = item;
                 Debug.Log(item.name + "was added");
+                inventorybutton[i].image.overrideSprite = item.GetComponent<SpriteRenderer>().sprite;
                 itemAdded = true;
                 // Do something with object
                 item.SendMessage("DoInteraction");

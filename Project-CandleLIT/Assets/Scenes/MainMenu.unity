@@ -1004,6 +1004,10 @@ Prefab:
       propertyPath: m_Name
       value: MainMenuMainCamera
       objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: 7461a7b0cf97947fd9b9e4502fd2d07b, type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7461a7b0cf97947fd9b9e4502fd2d07b, type: 2}
   m_IsPrefabParent: 0
@@ -2099,7 +2103,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "Kevin Mikus - Team Leader\nMohammed Jiban - UI Developer\nKathryn Coppola
     - Level Designer \nRabeya Akhtar - Level Designer\nJithin Koshy - Level Designer\nMatthew
-    Baun - Physics developer\nAdrian Burnley - Physics Developer\nMibin Baby - Physics
+    Baun - Physics Developer\nAdrian Burnley - Physics Developer\nMibin Baby - Physics
     Developer"
 --- !u!222 &708220966
 CanvasRenderer:
