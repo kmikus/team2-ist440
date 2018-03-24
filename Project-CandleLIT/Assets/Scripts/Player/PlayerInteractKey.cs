@@ -58,7 +58,12 @@ public class PlayerInteractKey : MonoBehaviour {
                     SceneManager.LoadScene(LevelToLoad);
                     DoorWithKeyText.text = "";
                     LevelToLoad++;
-                    GameObject.Find("Timer").GetComponent<TimeManager>().ResetTime();
+                    var levelTimer = GameObject.Find("LevelTimer");
+                    if (levelTimer != null)
+                    {
+                        var newTime = levelTimer.GetComponent<LevelTimer>().amountOfTime;
+                        GameObject.Find("Timer").GetComponent<TimeManager>().UpdateTime(newTime);
+                    }
 
                     //currentInterObjScript.Open(); --> add animation for door opening here
 

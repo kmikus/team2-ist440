@@ -11,7 +11,7 @@ public class PlayerHitDetection : MonoBehaviour
     private PlayerHealth ph;
     private Flashlight fl;
 
-    public float damageAmount = 20f;
+    public float defaultDamageAmount = 10f;
 
     private float recentlyHitTimer = 0f;
     public float recentlyHitTimeout = 3f;
@@ -82,6 +82,9 @@ public class PlayerHitDetection : MonoBehaviour
         {
             if (!recentlyHit)
             {
+                // This is not an error, make sure the DamageAmount script is attached to the enemy
+                var damageAmount = col.gameObject.GetComponent<DamageAmount>().damageAmount;
+                if (damageAmount == null) { damageAmount = defaultDamageAmount; }
                 ph.DealDamage(damageAmount);
                 SoundManager.instance.PlaySingle(sfx.hitByEnemy);
             }
@@ -114,6 +117,9 @@ public class PlayerHitDetection : MonoBehaviour
         {
             if (!recentlyHit)
             {
+                // This is not an error, make sure the DamageAmount script is attached to the enemy
+                var damageAmount = col.gameObject.GetComponent<DamageAmount>().damageAmount;
+                if (damageAmount == null) { damageAmount = defaultDamageAmount; }
                 ph.DealDamage(damageAmount);
                 SoundManager.instance.PlaySingle(sfx.hitByProjectile);
                 //check if passthrough, if not destroy the projectile. Checkbox on the projectiles prefab from Projectile Hit Detection Script

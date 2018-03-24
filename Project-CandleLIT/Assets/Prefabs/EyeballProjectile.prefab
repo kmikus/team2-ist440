@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 61397919118979754}
   - component: {fileID: 50027974251648432}
   - component: {fileID: 114265518182209680}
+  - component: {fileID: 114853751210504158}
   m_Layer: 0
   m_Name: EyeballProjectile
   m_TagString: Projectile
@@ -117,6 +118,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23e69d7ffe6cb7841b30167314cbe676, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  passthrough: 0
+--- !u!114 &114853751210504158
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1755210107785828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2de0fd22ba54bc7418ca969314a7ec77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageAmount: 10
 --- !u!212 &212143758875105166
 SpriteRenderer:
   m_ObjectHideFlags: 1
