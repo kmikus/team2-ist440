@@ -203,7 +203,7 @@ public class PlayerHitDetection : MonoBehaviour
 
     void flashLightAudio()
     {
-        if ((Input.GetKey(KeyCode.E)))
+		if ((Input.GetKey(KeyCode.E)) || (Input.GetKey(KeyCode.K)))
         {
 
             SoundManager.instance.PlaySingle(sfx.FlashLight);
@@ -213,7 +213,7 @@ public class PlayerHitDetection : MonoBehaviour
 
     void trapDoorSound()
     {
-        if (isCollidingWithTrapDoor && Input.GetKeyDown(KeyCode.P))
+        if (isCollidingWithTrapDoor)
         {
 
             SoundManager.instance.PlaySingle(sfx.Trapdoor);
