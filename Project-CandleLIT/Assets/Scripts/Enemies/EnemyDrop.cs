@@ -12,6 +12,7 @@ public class EnemyDrop : MonoBehaviour
     private bool active = false;
     private float direction;
     private Transform enemyTransform;
+    private SpiderState spiderState;
 
 
     // Use this for initialization
@@ -19,26 +20,34 @@ public class EnemyDrop : MonoBehaviour
     {
         enemyTransform = GetComponentInParent<Transform>();
         direction = enemyTransform.localScale.y;
+        spiderState = GetComponentInParent<SpiderState>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (active)
+        if (active && spiderState.CanAttack && spiderState.Waiting)
         {
             DashAttack(dashingEnemy);
-            dashTimer = 0f;
+            spiderState.Waiting = false;
+            spiderState.Attacking = true;
+            spiderState.CanAttack = false;
+            
+        }
+
+        if (!spiderState.CanAttack)
+        {
             dashTimer += Time.deltaTime;
             if (dashTimer > dashInterval)
             {
-                DashAttack(dashingEnemy);
-                dashTimer = 0f;
+                spiderState.CanAttack = true;
             }
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log("Got here");
         if (collision.gameObject.tag == "Player")
         {
             active = true;
