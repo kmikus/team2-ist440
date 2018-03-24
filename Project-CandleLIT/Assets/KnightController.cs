@@ -31,7 +31,7 @@ public class KnightController : MonoBehaviour {
             var newPosition = new Vector3(leftPosition.position.x, leftPosition.position.y, leftPosition.position.z);
             stopCollider.gameObject.transform.SetPositionAndRotation(newPosition, Quaternion.identity);
             isFlipped = !isFlipped;
-        } else if (collision == stopCollider && !isFlipped)
+        } else if (collision == stopCollider && isFlipped)
         {
             body2d.velocity = Vector2.zero;
             transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
