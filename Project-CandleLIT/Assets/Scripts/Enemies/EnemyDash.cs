@@ -9,12 +9,10 @@ public class EnemyDash : MonoBehaviour
     public float dashInterval = 3f;
     public float dashTimer = 0f;
     public GameObject dashingEnemy;
-    public Transform originPoint;
-    public Transform originPoint2;
-    public float range;
+
 
     private Vector2 dir = new Vector2(-1, 0);
-    private bool active = false;
+    private bool active = true;
     private float direction;
     private Transform enemyTransform;
 
@@ -23,30 +21,29 @@ public class EnemyDash : MonoBehaviour
     void Start()
     {
         enemyTransform = GetComponentInParent<Transform>();
-        direction = enemyTransform.localScale.x;
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (active)
+        if (!active)
         {
-            DashAttack(dashingEnemy);
-            dashTimer = 0f;
             dashTimer += Time.deltaTime;
-            if (dashTimer > dashInterval)
-            {
-                DashAttack(dashingEnemy);
-                dashTimer = 0f;
-            }
+        }
+
+        if (dashTimer > dashInterval)
+        {
+            active = true;
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player" && active)
         {
-            active = true;
+            DashAttack(dashingEnemy);
+            active = false;
         }
     }
 
@@ -62,6 +59,7 @@ public class EnemyDash : MonoBehaviour
     private void DashAttack(GameObject enemy)
     {
         var dashAttack = dashingEnemy.GetComponent<Rigidbody2D>();
+        direction = enemy.transform.localScale.x;
         dashAttack.AddForce(new Vector2(force * direction, 0));
     }
 }
