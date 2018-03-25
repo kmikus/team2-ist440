@@ -47,7 +47,6 @@ public class EnemyDrop : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        Debug.Log("Got here");
         if (collision.gameObject.tag == "Player")
         {
             active = true;

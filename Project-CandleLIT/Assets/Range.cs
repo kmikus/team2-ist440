@@ -5,16 +5,26 @@ using UnityEngine;
 public class Range : MonoBehaviour
 {
 
+    private EnemyFollow ef;
 
+    private void Start()
+    {
+        ef = GetComponentInParent<EnemyFollow>();
+    }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D col)
 
     {
-        if (collision.tag == "Player")
+        if (col.gameObject.tag == "Player")
         {
-
+            ef.Target = col.gameObject.transform;
         }
 
+    }
+
+    private void OnTriggerExit2D(Collider2D col)
+    {
+        ef.Target = null;
     }
 
 }

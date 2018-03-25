@@ -23,8 +23,8 @@ GameObject:
   - component: {fileID: 95669866666102864}
   - component: {fileID: 50593982494379624}
   - component: {fileID: 114879939783513444}
-  - component: {fileID: 114896713196792062}
   - component: {fileID: 61599822966664490}
+  - component: {fileID: 114727063697089604}
   m_Layer: 0
   m_Name: Red Eye_0(Follow)
   m_TagString: Enemy
@@ -209,7 +209,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.02770269, y: -0.10158241}
@@ -253,6 +253,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93f2db6e1444d4fc9ab3c0b34f7e5742, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114727063697089604
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1070134080951208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2de0fd22ba54bc7418ca969314a7ec77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageAmount: 5
 --- !u!114 &114879939783513444
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -265,22 +277,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  stoppingDistance: 2
---- !u!114 &114896713196792062
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1070134080951208}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a837b06b3d744d22bbc09d4071a7635, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocity: 2
-  sightStart: {fileID: 4752952785723464}
-  sightEnd: {fileID: 4479911136326808}
-  colliding: 0
+  stoppingDistance: 0
 --- !u!212 &212539870679333276
 SpriteRenderer:
   m_ObjectHideFlags: 1
