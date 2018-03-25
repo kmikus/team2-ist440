@@ -11,6 +11,8 @@ public class FootstepsAudio : MonoBehaviour {
 
 	Collider2D playerCollider;
 
+	int check = 0;
+
 	// Use this for initialization
 	void Start () {
 
@@ -53,15 +55,11 @@ public class FootstepsAudio : MonoBehaviour {
 	{
 		grounded = playerCollider.IsTouchingLayers (ground);
 
-		if ((Input.GetKey (KeyCode.Space)) && grounded) {
-			if(!allSources[1].isPlaying)
-				allSources[1].Play ();
+		if ((Input.GetKeyDown(KeyCode.Space)) && grounded) {
+
+			allSources [1].Play ();
 		} 
-		else 
-		{
-			if(allSources[1].isPlaying)
-				allSources[1].Stop();
-		}
+
 
 	}
 

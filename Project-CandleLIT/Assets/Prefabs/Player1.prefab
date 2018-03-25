@@ -37,7 +37,7 @@ GameObject:
   - component: {fileID: 4962338687119884}
   - component: {fileID: 61174546084894900}
   - component: {fileID: 50902116182606406}
-  - component: {fileID: 114008836747386764}
+  - component: {fileID: 114997882283052244}
   m_Layer: 0
   m_Name: FlashlightHitbox
   m_TagString: Untagged
@@ -83,7 +83,6 @@ GameObject:
   - component: {fileID: 114999165316617498}
   - component: {fileID: 82514550470977134}
   - component: {fileID: 114004147389567876}
-  - component: {fileID: 114320105097380842}
   m_Layer: 10
   m_Name: Player1
   m_TagString: Player
@@ -155,7 +154,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1940583601647994}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -29.04, y: 13.1, z: 0}
+  m_LocalPosition: {x: -40.4, y: 13.1, z: 0}
   m_LocalScale: {x: 1.7715329, y: 1.7715304, z: 1}
   m_Children:
   - {fileID: 4751520317817478}
@@ -594,37 +593,6 @@ MonoBehaviour:
   ground:
     serializedVersion: 2
     m_Bits: 256
---- !u!114 &114008836747386764
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1430061906567760}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bffc3dae5cd668c4cb04d513659ba808, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  respawnParticle: {fileID: 1518381401331266, guid: 6c5cc6e8565be3c47b32c28b9c681515,
-    type: 2}
-  deathParticle: {fileID: 1476739399110890, guid: 65a77d90cd561254da9c051229198c34,
-    type: 2}
-  enemyPosition: {fileID: 0}
-  disableTime: 10
---- !u!114 &114320105097380842
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1940583601647994}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd484fcf6254443cba86cbe153922f5e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damageAmount: 20
-  recentlyHitTimeout: 3
-  flickerInterval: 0.07
 --- !u!114 &114481898300117710
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -666,10 +634,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentKey: {fileID: 0}
-  collision: {fileID: 0}
   currentInterObjScript: {fileID: 0}
   inventory: {fileID: 114481898300117710}
   DoorWithKeyText: {fileID: 0}
+  LevelToLoad: 0
 --- !u!114 &114925988131115830
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -699,6 +667,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3d7b34a3bb2d4e4b926e7e729d3d410, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114997882283052244
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1430061906567760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bffc3dae5cd668c4cb04d513659ba808, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  respawnParticle: {fileID: 1518381401331266, guid: 6c5cc6e8565be3c47b32c28b9c681515,
+    type: 2}
+  deathParticle: {fileID: 1476739399110890, guid: 65a77d90cd561254da9c051229198c34,
+    type: 2}
+  enemyPosition: {fileID: 0}
+  disableTime: 10
 --- !u!114 &114999165316617498
 MonoBehaviour:
   m_ObjectHideFlags: 1

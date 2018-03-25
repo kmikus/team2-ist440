@@ -7,7 +7,7 @@ public class LoadToEneter : StateMachineBehaviour {
 
 	 // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
 	override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
-        SceneManager.LoadScene("Level One");
+        SceneManager.LoadScene("Level One V2");
 	}
 
 	// OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks

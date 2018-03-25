@@ -11,7 +11,7 @@ public class PlayerHitDetection : MonoBehaviour
     private PlayerHealth ph;
     private Flashlight fl;
 
-    public float damageAmount = 20f;
+    public float defaultDamageAmount = 10f;
 
     private float recentlyHitTimer = 0f;
     public float recentlyHitTimeout = 3f;
@@ -82,6 +82,14 @@ public class PlayerHitDetection : MonoBehaviour
         {
             if (!recentlyHit)
             {
+                float damageAmount;
+                if ( col.gameObject.GetComponent<DamageAmount>() != null )
+                {
+                    damageAmount = col.gameObject.GetComponent<DamageAmount>().damageAmount;
+                } else {
+                    damageAmount = defaultDamageAmount;
+                    Debug.LogError("Default damage was used, please add Damage Amount Script to enemy");
+                }
                 ph.DealDamage(damageAmount);
                 SoundManager.instance.PlaySingle(sfx.hitByEnemy);
             }
@@ -114,6 +122,16 @@ public class PlayerHitDetection : MonoBehaviour
         {
             if (!recentlyHit)
             {
+                float damageAmount;
+                if (col.gameObject.GetComponent<DamageAmount>() != null)
+                {
+                    damageAmount = col.gameObject.GetComponent<DamageAmount>().damageAmount;
+                }
+                else
+                {
+                    damageAmount = defaultDamageAmount;
+                    Debug.LogError("Default damage was used, please add Damage Amount Script to projectile prefab");
+                }
                 ph.DealDamage(damageAmount);
                 SoundManager.instance.PlaySingle(sfx.hitByProjectile);
                 //check if passthrough, if not destroy the projectile. Checkbox on the projectiles prefab from Projectile Hit Detection Script
@@ -203,7 +221,7 @@ public class PlayerHitDetection : MonoBehaviour
 
     void flashLightAudio()
     {
-        if ((Input.GetKey(KeyCode.E)))
+		if ((Input.GetKey(KeyCode.E)) || (Input.GetKey(KeyCode.K)))
         {
 
             SoundManager.instance.PlaySingle(sfx.FlashLight);
@@ -213,7 +231,7 @@ public class PlayerHitDetection : MonoBehaviour
 
     void trapDoorSound()
     {
-        if (isCollidingWithTrapDoor && Input.GetKeyDown(KeyCode.P))
+        if (isCollidingWithTrapDoor)
         {
 
             SoundManager.instance.PlaySingle(sfx.Trapdoor);
