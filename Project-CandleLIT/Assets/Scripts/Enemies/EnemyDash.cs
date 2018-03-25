@@ -35,31 +35,32 @@ public class EnemyDash : MonoBehaviour
         if (dashTimer > dashInterval)
         {
             active = true;
+            dashTimer = 0f;
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player" && active)
         {
             DashAttack(dashingEnemy);
-            active = false;
         }
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "Player")
-        {
-            active = false;
-        }
+    //private void OnTriggerExit2D(Collider2D collision)
+    //{
+    //    if (collision.gameObject.tag == "Player")
+    //    {
+    //        active = false;
+    //    }
 
-    }
+    //}
 
     private void DashAttack(GameObject enemy)
     {
         var dashAttack = dashingEnemy.GetComponent<Rigidbody2D>();
         direction = enemy.transform.localScale.x;
         dashAttack.AddForce(new Vector2(force * direction, 0));
+        active = false;
     }
 }

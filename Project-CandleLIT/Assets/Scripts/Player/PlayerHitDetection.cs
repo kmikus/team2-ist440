@@ -82,9 +82,14 @@ public class PlayerHitDetection : MonoBehaviour
         {
             if (!recentlyHit)
             {
-                // This is not an error, make sure the DamageAmount script is attached to the enemy
-                var damageAmount = col.gameObject.GetComponent<DamageAmount>().damageAmount;
-                if (damageAmount == null) { damageAmount = defaultDamageAmount; }
+                float damageAmount;
+                if ( col.gameObject.GetComponent<DamageAmount>() != null )
+                {
+                    damageAmount = col.gameObject.GetComponent<DamageAmount>().damageAmount;
+                } else {
+                    damageAmount = defaultDamageAmount;
+                    Debug.LogError("Default damage was used, please add Damage Amount Script to enemy");
+                }
                 ph.DealDamage(damageAmount);
                 SoundManager.instance.PlaySingle(sfx.hitByEnemy);
             }
@@ -117,9 +122,16 @@ public class PlayerHitDetection : MonoBehaviour
         {
             if (!recentlyHit)
             {
-                // This is not an error, make sure the DamageAmount script is attached to the enemy
-                var damageAmount = col.gameObject.GetComponent<DamageAmount>().damageAmount;
-                if (damageAmount == null) { damageAmount = defaultDamageAmount; }
+                float damageAmount;
+                if (col.gameObject.GetComponent<DamageAmount>() != null)
+                {
+                    damageAmount = col.gameObject.GetComponent<DamageAmount>().damageAmount;
+                }
+                else
+                {
+                    damageAmount = defaultDamageAmount;
+                    Debug.LogError("Default damage was used, please add Damage Amount Script to projectile prefab");
+                }
                 ph.DealDamage(damageAmount);
                 SoundManager.instance.PlaySingle(sfx.hitByProjectile);
                 //check if passthrough, if not destroy the projectile. Checkbox on the projectiles prefab from Projectile Hit Detection Script

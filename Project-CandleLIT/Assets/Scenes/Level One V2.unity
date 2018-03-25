@@ -563,11 +563,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4843249827771524, guid: 145f1d7b5e53d477185614c130eab5c0, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -21
+      value: 3.51
       objectReference: {fileID: 0}
     - target: {fileID: 4843249827771524, guid: 145f1d7b5e53d477185614c130eab5c0, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: -12.18
       objectReference: {fileID: 0}
     - target: {fileID: 4843249827771524, guid: 145f1d7b5e53d477185614c130eab5c0, type: 2}
       propertyPath: m_LocalPosition.z
@@ -13747,7 +13747,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1553053315}
   m_Layer: 0
-  m_Name: KnightStuff
+  m_Name: Knight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15510,6 +15510,7 @@ GameObject:
   - component: {fileID: 1924319302}
   - component: {fileID: 1924319301}
   - component: {fileID: 1924319306}
+  - component: {fileID: 1924319307}
   m_Layer: 0
   m_Name: Knight Guard
   m_TagString: Enemy
@@ -15651,6 +15652,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stopCollider: {fileID: 206862177}
   leftPosition: {fileID: 1838735088}
+--- !u!114 &1924319307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1924319300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2de0fd22ba54bc7418ca969314a7ec77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageAmount: 20
 --- !u!1 &1928564571
 GameObject:
   m_ObjectHideFlags: 0
