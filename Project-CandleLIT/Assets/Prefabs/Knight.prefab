@@ -55,6 +55,7 @@ GameObject:
   - component: {fileID: 50947835412236656}
   - component: {fileID: 114994987128423826}
   - component: {fileID: 114643461227185392}
+  - component: {fileID: 70363170574834406}
   m_Layer: 0
   m_Name: Knight Guard
   m_TagString: Enemy
@@ -330,6 +331,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.1501722, y: 2.3031015}
   m_EdgeRadius: 0
+--- !u!70 &70363170574834406
+CapsuleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1354558343371898}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.92871404, y: 0.07283969}
+  m_Size: {x: 1.7549357, y: 0.51665604}
+  m_Direction: 1
 --- !u!95 &95562437931422116
 Animator:
   serializedVersion: 3
@@ -337,9 +353,9 @@ Animator:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1354558343371898}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 82c6773d7902f4a428bda4c778452a3c, type: 2}
+  m_Controller: {fileID: 9100000, guid: 6565d7f25939da64d9a32a3188440f9b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

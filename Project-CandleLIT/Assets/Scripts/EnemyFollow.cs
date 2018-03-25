@@ -39,7 +39,6 @@ public class EnemyFollow : MonoBehaviour {
             }
         } else
         {
-            Debug.Log(Vector2.Distance(transform.position, startingPosition));
             if (Vector2.Distance(transform.position, startingPosition) > stoppingDistance)
             {
                 Debug.Log("yoyoyo");

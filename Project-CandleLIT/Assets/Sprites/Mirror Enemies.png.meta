@@ -17,6 +17,10 @@ TextureImporter:
     21300020: Mirror Enemies_12
     21300022: Mirror Enemies_14
     21300024: Mirror Enemies_16
+    21300026: Mirror Enemies_9
+    21300028: Mirror Enemies_11
+    21300030: Mirror Enemies_13
+    21300032: Mirror Enemies_15
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -100,8 +104,8 @@ TextureImporter:
         y: 872
         width: 36
         height: 44
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -114,8 +118,8 @@ TextureImporter:
         y: 872
         width: 36
         height: 44
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -128,8 +132,8 @@ TextureImporter:
         y: 872
         width: 36
         height: 44
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -142,8 +146,8 @@ TextureImporter:
         y: 872
         width: 36
         height: 44
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -156,8 +160,8 @@ TextureImporter:
         y: 616
         width: 40
         height: 44
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -170,8 +174,8 @@ TextureImporter:
         y: 616
         width: 48
         height: 44
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -184,9 +188,9 @@ TextureImporter:
         y: 616
         width: 76
         height: 44
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 4, z: 40, w: 7}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -198,9 +202,9 @@ TextureImporter:
         y: 616
         width: 76
         height: 44
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 4, z: 41, w: 8}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -208,13 +212,13 @@ TextureImporter:
       name: Mirror Enemies_8
       rect:
         serializedVersion: 2
-        x: 121
+        x: 124
         y: 360
         width: 76
         height: 44
-      alignment: 9
-      pivot: {x: 0.6362592, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 4, z: 46, w: 7}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -222,13 +226,13 @@ TextureImporter:
       name: Mirror Enemies_10
       rect:
         serializedVersion: 2
-        x: 377
+        x: 380
         y: 360
-        width: 79
+        width: 76
         height: 44
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 4, z: 48, w: 8}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -236,12 +240,26 @@ TextureImporter:
       name: Mirror Enemies_12
       rect:
         serializedVersion: 2
-        x: 593
+        x: 597
         y: 360
-        width: 119
+        width: 115
         height: 44
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 4, z: 87, w: 8}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mirror Enemies_13
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 364
+        width: 28
+        height: 32
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -250,12 +268,26 @@ TextureImporter:
       name: Mirror Enemies_14
       rect:
         serializedVersion: 2
-        x: 798
+        x: 800
         y: 360
-        width: 170
+        width: 168
         height: 44
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 5, z: 139, w: 7}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mirror Enemies_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 108
+        width: 28
+        height: 32
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -268,9 +300,9 @@ TextureImporter:
         y: 104
         width: 200
         height: 44
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 5, z: 171, w: 7}
       outline: []
       physicsShape: []
       tessellationDetail: 0
