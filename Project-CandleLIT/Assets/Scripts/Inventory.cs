@@ -58,6 +58,8 @@ public class Inventory : MonoBehaviour {
             {
                 inventory[i] = null;
                 Debug.Log(item.name + " was removed from inventory");
+
+                inventorybutton[i].image.overrideSprite = null;
                 break;
             }
         }
