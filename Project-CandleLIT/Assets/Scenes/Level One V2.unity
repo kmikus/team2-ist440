@@ -9512,6 +9512,48 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1001 &752368485
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4205878924530340, guid: c60448aed52098b438f01404738f10ef, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -5.1526694
+      objectReference: {fileID: 0}
+    - target: {fileID: 4205878924530340, guid: c60448aed52098b438f01404738f10ef, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -4.7020726
+      objectReference: {fileID: 0}
+    - target: {fileID: 4205878924530340, guid: c60448aed52098b438f01404738f10ef, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.2890625
+      objectReference: {fileID: 0}
+    - target: {fileID: 4205878924530340, guid: c60448aed52098b438f01404738f10ef, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0.40821788
+      objectReference: {fileID: 0}
+    - target: {fileID: 4205878924530340, guid: c60448aed52098b438f01404738f10ef, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0.23456968
+      objectReference: {fileID: 0}
+    - target: {fileID: 4205878924530340, guid: c60448aed52098b438f01404738f10ef, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0.10938163
+      objectReference: {fileID: 0}
+    - target: {fileID: 4205878924530340, guid: c60448aed52098b438f01404738f10ef, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.8754261
+      objectReference: {fileID: 0}
+    - target: {fileID: 4205878924530340, guid: c60448aed52098b438f01404738f10ef, type: 2}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: c60448aed52098b438f01404738f10ef, type: 2}
+  m_IsPrefabParent: 0
 --- !u!4 &754547278 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4241429311484038, guid: 6cde2d63c4361ab4997ccc8090a82d20,
