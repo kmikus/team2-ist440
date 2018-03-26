@@ -882,11 +882,11 @@ Tilemap:
   - m_RefCount: 52
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   - m_RefCount: 1
-    m_Data: {r: 0.99489915, g: 0.47873774, b: 0.52097917, a: 1}
+    m_Data: {r: 0.9568968, g: 0.48261094, b: 0.5559616, a: 1}
   - m_RefCount: 1
-    m_Data: {r: 0.9435058, g: 0.46925637, b: 0.6224855, a: 1}
+    m_Data: {r: 0.74387217, g: 0.34068152, b: 0.4529167, a: 1}
   - m_RefCount: 1
-    m_Data: {r: 0.9698174, g: 0.39689016, b: 0.4724496, a: 1}
+    m_Data: {r: 0.7223705, g: 0.39416435, b: 0.49857485, a: 1}
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Origin: {x: -4, y: -6, z: 0}
