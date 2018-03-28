@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityStandardAssets.CrossPlatformInput;
 //using UnityEngine.EventSystems;
 
 public class HighScoreInputManager : MonoBehaviour {
@@ -13,6 +14,9 @@ public class HighScoreInputManager : MonoBehaviour {
     //public EventSystem eventSystem;
     public Button mainMenuButton;
 
+    private Color selectedColor = Color.green;
+    private Color defaultColor = Color.white;
+
     private bool isScoreSubmitted = false;
     private bool newHighScore = true;
     private bool inputActionHappened = false;
@@ -23,11 +27,15 @@ public class HighScoreInputManager : MonoBehaviour {
     // Use this for initialization
     void Start () {
 
+        //DO NOT UNCOMMENT THIS LINE UNLESS YOU REALLY WANT TO ERASE ALL THE SCORES
+        //Scoring.ResetHighScores();
+        //FOR TESTING ONLY
+
         Scoring.LoadHighScores();
         UpdateHighScoreUI();
 
         // If the current score doesn't beat the high scores disable ability to submit a new high score
-        if (Scoring.getScore() < Scoring.GetLowestScore() && Scoring.highScores.Count > 10)
+        if (Scoring.getScore() <= Scoring.GetLowestScore() && Scoring.highScores.Count == 10)
         {
             newHighScore = false;
             initial1.gameObject.SetActive(false);
@@ -35,6 +43,9 @@ public class HighScoreInputManager : MonoBehaviour {
             initial3.gameObject.SetActive(false);
             labelForInitials.gameObject.SetActive(false);
             mainMenuButton.Select();
+        } else
+        {
+            mainMenuButton.gameObject.SetActive(false);
         }
 
     }
@@ -53,12 +64,16 @@ public class HighScoreInputManager : MonoBehaviour {
             t = 0f;
         }
 
-        if (Input.GetButtonDown("Submit"))
+        //WHY UNITY WHY
+        for (int i = 0; i < 20; i++)
         {
-            SubmitHighScore();
+            if (Input.GetKeyDown("joystick button " + i) || Input.GetButtonDown("Submit"))
+            {
+                SubmitHighScore();
+            }
         }
 
-		if (Input.GetAxisRaw("Horizontal") > 0 && !inputActionHappened)
+        if (Input.GetAxisRaw("Horizontal") > 0 && !inputActionHappened)
         {
             inputActionHappened = true;
             currentInitial++;
@@ -80,6 +95,10 @@ public class HighScoreInputManager : MonoBehaviour {
 
         if (currentInitial == 1)
         {
+            initial1.color = selectedColor;
+            initial2.color = defaultColor;
+            initial3.color = defaultColor;
+
             if (Input.GetAxisRaw("Vertical") > 0 && !inputActionHappened)
             {
                 inputActionHappened = true;
@@ -112,6 +131,10 @@ public class HighScoreInputManager : MonoBehaviour {
         }
         else if (currentInitial == 2)
         {
+            initial1.color = defaultColor;
+            initial2.color = selectedColor;
+            initial3.color = defaultColor;
+
             if (Input.GetAxisRaw("Vertical") > 0 && !inputActionHappened)
             {
                 inputActionHappened = true;
@@ -144,6 +167,10 @@ public class HighScoreInputManager : MonoBehaviour {
         }
         else if (currentInitial == 3)
         {
+            initial1.color = defaultColor;
+            initial2.color = defaultColor;
+            initial3.color = selectedColor;
+
             if (Input.GetAxisRaw("Vertical") > 0 && !inputActionHappened)
             {
                 inputActionHappened = true;
@@ -204,6 +231,7 @@ public class HighScoreInputManager : MonoBehaviour {
             initial3.gameObject.SetActive(false);
             labelForInitials.gameObject.SetActive(false);
 
+            mainMenuButton.gameObject.SetActive(true);
             mainMenuButton.Select();
         }
     }

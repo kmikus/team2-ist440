@@ -18,6 +18,7 @@ public class Scoring : MonoBehaviour {
         scoreText = GameObject.Find(scoreTextName).GetComponent<Text>();
         updateScoreText();
         highScores = new List<string>();
+        resetScore();
     }
 
     private void Update()
