@@ -37,39 +37,39 @@ public class PauseMenu : MonoBehaviour {
         }
     }
 
-    public void Resume()
-    {
-      /*  pauseMenuUI.SetActive(false);
-        GameIsPaused = false;
-        Time.timeScale = timeScale;
-        */
-        mainPanel.SetActive(false);
-        controlpanel.SetActive(false);
-        volume.SetActive(false);
-        Time.timeScale = 1;
+   // public void Resume()
+   // {
+   //   /*  pauseMenuUI.SetActive(false);
+   //     GameIsPaused = false;
+   //     Time.timeScale = timeScale;
+   //     */
+   //     mainPanel.SetActive(false);
+   //     controlpanel.SetActive(false);
+   //     volume.SetActive(false);
+   //     Time.timeScale = 1;
 
-    }
+   // }
 
-   /* public void Pause()
-    {
-        pauseMenuUI.SetActive(true);
-        Time.timeScale = 0f;
-        GameIsPaused = true;
-    }*/
+   ///* public void Pause()
+   // {
+   //     pauseMenuUI.SetActive(true);
+   //     Time.timeScale = 0f;
+   //     GameIsPaused = true;
+   // }*/
 
-    public void loadMenu()
-    {
-        Application.LoadLevel("MainMenu");
-        Time.timeScale = 1f;
-        GameIsPaused = false;
-    }
+   // public void loadMenu()
+   // {
+   //     Application.LoadLevel("MainMenu");
+   //     Time.timeScale = 1f;
+   //     GameIsPaused = false;
+   // }
 
-    public void Control()
-    {
+   // public void Control()
+   // {
 
-        mainPanel.SetActive(false);
-        controlpanel.SetActive(true);
-        volume.SetActive(false);
+   //     mainPanel.SetActive(false);
+   //     controlpanel.SetActive(true);
+   //     volume.SetActive(false);
 
-    }
+   // }
 }
