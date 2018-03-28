@@ -1332,6 +1332,10 @@ Prefab:
       propertyPath: ShapeModule.radiusThickness
       value: 1.0000
       objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: 7461a7b0cf97947fd9b9e4502fd2d07b, type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7461a7b0cf97947fd9b9e4502fd2d07b, type: 2}
   m_IsPrefabParent: 0
@@ -2049,6 +2053,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114231787095961072, guid: b35f79ca9899e5c4abf07c72bb889211,
+        type: 2}
+      propertyPath: gameObjectNamesToDestroy.Array.size
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4270493188058786, guid: b35f79ca9899e5c4abf07c72bb889211, type: 2}
       propertyPath: m_LocalPosition.x
       value: 4.535796
@@ -2080,6 +2089,11 @@ Prefab:
     - target: {fileID: 4270493188058786, guid: b35f79ca9899e5c4abf07c72bb889211, type: 2}
       propertyPath: m_RootOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114231787095961072, guid: b35f79ca9899e5c4abf07c72bb889211,
+        type: 2}
+      propertyPath: gameObjectNamesToDestroy.Array.data[9]
+      value: Score
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b35f79ca9899e5c4abf07c72bb889211, type: 2}

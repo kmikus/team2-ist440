@@ -2,33 +2,40 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+//using UnityEngine.EventSystems;
 
 public class HighScoreInputManager : MonoBehaviour {
 
     public int currentInitial = 1;
-    private Text initial1;
-    private Text initial2;
-    private Text initial3;
+    public Text initial1;
+    public Text initial2;
+    public Text initial3;
+    //public EventSystem eventSystem;
+    public Button mainMenuButton;
 
     private bool isScoreSubmitted = false;
+    private bool newHighScore = true;
     private bool inputActionHappened = false;
     private float t = 0f;
     public float inputDelay = 0.2f;
+    public Text labelForInitials;
 
-	// Use this for initialization
-	void Start () {
-        initial1 = GameObject.Find("InputInit1").GetComponent<Text>();
-        initial2 = GameObject.Find("InputInit2").GetComponent<Text>();
-        initial3 = GameObject.Find("InputInit3").GetComponent<Text>();
+    // Use this for initialization
+    void Start () {
 
         Scoring.LoadHighScores();
-
-       /* if (Scoring.highScores.Count > 0)
-        {
-            GameObject.Find("InitialsTest").GetComponent<Text>().text = Scoring.highScores[Scoring.highScores.Count - 1];
-        }*/
-
         UpdateHighScoreUI();
+
+        // If the current score doesn't beat the high scores disable ability to submit a new high score
+        if (Scoring.getScore() < Scoring.GetLowestScore() && Scoring.highScores.Count > 10)
+        {
+            newHighScore = false;
+            initial1.gameObject.SetActive(false);
+            initial2.gameObject.SetActive(false);
+            initial3.gameObject.SetActive(false);
+            labelForInitials.gameObject.SetActive(false);
+            mainMenuButton.Select();
+        }
 
     }
 	
@@ -46,13 +53,9 @@ public class HighScoreInputManager : MonoBehaviour {
             t = 0f;
         }
 
-        if (Input.GetButtonDown("Submit") && !isScoreSubmitted)
+        if (Input.GetButtonDown("Submit"))
         {
-            string initials = initial1.text.ToCharArray()[0].ToString() + initial2.text.ToCharArray()[0].ToString() + initial3.text.ToCharArray()[0].ToString();
-            Scoring.UpdateHighScore(initials, Scoring.score);
-            Scoring.resetScore();
-            UpdateHighScoreUI();
-            isScoreSubmitted = true;
+            SubmitHighScore();
         }
 
 		if (Input.GetAxisRaw("Horizontal") > 0 && !inputActionHappened)
@@ -183,6 +186,25 @@ public class HighScoreInputManager : MonoBehaviour {
             var initial1 = GameObject.Find("Initial" + i).GetComponent<Text>();
             initials1.text = Scoring.highScores[sizeOfHighScores - i].Substring(8);
             initial1.text = Scoring.highScores[sizeOfHighScores - i].Substring(0, 8);
+        }
+    }
+
+    private void SubmitHighScore()
+    {
+        if (!isScoreSubmitted && newHighScore)
+        {
+            string initials = initial1.text.ToCharArray()[0].ToString() + initial2.text.ToCharArray()[0].ToString() + initial3.text.ToCharArray()[0].ToString();
+            Scoring.UpdateHighScore(initials, Scoring.score);
+            Scoring.resetScore();
+            UpdateHighScoreUI();
+            isScoreSubmitted = true;
+
+            initial1.gameObject.SetActive(false);
+            initial2.gameObject.SetActive(false);
+            initial3.gameObject.SetActive(false);
+            labelForInitials.gameObject.SetActive(false);
+
+            mainMenuButton.Select();
         }
     }
 }

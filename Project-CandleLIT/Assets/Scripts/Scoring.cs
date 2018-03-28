@@ -10,13 +10,14 @@ public class Scoring : MonoBehaviour {
     public string scoreTextName = "ScoreValue";
     public static float diamondPickupValue = 50f;
 
-    public static List<string> highScores = new List<string>();
+    public static List<string> highScores;
 
     private void Start()
     {
         DontDestroyOnLoad(gameObject);
         scoreText = GameObject.Find(scoreTextName).GetComponent<Text>();
         updateScoreText();
+        highScores = new List<string>();
     }
 
     private void Update()
@@ -24,7 +25,7 @@ public class Scoring : MonoBehaviour {
         //FOR TESTING ONLY
         if (Input.GetKeyDown("i"))
         {
-            Scoring.increaseScore(50);
+            Scoring.increaseScore(250);
         }
     }
 
@@ -99,5 +100,31 @@ public class Scoring : MonoBehaviour {
         {
             highScores.Sort();
         }
+    }
+
+    public static void ResetHighScores()
+    {
+        PlayerPrefs.DeleteAll();
+    }
+
+    public static float GetLowestScore()
+    {
+        if (highScores.Count < 1)
+        {
+            throw new System.Exception("Lowest score is not available. Please make sure scores are loaded.");
+        } else
+        {
+            return GetValueFromScore(highScores[0]);
+        }
+    }
+
+    public static string GetInitialsFromScore(string highScoreStr)
+    {
+        return highScoreStr.Substring(8);
+    }
+
+    public static float GetValueFromScore(string highScoreStr)
+    {
+        return float.Parse(highScoreStr.Substring(0, 8));
     }
 }
