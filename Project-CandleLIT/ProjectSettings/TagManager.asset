@@ -12,6 +12,8 @@ TagManager:
   - Diamond
   - Projectile
   - Battery
+  - Key
+  - Heart
   layers:
   - Default
   - TransparentFX

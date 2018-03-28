@@ -117,6 +117,16 @@ public class PlayerHitDetection : MonoBehaviour
             }
         }
 
+        if (col.gameObject.tag == "Heart")
+        {
+            if (!(ph.CurrentHealth == ph.MaxHealth))
+            {
+                SoundManager.instance.PlaySingle(sfx.batteryPickup);
+                ph.recharge(ph.heartRechargeVal);
+                Destroy(col.gameObject);
+            }
+        }
+
         //Projectile Case
         if (col.gameObject.tag == "Projectile" && !recentlyHit)
         {

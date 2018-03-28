@@ -8,7 +8,7 @@ public class PlayerHealth : MonoBehaviour
 
     public float CurrentHealth { get; set; }
     public float MaxHealth { get; set; }
-
+    public float heartRechargeVal = 20f;
     public Slider healthbar;
 
     void Start()
@@ -45,6 +45,20 @@ public class PlayerHealth : MonoBehaviour
     float CalculateHealth()
     {
         return CurrentHealth / MaxHealth;
+    }
+
+    public void recharge(float amount)
+    {
+        if (CurrentHealth < MaxHealth)
+        {
+            CurrentHealth += amount;
+            healthbar.value = CalculateHealth();
+        }
+        else
+        {
+            CurrentHealth = MaxHealth;
+        }
+
     }
     void Die()
     {
