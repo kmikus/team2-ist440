@@ -10,6 +10,8 @@ public class HighScoreInputManager : MonoBehaviour {
     private Text initial2;
     private Text initial3;
 
+    private bool isScoreSubmitted = false;
+
 	// Use this for initialization
 	void Start () {
         initial1 = GameObject.Find("InputInit1").GetComponent<Text>();
@@ -30,12 +32,13 @@ public class HighScoreInputManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        if (Input.GetKeyDown(KeyCode.Return))
+        if (Input.GetKeyDown(KeyCode.Return) && !isScoreSubmitted)
         {
             string initials = initial1.text.ToCharArray()[0].ToString() + initial2.text.ToCharArray()[0].ToString() + initial3.text.ToCharArray()[0].ToString();
             Scoring.UpdateHighScore(initials, Scoring.score);
             Scoring.resetScore();
             UpdateHighScoreUI();
+            isScoreSubmitted = true;
         }
 
 		if (Input.GetKeyDown(KeyCode.RightArrow))
