@@ -14,7 +14,7 @@ public class PlayerInteractKey : MonoBehaviour {
 
     void Update()
     {
-        if (Input.GetKeyDown("p") && currentKey)
+        if (Input.GetButtonDown("KeyPickup") && currentKey)
         {
             // Check to see if should be stored in inventory
             if (currentInterObjScript.inventory)

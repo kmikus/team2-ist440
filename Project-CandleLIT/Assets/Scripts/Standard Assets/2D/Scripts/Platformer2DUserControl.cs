@@ -29,7 +29,7 @@ namespace UnityStandardAssets._2D
                     // Read the jump input in Update so button presses aren't missed.
                     m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
                 }
-                if (Input.GetKeyDown("e"))
+                if (Input.GetButtonDown("p1Flashlight"))
                 {
                     fl.ToggleLight();
                 }
@@ -41,7 +41,7 @@ namespace UnityStandardAssets._2D
                     // Read the jump input in Update so button presses aren't missed.
                     m_Jump = CrossPlatformInputManager.GetButtonDown("p2jump");
                 }
-                if (Input.GetKeyDown("k"))
+                if (Input.GetButtonDown("p2Flashlight"))
                 {
                     fl.ToggleLight();
                 }
