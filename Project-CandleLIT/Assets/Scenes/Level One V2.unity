@@ -8941,7 +8941,7 @@ GameObject:
   - component: {fileID: 704573750}
   - component: {fileID: 704573752}
   m_Layer: 5
-  m_Name: controlpnel
+  m_Name: controlpanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11422,7 +11422,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -13347,7 +13347,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e28cc12621829f4da433ee1d1fa2aa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseMenuUI: {fileID: 719841334}
+  mainPanel: {fileID: 719841334}
+  controlpanel: {fileID: 704573748}
+  volume: {fileID: 1089633544}
 --- !u!4 &1308224789 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4863780962499280, guid: c0e0342b4f983214193b31fd64acd13b,
@@ -16299,7 +16301,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
