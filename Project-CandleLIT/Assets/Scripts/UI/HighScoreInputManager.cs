@@ -11,6 +11,9 @@ public class HighScoreInputManager : MonoBehaviour {
     private Text initial3;
 
     private bool isScoreSubmitted = false;
+    private bool inputActionHappened = false;
+    private float t = 0f;
+    public float inputDelay = 0.2f;
 
 	// Use this for initialization
 	void Start () {
@@ -32,7 +35,18 @@ public class HighScoreInputManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        if (Input.GetKeyDown(KeyCode.Return) && !isScoreSubmitted)
+        if (inputActionHappened)
+        {
+            t += Time.deltaTime;
+        }
+
+        if (t > inputDelay)
+        {
+            inputActionHappened = false;
+            t = 0f;
+        }
+
+        if (Input.GetButtonDown("Submit") && !isScoreSubmitted)
         {
             string initials = initial1.text.ToCharArray()[0].ToString() + initial2.text.ToCharArray()[0].ToString() + initial3.text.ToCharArray()[0].ToString();
             Scoring.UpdateHighScore(initials, Scoring.score);
@@ -41,8 +55,9 @@ public class HighScoreInputManager : MonoBehaviour {
             isScoreSubmitted = true;
         }
 
-		if (Input.GetKeyDown(KeyCode.RightArrow))
+		if (Input.GetAxisRaw("Horizontal") > 0 && !inputActionHappened)
         {
+            inputActionHappened = true;
             currentInitial++;
             if(currentInitial == 4)
             {
@@ -50,8 +65,9 @@ public class HighScoreInputManager : MonoBehaviour {
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        if (Input.GetAxisRaw("Horizontal") < 0 && !inputActionHappened)
         {
+            inputActionHappened = true;
             currentInitial--;
             if(currentInitial == 0)
             {
@@ -61,8 +77,9 @@ public class HighScoreInputManager : MonoBehaviour {
 
         if (currentInitial == 1)
         {
-            if (Input.GetKeyDown(KeyCode.UpArrow))
+            if (Input.GetAxisRaw("Vertical") > 0 && !inputActionHappened)
             {
+                inputActionHappened = true;
                 var currentLetter = initial1.text;
                 int asciiNum = System.Convert.ToInt32(currentLetter.ToCharArray()[0]);
                 //Debug.Log(asciiNum);
@@ -75,8 +92,9 @@ public class HighScoreInputManager : MonoBehaviour {
                 initial1.text = System.Convert.ToChar(asciiNum).ToString();
             }
 
-            if (Input.GetKeyDown(KeyCode.DownArrow))
+            if (Input.GetAxisRaw("Vertical") < 0 && !inputActionHappened)
             {
+                inputActionHappened = true;
                 var currentLetter = initial1.text;
                 int asciiNum = System.Convert.ToInt32(currentLetter.ToCharArray()[0]);
                 //Debug.Log(asciiNum);
@@ -91,8 +109,9 @@ public class HighScoreInputManager : MonoBehaviour {
         }
         else if (currentInitial == 2)
         {
-            if (Input.GetKeyDown(KeyCode.UpArrow))
+            if (Input.GetAxisRaw("Vertical") > 0 && !inputActionHappened)
             {
+                inputActionHappened = true;
                 var currentLetter = initial2.text;
                 int asciiNum = System.Convert.ToInt32(currentLetter.ToCharArray()[0]);
                 //Debug.Log(asciiNum);
@@ -105,8 +124,9 @@ public class HighScoreInputManager : MonoBehaviour {
                 initial2.text = System.Convert.ToChar(asciiNum).ToString();
             }
 
-            if (Input.GetKeyDown(KeyCode.DownArrow))
+            if (Input.GetAxisRaw("Vertical") < 0 && !inputActionHappened)
             {
+                inputActionHappened = true;
                 var currentLetter = initial2.text;
                 int asciiNum = System.Convert.ToInt32(currentLetter.ToCharArray()[0]);
                 //Debug.Log(asciiNum);
@@ -121,8 +141,9 @@ public class HighScoreInputManager : MonoBehaviour {
         }
         else if (currentInitial == 3)
         {
-            if (Input.GetKeyDown(KeyCode.UpArrow))
+            if (Input.GetAxisRaw("Vertical") > 0 && !inputActionHappened)
             {
+                inputActionHappened = true;
                 var currentLetter = initial3.text;
                 int asciiNum = System.Convert.ToInt32(currentLetter.ToCharArray()[0]);
                 //Debug.Log(asciiNum);
@@ -135,8 +156,9 @@ public class HighScoreInputManager : MonoBehaviour {
                 initial3.text = System.Convert.ToChar(asciiNum).ToString();
             }
 
-            if (Input.GetKeyDown(KeyCode.DownArrow))
+            if (Input.GetAxisRaw("Vertical") < 0 && !inputActionHappened)
             {
+                inputActionHappened = true;
                 var currentLetter = initial3.text;
                 int asciiNum = System.Convert.ToInt32(currentLetter.ToCharArray()[0]);
                 //Debug.Log(asciiNum);
