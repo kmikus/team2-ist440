@@ -616,7 +616,7 @@ Prefab:
     - target: {fileID: 114758180065442916, guid: 145f1d7b5e53d477185614c130eab5c0,
         type: 2}
       propertyPath: LevelToLoad
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 114758180065442916, guid: 145f1d7b5e53d477185614c130eab5c0,
         type: 2}
@@ -13157,7 +13157,7 @@ MonoBehaviour:
   currentInterObjScript: {fileID: 0}
   inventory: {fileID: 1294202779}
   DoorWithKeyText: {fileID: 1155349156}
-  LevelToLoad: 4
+  LevelToLoad: 5
 --- !u!114 &1294202781
 MonoBehaviour:
   m_ObjectHideFlags: 0
