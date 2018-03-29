@@ -10,7 +10,7 @@ public class PlayerInteractKey : MonoBehaviour {
     public InteractionKey currentInterObjScript = null;
     public Inventory inventory;
     public Text DoorWithKeyText;
-    public int LevelToLoad = 4;
+    public int LevelToLoad = 5;
 
     void Update()
     {

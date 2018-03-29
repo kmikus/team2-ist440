@@ -6,9 +6,10 @@ public class LightningFlash : MonoBehaviour {
 
     private Light lightning;
     private float activeTimer;
-    private float lerpTimer;
+    private float lerpTimer = 0f;
     private bool active = false;
     private float randomTimeAdded;
+    private SoundEffects sfx;
 
     public float activeResetTime = 30f;
     public float randomRange = 30f;
@@ -19,6 +20,7 @@ public class LightningFlash : MonoBehaviour {
         lightning = GetComponent<Light>();
         lightning.intensity = 0;
         randomTimeAdded = Random.Range(0, randomRange);
+        sfx = SoundManager.instance.GetComponent<SoundEffects>();
     }
 	
 	// Update is called once per frame
@@ -33,6 +35,10 @@ public class LightningFlash : MonoBehaviour {
 
         if (active)
         {
+            if (lerpTimer == 0)
+            {
+                SoundManager.instance.PlaySingle2(sfx.Thunder);
+            }
             lerpTimer += Time.deltaTime * fadeSpeed;
             lightning.intensity = Mathf.Lerp(intensity, 0, lerpTimer);
 

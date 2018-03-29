@@ -15,4 +15,5 @@ public class SoundEffects : MonoBehaviour {
 	public AudioClip Trapdoor;
 	public AudioClip FlashLight;
 	public AudioClip KeyPickup;
+    public AudioClip Thunder;
 }
