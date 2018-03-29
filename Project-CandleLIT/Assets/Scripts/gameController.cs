@@ -10,6 +10,7 @@ public class gameController : MonoBehaviour {
     public GameObject gameover;
     public bool gameOver = false;
     public Scene scene;
+
     //public InputField playerName;
 	// Use this for initialization
 	void Awake () {
@@ -31,6 +32,7 @@ public class gameController : MonoBehaviour {
     {
         gameover.SetActive(true);
         gameOver = true;
+
         //Time.timeScale = 0f;
         
     }
