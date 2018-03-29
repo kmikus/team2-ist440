@@ -51,7 +51,7 @@ public class TimeManager : MonoBehaviour
             gameController.instance.EndGame();
             gameover.SetActive(true);
             gameOver = true;
-
+            Time.timeScale = 0;
         }
     }
 

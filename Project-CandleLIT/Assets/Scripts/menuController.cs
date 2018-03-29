@@ -8,7 +8,7 @@ public class menuController : MonoBehaviour {
 
     public void loadLevel1()
     {
-        Application.LoadLevel("Level One");
+        Application.LoadLevel("Level One V2");
         Time.timeScale = 1f;
     }
 

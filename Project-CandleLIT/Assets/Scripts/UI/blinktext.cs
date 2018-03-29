@@ -21,5 +21,6 @@ public class blinktext : MonoBehaviour {
             GetComponent<Text>().enabled = false;
             timer = 0;
         }
+       // Time.timeScale = 1;
     }
 }
