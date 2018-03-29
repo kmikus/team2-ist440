@@ -31,6 +31,7 @@ public class PlayerHealth : MonoBehaviour
         if (CurrentHealth <= 0)
         {
             gameController.instance.EndGame();
+            Time.timeScale = 0;
         }
     }
 

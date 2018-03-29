@@ -13,12 +13,12 @@ public class blinktext : MonoBehaviour {
 
         if (timer >= 0.5)
         {
-            GetComponent<Text>().enabled = true;
+            GetComponent<Button>().enabled = true;
         }
 
         if(timer >= 1)
         {
-            GetComponent<Text>().enabled = false;
+            GetComponent<Button>().enabled = false;
             timer = 0;
         }
        // Time.timeScale = 1;
