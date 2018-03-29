@@ -121,7 +121,7 @@ public class PlayerHitDetection : MonoBehaviour
         {
             if (!(ph.CurrentHealth == ph.MaxHealth))
             {
-                SoundManager.instance.PlaySingle(sfx.batteryPickup);
+                SoundManager.instance.PlaySingle(sfx.HealthPickup);
                 ph.recharge(ph.heartRechargeVal);
                 Destroy(col.gameObject);
             }
