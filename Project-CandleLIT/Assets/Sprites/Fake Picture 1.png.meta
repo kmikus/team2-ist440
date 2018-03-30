@@ -1,0 +1,327 @@
+fileFormatVersion: 2
+guid: 66b37346dc502794db6707cc5ba5078e
+timeCreated: 1522370618
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Fake Picture 1_0
+    21300002: Fake Picture 1_1
+    21300004: Fake Picture 1_2
+    21300006: Fake Picture 1_3
+    21300008: Fake Picture 1_4
+    21300010: Fake Picture 1_5
+    21300012: Fake Picture 1_6
+    21300014: Fake Picture 1_7
+    21300016: Fake Picture 1_8
+    21300018: Fake Picture 1_9
+    21300020: Fake Picture 1_10
+    21300022: Fake Picture 1_11
+    21300024: Fake Picture 1_12
+    21300026: Fake Picture 1_13
+    21300028: Fake Picture 1_14
+    21300030: Fake Picture 1_15
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 35
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Fake Picture 1_0
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 872
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.3791728, y: 0.3153124}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Fake Picture 1_1
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 872
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.3791728, y: 0.3153124}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Fake Picture 1_2
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 872
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.37917233, y: 0.32538128}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Fake Picture 1_3
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 872
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.38924217, y: 0.3153124}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Fake Picture 1_4
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 616
+        width: 72
+        height: 64
+      alignment: 9
+      pivot: {x: 0.33819166, y: 0.32787323}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Fake Picture 1_5
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 616
+        width: 80
+        height: 68
+      alignment: 9
+      pivot: {x: 0.29836196, y: 0.3023161}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Fake Picture 1_6
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 616
+        width: 84
+        height: 72
+      alignment: 9
+      pivot: {x: 0.27595738, y: 0.28840467}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Fake Picture 1_7
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 616
+        width: 100
+        height: 84
+      alignment: 9
+      pivot: {x: 0.24907288, y: 0.2546205}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Fake Picture 1_8
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 360
+        width: 112
+        height: 84
+      alignment: 9
+      pivot: {x: 0.31596532, y: 0.23328327}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Fake Picture 1_9
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 360
+        width: 124
+        height: 84
+      alignment: 9
+      pivot: {x: 0.39159244, y: 0.22261447}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Fake Picture 1_10
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 332
+        width: 124
+        height: 112
+      alignment: 9
+      pivot: {x: 0.39881948, y: 0.42798668}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Fake Picture 1_11
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 328
+        width: 124
+        height: 116
+      alignment: 9
+      pivot: {x: 0.38436544, y: 0.4381956}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Fake Picture 1_12
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 64
+        width: 124
+        height: 124
+      alignment: 9
+      pivot: {x: 0.39159244, y: 0.4868713}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Fake Picture 1_13
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 104
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.3691039, y: 0.30524242}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Fake Picture 1_14
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 104
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.37917233, y: 0.31531143}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Fake Picture 1_15
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 104
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.3590355, y: 0.31531143}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
