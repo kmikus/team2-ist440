@@ -57,12 +57,12 @@ public class PauseMenu : MonoBehaviour {
    //     GameIsPaused = true;
    // }*/
 
-   // public void loadMenu()
-   // {
-   //     Application.LoadLevel("MainMenu");
-   //     Time.timeScale = 1f;
-   //     GameIsPaused = false;
-   // }
+    public void loadMenu()
+    {
+        Application.LoadLevel("MainMenu");
+        Time.timeScale = 1f;
+        GameIsPaused = false;
+    }
 
    // public void Control()
    // {
