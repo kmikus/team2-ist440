@@ -608,12 +608,12 @@ Prefab:
     - target: {fileID: 61174546084894900, guid: 145f1d7b5e53d477185614c130eab5c0,
         type: 2}
       propertyPath: m_Offset.x
-      value: 1
+      value: 0.87447023
       objectReference: {fileID: 0}
     - target: {fileID: 61174546084894900, guid: 145f1d7b5e53d477185614c130eab5c0,
         type: 2}
       propertyPath: m_Size.x
-      value: 2
+      value: 2.2510595
       objectReference: {fileID: 0}
     - target: {fileID: 108732276860030470, guid: 145f1d7b5e53d477185614c130eab5c0,
         type: 2}
@@ -634,6 +634,20 @@ Prefab:
         type: 2}
       propertyPath: m_RenderMode
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114925988131115830, guid: 145f1d7b5e53d477185614c130eab5c0,
+        type: 2}
+      propertyPath: flIntensity
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 108648201714540498, guid: 145f1d7b5e53d477185614c130eab5c0,
+        type: 2}
+      propertyPath: m_Range
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4236153853068894, guid: 145f1d7b5e53d477185614c130eab5c0, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 145f1d7b5e53d477185614c130eab5c0, type: 2}
@@ -8372,7 +8386,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1, y: -0.1308088}
+  m_Offset: {x: 0.8744704, y: -0.1308088}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -8383,7 +8397,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2, y: 0.7383824}
+  m_Size: {x: 2.251059, y: 0.7383824}
   m_EdgeRadius: 0
 --- !u!1 &528050026 stripped
 GameObject:
@@ -10347,6 +10361,10 @@ Prefab:
     - target: {fileID: 1091568477880540, guid: 23833dcbfff0927459d8ab93fa5119e5, type: 2}
       propertyPath: m_Name
       value: FlickeringTorch (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1091568477880540, guid: 23833dcbfff0927459d8ab93fa5119e5, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 23833dcbfff0927459d8ab93fa5119e5, type: 2}
@@ -12867,7 +12885,7 @@ MonoBehaviour:
   maxHealth: 2000
   energyBar: {fileID: 1304264935}
   flLight: {fileID: 1494109546}
-  flIntensity: 35
+  flIntensity: 30
   drainVal: 1
   rechargeVal: 0.5
   batteryRechargeVal: 500
@@ -13830,7 +13848,7 @@ Light:
   m_Type: 0
   m_Color: {r: 0.92046297, g: 0.9411765, b: 0.7266436, a: 1}
   m_Intensity: 0
-  m_Range: 15
+  m_Range: 20
   m_SpotAngle: 54
   m_CookieSize: 10
   m_Shadows:
@@ -13863,7 +13881,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1494109545}
   m_LocalRotation: {x: -0.003961987, y: 0.63271886, z: -0.0032372656, w: 0.77436477}
-  m_LocalPosition: {x: -0.08, y: -0.24, z: -0.36}
+  m_LocalPosition: {x: -0.08, y: -0.24, z: -0.5}
   m_LocalScale: {x: 0.98265547, y: 0.56452924, z: 0.5817824}
   m_Children: []
   m_Father: {fileID: 1294202792}
