@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4706877047885940}
   - component: {fileID: 114221419143674740}
+  - component: {fileID: 114395146520164726}
   m_Layer: 0
   m_Name: LevelTimer
   m_TagString: Untagged
@@ -51,4 +52,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f318f2907051ba349845448ec939bc7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amountOfTime: 120
+  amountOfTime: 400
+--- !u!114 &114395146520164726
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1662344992310134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24937d2eaf27d40be883ceddae4f3469, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelCompletionBonus: 1000
+  timeLeftBonusMultiplier: 3

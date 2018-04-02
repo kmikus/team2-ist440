@@ -16,6 +16,19 @@ public class TimeManager : MonoBehaviour
     public bool gameOver = false;
     public float defaultLevelTime = 120f;
 
+    public float TimeElapsed
+    {
+        get
+        {
+            return timeElapsed;
+        }
+
+        set
+        {
+            timeElapsed = value;
+        }
+    }
+
     // This adds an additional 5 seconds after time runs out until it switches to the next scene
     // During this 5 seconds the player should not be able to move and the Spawner should stop
     // It is just so the transition is more smooth so it does not abrupty switch to the next scene
@@ -28,10 +41,10 @@ public class TimeManager : MonoBehaviour
         var levelTimer = GameObject.Find("LevelTimer");
         if (levelTimer != null)
         {
-            timeElapsed = levelTimer.GetComponent<LevelTimer>().amountOfTime;
+            TimeElapsed = levelTimer.GetComponent<LevelTimer>().amountOfTime;
         } else
         {
-            timeElapsed = defaultLevelTime;
+            TimeElapsed = defaultLevelTime;
         }
     }
 
@@ -41,10 +54,10 @@ public class TimeManager : MonoBehaviour
 
         //timeOnGame -= Time.deltaTime;
 
-        timeElapsed -= Time.deltaTime;
-        countdownTime.text = "TIME: " + FormatTime(value: timeElapsed);
+        TimeElapsed -= Time.deltaTime;
+        countdownTime.text = "TIME: " + FormatTime(value: TimeElapsed);
 
-        if (timeElapsed <= 0)
+        if (TimeElapsed <= 0)
         {
             countdownTime.text = "TIME: 00:00";
 
@@ -63,12 +76,12 @@ public class TimeManager : MonoBehaviour
     
     public void ResetTime()
     {
-        timeElapsed = defaultLevelTime;
+        TimeElapsed = defaultLevelTime;
     }
 
     public void UpdateTime(float newTime)
     {
-        timeElapsed = newTime;
+        TimeElapsed = newTime;
     }
 
 }
