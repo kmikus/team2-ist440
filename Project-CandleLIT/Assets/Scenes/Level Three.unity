@@ -1352,7 +1352,7 @@ GameObject:
   - component: {fileID: 115230705}
   m_Layer: 0
   m_Name: Lava _0 (6)
-  m_TagString: Enemy
+  m_TagString: Lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1685,7 +1685,7 @@ GameObject:
   - component: {fileID: 160513014}
   m_Layer: 0
   m_Name: Lava _0 (15)
-  m_TagString: Enemy
+  m_TagString: Lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2406,7 +2406,7 @@ GameObject:
   - component: {fileID: 340327538}
   m_Layer: 0
   m_Name: Lava _0 (16)
-  m_TagString: Enemy
+  m_TagString: Lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4364,15 +4364,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
-  m_TileRefreshArray:
-  - serializedVersion: 1
-    m_DirtyIndex: 0
-  - serializedVersion: 1
-    m_DirtyIndex: 0
-  - serializedVersion: 1
-    m_DirtyIndex: 0
-  - serializedVersion: 1
-    m_DirtyIndex: 0
 --- !u!1 &373954149
 GameObject:
   m_ObjectHideFlags: 0
@@ -25943,13 +25934,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
-  m_TileRefreshArray:
-  - serializedVersion: 1
-    m_DirtyIndex: 0
-  - serializedVersion: 1
-    m_DirtyIndex: 0
-  - serializedVersion: 1
-    m_DirtyIndex: 0
 --- !u!1 &483011638
 GameObject:
   m_ObjectHideFlags: 0
@@ -28766,7 +28750,7 @@ GameObject:
   - component: {fileID: 806580086}
   m_Layer: 0
   m_Name: Lava _0 (12)
-  m_TagString: Enemy
+  m_TagString: Lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29683,7 +29667,7 @@ GameObject:
   - component: {fileID: 879387781}
   m_Layer: 0
   m_Name: Lava _0 (4)
-  m_TagString: Enemy
+  m_TagString: Lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31440,6 +31424,53 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1001 &1118863570
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4706877047885940, guid: c787c1aaafd33794a84326b04256fe7a, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -4.446837
+      objectReference: {fileID: 0}
+    - target: {fileID: 4706877047885940, guid: c787c1aaafd33794a84326b04256fe7a, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.1095672
+      objectReference: {fileID: 0}
+    - target: {fileID: 4706877047885940, guid: c787c1aaafd33794a84326b04256fe7a, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 20.284204
+      objectReference: {fileID: 0}
+    - target: {fileID: 4706877047885940, guid: c787c1aaafd33794a84326b04256fe7a, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4706877047885940, guid: c787c1aaafd33794a84326b04256fe7a, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4706877047885940, guid: c787c1aaafd33794a84326b04256fe7a, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4706877047885940, guid: c787c1aaafd33794a84326b04256fe7a, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4706877047885940, guid: c787c1aaafd33794a84326b04256fe7a, type: 2}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114221419143674740, guid: c787c1aaafd33794a84326b04256fe7a,
+        type: 2}
+      propertyPath: amountOfTime
+      value: 500
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: c787c1aaafd33794a84326b04256fe7a, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1141416971
 GameObject:
   m_ObjectHideFlags: 0
@@ -31945,7 +31976,7 @@ GameObject:
   - component: {fileID: 1203260437}
   m_Layer: 0
   m_Name: Lava _0 (11)
-  m_TagString: Enemy
+  m_TagString: Lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32521,7 +32552,7 @@ GameObject:
   - component: {fileID: 1254041085}
   m_Layer: 0
   m_Name: Lava _0 (13)
-  m_TagString: Enemy
+  m_TagString: Lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41570,23 +41601,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
-  m_TileRefreshArray:
-  - serializedVersion: 1
-    m_DirtyIndex: 0
-  - serializedVersion: 1
-    m_DirtyIndex: 0
-  - serializedVersion: 1
-    m_DirtyIndex: 0
-  - serializedVersion: 1
-    m_DirtyIndex: 0
-  - serializedVersion: 1
-    m_DirtyIndex: 0
-  - serializedVersion: 1
-    m_DirtyIndex: 0
-  - serializedVersion: 1
-    m_DirtyIndex: 0
-  - serializedVersion: 1
-    m_DirtyIndex: 0
 --- !u!19719996 &1275130084
 TilemapCollider2D:
   m_ObjectHideFlags: 0
@@ -41752,7 +41766,7 @@ GameObject:
   - component: {fileID: 1283650464}
   m_Layer: 0
   m_Name: Lava _0 (3)
-  m_TagString: Enemy
+  m_TagString: Lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42174,7 +42188,7 @@ GameObject:
   - component: {fileID: 1307230197}
   m_Layer: 0
   m_Name: Lava _0 (9)
-  m_TagString: Enemy
+  m_TagString: Lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42312,7 +42326,7 @@ GameObject:
   - component: {fileID: 1323916804}
   m_Layer: 0
   m_Name: Lava _0 (17)
-  m_TagString: Enemy
+  m_TagString: Lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44498,7 +44512,7 @@ GameObject:
   - component: {fileID: 1580247913}
   m_Layer: 0
   m_Name: Lava _0 (5)
-  m_TagString: Enemy
+  m_TagString: Lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45204,7 +45218,7 @@ GameObject:
   - component: {fileID: 1629442781}
   m_Layer: 0
   m_Name: Lava _0 (10)
-  m_TagString: Enemy
+  m_TagString: Lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46789,7 +46803,7 @@ GameObject:
   - component: {fileID: 1844785358}
   m_Layer: 0
   m_Name: Lava _0 (7)
-  m_TagString: Enemy
+  m_TagString: Lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -47081,7 +47095,7 @@ GameObject:
   - component: {fileID: 1892551348}
   m_Layer: 0
   m_Name: Lava _0 (14)
-  m_TagString: Enemy
+  m_TagString: Lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -47598,7 +47612,7 @@ GameObject:
   - component: {fileID: 1963297395}
   m_Layer: 0
   m_Name: Lava _0 (8)
-  m_TagString: Enemy
+  m_TagString: Lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

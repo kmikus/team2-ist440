@@ -151,6 +151,28 @@ public class PlayerHitDetection : MonoBehaviour
             recentlyHit = true;
         }
 
+        //Lava Case
+        if (col.gameObject.tag == "Lava" && !recentlyHit)
+        {
+            if (!recentlyHit)
+            {
+                float damageAmount;
+                if (col.gameObject.GetComponent<DamageAmount>() != null)
+                {
+                    damageAmount = col.gameObject.GetComponent<DamageAmount>().damageAmount;
+                }
+                else
+                {
+                    damageAmount = defaultDamageAmount;
+                    Debug.LogError("Default damage was used, please add Damage Amount Script to enemy");
+                }
+                ph.DealDamage(damageAmount);
+                SoundManager.instance.PlaySingle(sfx.hitByEnemy);
+            }
+            Debug.Log("Enemy collision: " + col.gameObject.ToString() + " Player health: " + ph.CurrentHealth);
+            recentlyHit = true;
+        }
+
         if (col.gameObject.tag == "Door")
         {
 
