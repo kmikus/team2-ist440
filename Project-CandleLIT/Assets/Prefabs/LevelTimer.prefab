@@ -52,7 +52,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f318f2907051ba349845448ec939bc7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amountOfTime: 400
+  amountOfTime: 500
 --- !u!114 &114395146520164726
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -64,5 +64,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24937d2eaf27d40be883ceddae4f3469, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tm: {fileID: 0}
   levelCompletionBonus: 1000
   timeLeftBonusMultiplier: 3
