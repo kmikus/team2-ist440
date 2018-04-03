@@ -27,6 +27,7 @@ public class HighScoreInputManager : MonoBehaviour {
     // Use this for initialization
     void Start () {
 
+        Time.timeScale = 1;
         //DO NOT UNCOMMENT THIS LINE UNLESS YOU REALLY WANT TO ERASE ALL THE SCORES
         //Scoring.ResetHighScores();
         //FOR TESTING ONLY
@@ -56,6 +57,8 @@ public class HighScoreInputManager : MonoBehaviour {
         if (inputActionHappened)
         {
             t += Time.deltaTime;
+            //Debug.Log(t);
+            //Debug.Log(Time.deltaTime);
         }
 
         if (t > inputDelay)
