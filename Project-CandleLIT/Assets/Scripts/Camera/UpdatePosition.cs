@@ -18,9 +18,15 @@ public class UpdatePosition : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        newX = (player1.position.x + player2.position.x) / 2;
-        newY = (player1.position.y + player2.position.y) / 2;
+        
+        if (NumPlayersChecker.numOfPlayers == 2) {
+            newX = (player1.position.x + player2.position.x) / 2;
+            newY = (player1.position.y + player2.position.y) / 2;
 
-        currentPosition.position = new Vector3(newX, newY, currentPosition.position.z);
+            currentPosition.position = new Vector3(newX, newY, currentPosition.position.z);
+        } else {
+            currentPosition.position = player1.position;
+        }
+
     }
 }
