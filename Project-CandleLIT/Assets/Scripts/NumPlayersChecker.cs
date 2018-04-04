@@ -11,4 +11,12 @@ public class NumPlayersChecker : MonoBehaviour {
         numOfPlayers = num;
     }
 
+    public void startSinglePlayer() {
+        setNumPlayers(1);
+    }
+
+    public void startTwoPlayer() {
+        setNumPlayers(2);
+    }
+
 }
