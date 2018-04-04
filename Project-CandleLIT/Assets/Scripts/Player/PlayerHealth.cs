@@ -13,7 +13,7 @@ public class PlayerHealth : MonoBehaviour
 
     void Start()
     {
-        MaxHealth = 100f;
+        MaxHealth = 200f;
         CurrentHealth = MaxHealth;
 
         healthbar.value = CalculateHealth();

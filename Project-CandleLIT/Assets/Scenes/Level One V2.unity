@@ -565,90 +565,26 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 114758180065442916, guid: 145f1d7b5e53d477185614c130eab5c0,
-        type: 2}
-      propertyPath: DoorWithKeyText
-      value: 
-      objectReference: {fileID: 1155349156}
-    - target: {fileID: 114925988131115830, guid: 145f1d7b5e53d477185614c130eab5c0,
-        type: 2}
-      propertyPath: energyBar
-      value: 
-      objectReference: {fileID: 2055603482}
-    - target: {fileID: 114685426015663598, guid: 145f1d7b5e53d477185614c130eab5c0,
-        type: 2}
-      propertyPath: healthbar
-      value: 
-      objectReference: {fileID: 1134569750}
-    - target: {fileID: 114758180065442916, guid: 145f1d7b5e53d477185614c130eab5c0,
-        type: 2}
-      propertyPath: LevelToLoad
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114758180065442916, guid: 145f1d7b5e53d477185614c130eab5c0,
-        type: 2}
-      propertyPath: currentInterObjScript
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 61255590838388278, guid: 145f1d7b5e53d477185614c130eab5c0,
-        type: 2}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 114481898300117710, guid: 145f1d7b5e53d477185614c130eab5c0,
         type: 2}
       propertyPath: inventorybutton.Array.data[0]
       value: 
       objectReference: {fileID: 1984356124}
-    - target: {fileID: 82514550470977134, guid: 145f1d7b5e53d477185614c130eab5c0,
+    - target: {fileID: 114685426015663598, guid: 145f1d7b5e53d477185614c130eab5c0,
         type: 2}
-      propertyPath: m_PlayOnAwake
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 61174546084894900, guid: 145f1d7b5e53d477185614c130eab5c0,
-        type: 2}
-      propertyPath: m_Offset.x
-      value: 0.87447023
-      objectReference: {fileID: 0}
-    - target: {fileID: 61174546084894900, guid: 145f1d7b5e53d477185614c130eab5c0,
-        type: 2}
-      propertyPath: m_Size.x
-      value: 2.2510595
-      objectReference: {fileID: 0}
-    - target: {fileID: 108732276860030470, guid: 145f1d7b5e53d477185614c130eab5c0,
-        type: 2}
-      propertyPath: m_SpotAngle
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 82514550470977134, guid: 145f1d7b5e53d477185614c130eab5c0,
-        type: 2}
-      propertyPath: m_Volume
-      value: 0.51
-      objectReference: {fileID: 0}
-    - target: {fileID: 108648201714540498, guid: 145f1d7b5e53d477185614c130eab5c0,
-        type: 2}
-      propertyPath: m_RenderMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 108732276860030470, guid: 145f1d7b5e53d477185614c130eab5c0,
-        type: 2}
-      propertyPath: m_RenderMode
-      value: 1
-      objectReference: {fileID: 0}
+      propertyPath: healthbar
+      value: 
+      objectReference: {fileID: 1134569750}
     - target: {fileID: 114925988131115830, guid: 145f1d7b5e53d477185614c130eab5c0,
         type: 2}
-      propertyPath: flIntensity
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 108648201714540498, guid: 145f1d7b5e53d477185614c130eab5c0,
+      propertyPath: energyBar
+      value: 
+      objectReference: {fileID: 2055603482}
+    - target: {fileID: 114758180065442916, guid: 145f1d7b5e53d477185614c130eab5c0,
         type: 2}
-      propertyPath: m_Range
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 4236153853068894, guid: 145f1d7b5e53d477185614c130eab5c0, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.5
-      objectReference: {fileID: 0}
+      propertyPath: DoorWithKeyText
+      value: 
+      objectReference: {fileID: 1155349156}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 145f1d7b5e53d477185614c130eab5c0, type: 2}
   m_IsPrefabParent: 0
@@ -1419,6 +1355,7 @@ GameObject:
   - component: {fileID: 263997350}
   - component: {fileID: 263997351}
   - component: {fileID: 1155349156}
+  - component: {fileID: 263997352}
   m_Layer: 5
   m_Name: DoorWithKeyText
   m_TagString: Untagged
@@ -1442,7 +1379,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 13.35, y: 0}
+  m_AnchoredPosition: {x: -0.64999, y: -231}
   m_SizeDelta: {x: 272.3, y: 51}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &263997351
@@ -1452,6 +1389,18 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 263997349}
+--- !u!114 &263997352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 263997349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17fb6a8760dc1ae44b2b0fc9aab59480, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 1
 --- !u!1 &270001000
 GameObject:
   m_ObjectHideFlags: 0
@@ -8618,44 +8567,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.251059, y: 0.7383824}
   m_EdgeRadius: 0
---- !u!1 &528050026 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1940583601647994, guid: 145f1d7b5e53d477185614c130eab5c0,
-    type: 2}
-  m_PrefabInternal: {fileID: 44952140}
---- !u!114 &528050027
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 528050026}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51426708d04b92646aea662fa6bd0363, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  instance: {fileID: 0}
---- !u!114 &528050043
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 528050026}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd484fcf6254443cba86cbe153922f5e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  defaultDamageAmount: 10
-  recentlyHitTimeout: 3
-  flickerInterval: 0.07
---- !u!81 &528050044
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 528050026}
-  m_Enabled: 1
 --- !u!4 &533076120 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4118096242812528, guid: 6c034ba2d123ceb48ba6139b07c8b77b,
@@ -12557,11 +12468,11 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 7cb2912222469634ba17a77055919ea8, type: 3}
-    m_FontSize: 26
+    m_FontSize: 68
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
-    m_MaxSize: 51
+    m_MaxSize: 71
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -19780,6 +19691,23 @@ Prefab:
     - target: {fileID: 1173940468797318, guid: c0e0342b4f983214193b31fd64acd13b, type: 2}
       propertyPath: m_Name
       value: Ghost2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1751946378725232, guid: c0e0342b4f983214193b31fd64acd13b, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1304583939805594, guid: c0e0342b4f983214193b31fd64acd13b, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1173940468797318, guid: c0e0342b4f983214193b31fd64acd13b, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 114885064788063622, guid: c0e0342b4f983214193b31fd64acd13b,
+        type: 2}
+      propertyPath: damageAmount
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c0e0342b4f983214193b31fd64acd13b, type: 2}

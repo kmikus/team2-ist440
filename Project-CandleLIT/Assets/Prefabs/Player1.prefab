@@ -83,6 +83,11 @@ GameObject:
   - component: {fileID: 114999165316617498}
   - component: {fileID: 82514550470977134}
   - component: {fileID: 114004147389567876}
+  - component: {fileID: 114415229355072440}
+  - component: {fileID: 114620136379473146}
+  - component: {fileID: 81284014371170958}
+  - component: {fileID: 114941655817081842}
+  - component: {fileID: 114697180261855970}
   m_Layer: 10
   m_Name: Player1
   m_TagString: Player
@@ -128,7 +133,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1402761236979308}
   m_LocalRotation: {x: -0.003961987, y: 0.63271886, z: -0.0032372656, w: 0.77436477}
-  m_LocalPosition: {x: -0.08, y: -0.24, z: -0.36}
+  m_LocalPosition: {x: -0.08, y: -0.24, z: -0.5}
   m_LocalScale: {x: 0.98265547, y: 0.56452924, z: 0.5817824}
   m_Children: []
   m_Father: {fileID: 4843249827771524}
@@ -154,7 +159,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1940583601647994}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -40.4, y: 13.1, z: 0}
+  m_LocalPosition: {x: 4.63, y: -0.94, z: 0}
   m_LocalScale: {x: 1.7715329, y: 1.7715304, z: 1}
   m_Children:
   - {fileID: 4751520317817478}
@@ -271,7 +276,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.16121149, y: -0.1308088}
+  m_Offset: {x: 0.87447023, y: -0.1308088}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -282,7 +287,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.3162017, y: 0.7383824}
+  m_Size: {x: 2.2510595, y: 0.7383824}
   m_EdgeRadius: 0
 --- !u!61 &61255590838388278
 BoxCollider2D:
@@ -309,6 +314,13 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.25, y: 0.6976788}
   m_EdgeRadius: 0
+--- !u!81 &81284014371170958
+AudioListener:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1940583601647994}
+  m_Enabled: 1
 --- !u!82 &82514550470977134
 AudioSource:
   m_ObjectHideFlags: 1
@@ -320,8 +332,8 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 243175539370577826, guid: 5cd80abbc87704249b8abbf32ab1f185,
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 55f2c52673aad45fcae2edceb22ae162, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
+  m_PlayOnAwake: 0
+  m_Volume: 0.51
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -499,7 +511,7 @@ Light:
   m_Type: 0
   m_Color: {r: 0.92046297, g: 0.9411765, b: 0.7266436, a: 1}
   m_Intensity: 0
-  m_Range: 15
+  m_Range: 20
   m_SpotAngle: 54
   m_CookieSize: 10
   m_Shadows:
@@ -513,7 +525,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -536,7 +548,7 @@ Light:
   m_Color: {r: 0.9191176, g: 0.9163211, b: 0.8177444, a: 1}
   m_Intensity: 4.96
   m_Range: 5
-  m_SpotAngle: 82
+  m_SpotAngle: 100
   m_CookieSize: 10
   m_Shadows:
     m_Type: 0
@@ -549,7 +561,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -593,6 +605,18 @@ MonoBehaviour:
   ground:
     serializedVersion: 2
     m_Bits: 256
+--- !u!114 &114415229355072440
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1940583601647994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51426708d04b92646aea662fa6bd0363, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  instance: {fileID: 0}
 --- !u!114 &114481898300117710
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -610,6 +634,26 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  inventorybutton:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+--- !u!114 &114620136379473146
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1940583601647994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd484fcf6254443cba86cbe153922f5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultDamageAmount: 10
+  recentlyHitTimeout: 3
+  flickerInterval: 0.07
 --- !u!114 &114685426015663598
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -621,7 +665,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7d2281b46125624e844b4492cc81b7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  heartRechargeVal: 20
   healthbar: {fileID: 0}
+--- !u!114 &114697180261855970
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1940583601647994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd484fcf6254443cba86cbe153922f5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultDamageAmount: 10
+  recentlyHitTimeout: 3
+  flickerInterval: 0.07
 --- !u!114 &114758180065442916
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -637,7 +696,7 @@ MonoBehaviour:
   currentInterObjScript: {fileID: 0}
   inventory: {fileID: 114481898300117710}
   DoorWithKeyText: {fileID: 0}
-  LevelToLoad: 0
+  LevelToLoad: 5
 --- !u!114 &114925988131115830
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -652,10 +711,22 @@ MonoBehaviour:
   maxHealth: 2000
   energyBar: {fileID: 0}
   flLight: {fileID: 108648201714540498}
-  flIntensity: 35
+  flIntensity: 30
   drainVal: 1
   rechargeVal: 0.5
   batteryRechargeVal: 500
+--- !u!114 &114941655817081842
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1940583601647994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51426708d04b92646aea662fa6bd0363, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  instance: {fileID: 0}
 --- !u!114 &114964647875142108
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -19,7 +19,7 @@ public class psuslpahscript : MonoBehaviour {
 
     IEnumerator LoadSplashScreen1()
     {
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(5f);
 
         SceneManager.LoadScene("SplashScreen1");
     }
