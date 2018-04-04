@@ -10,7 +10,7 @@ public class Flashlight : MonoBehaviour {
     public Light flLight;
     public float flIntensity = 10f;
     public float drainVal = 5f;
-    public float rechargeVal = 0.5f;
+    public float rechargeVal = 2f;
     public float batteryRechargeVal = 500f;
 
     private float currentHealth;

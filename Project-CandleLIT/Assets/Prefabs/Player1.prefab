@@ -44,7 +44,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1642579619255352
 GameObject:
   m_ObjectHideFlags: 0
@@ -742,6 +742,7 @@ MonoBehaviour:
   projectilePrefab: {fileID: 1950853543130688, guid: b5a1fcc30bf934644a173afca03102d7,
     type: 2}
   force: 1000
+  drainValue: 100
 --- !u!114 &114925988131115830
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -758,7 +759,7 @@ MonoBehaviour:
   flLight: {fileID: 108648201714540498}
   flIntensity: 30
   drainVal: 1
-  rechargeVal: 0.5
+  rechargeVal: 1.25
   batteryRechargeVal: 500
 --- !u!114 &114941655817081842
 MonoBehaviour:

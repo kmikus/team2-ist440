@@ -565,26 +565,26 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 114758180065442916, guid: 145f1d7b5e53d477185614c130eab5c0,
-        type: 2}
-      propertyPath: DoorWithKeyText
-      value: 
-      objectReference: {fileID: 1155349156}
-    - target: {fileID: 114925988131115830, guid: 145f1d7b5e53d477185614c130eab5c0,
-        type: 2}
-      propertyPath: energyBar
-      value: 
-      objectReference: {fileID: 2055603482}
-    - target: {fileID: 114685426015663598, guid: 145f1d7b5e53d477185614c130eab5c0,
-        type: 2}
-      propertyPath: healthbar
-      value: 
-      objectReference: {fileID: 1134569750}
     - target: {fileID: 114481898300117710, guid: 145f1d7b5e53d477185614c130eab5c0,
         type: 2}
       propertyPath: inventorybutton.Array.data[0]
       value: 
       objectReference: {fileID: 1984356124}
+    - target: {fileID: 114685426015663598, guid: 145f1d7b5e53d477185614c130eab5c0,
+        type: 2}
+      propertyPath: healthbar
+      value: 
+      objectReference: {fileID: 1134569750}
+    - target: {fileID: 114925988131115830, guid: 145f1d7b5e53d477185614c130eab5c0,
+        type: 2}
+      propertyPath: energyBar
+      value: 
+      objectReference: {fileID: 2055603482}
+    - target: {fileID: 114758180065442916, guid: 145f1d7b5e53d477185614c130eab5c0,
+        type: 2}
+      propertyPath: DoorWithKeyText
+      value: 
+      objectReference: {fileID: 1155349156}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 145f1d7b5e53d477185614c130eab5c0, type: 2}
   m_IsPrefabParent: 0
@@ -7990,26 +7990,26 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 114923508904716636, guid: 73dcd60b04503714fabdca8d4bbfd202,
-        type: 2}
-      propertyPath: inventorybutton.Array.data[0]
-      value: 
-      objectReference: {fileID: 860291216}
-    - target: {fileID: 114462398225747462, guid: 73dcd60b04503714fabdca8d4bbfd202,
-        type: 2}
-      propertyPath: DoorWithKeyText
-      value: 
-      objectReference: {fileID: 1155349156}
-    - target: {fileID: 114197614324588240, guid: 73dcd60b04503714fabdca8d4bbfd202,
-        type: 2}
-      propertyPath: energyBar
-      value: 
-      objectReference: {fileID: 1304264935}
     - target: {fileID: 114136064047611668, guid: 73dcd60b04503714fabdca8d4bbfd202,
         type: 2}
       propertyPath: healthbar
       value: 
       objectReference: {fileID: 936737507}
+    - target: {fileID: 114197614324588240, guid: 73dcd60b04503714fabdca8d4bbfd202,
+        type: 2}
+      propertyPath: energyBar
+      value: 
+      objectReference: {fileID: 1304264935}
+    - target: {fileID: 114462398225747462, guid: 73dcd60b04503714fabdca8d4bbfd202,
+        type: 2}
+      propertyPath: DoorWithKeyText
+      value: 
+      objectReference: {fileID: 1155349156}
+    - target: {fileID: 114923508904716636, guid: 73dcd60b04503714fabdca8d4bbfd202,
+        type: 2}
+      propertyPath: inventorybutton.Array.data[0]
+      value: 
+      objectReference: {fileID: 860291216}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 73dcd60b04503714fabdca8d4bbfd202, type: 2}
   m_IsPrefabParent: 0
