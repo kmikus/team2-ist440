@@ -11,12 +11,14 @@ namespace UnityStandardAssets._2D
         private bool m_Jump;
         private selectplayer selectplayer;
         private Flashlight fl;
+        private ShootLasers laser;
 
         private void Awake()
         {
             m_Character = GetComponent<PlatformerCharacter2D>();
             selectplayer = GetComponent<selectplayer>();
             fl = GetComponent<Flashlight>();
+            laser = GetComponent<ShootLasers>();
         }
 
 
@@ -33,6 +35,9 @@ namespace UnityStandardAssets._2D
                 {
                     fl.ToggleLight();
                 }
+                if (Input.GetButtonDown("ShootLaser")) {
+                    laser.FireProjectile();
+                }
             }
             else if(selectplayer.isPlayer2)
             {
@@ -44,6 +49,10 @@ namespace UnityStandardAssets._2D
                 if (Input.GetButtonDown("p2Flashlight"))
                 {
                     fl.ToggleLight();
+                }
+                if (Input.GetButtonDown("p2ShootLaser"))
+                {
+                    laser.FireProjectile();
                 }
             }
         }

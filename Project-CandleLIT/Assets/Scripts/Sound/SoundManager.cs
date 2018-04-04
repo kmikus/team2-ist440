@@ -13,16 +13,16 @@ public class SoundManager : MonoBehaviour
 
     void Awake()
     {
-        //Check if there is already an instance of SoundManager
+        //Check if there is already an instance of this GameObject
         if (instance == null)
             //if not, set it to this.
             instance = this;
         //If instance already exists:
         else if (instance != this)
-            //Destroy this, this enforces our singleton pattern so there can only be one instance of SoundManager.
+            //Destroy this, this enforces our singleton pattern so there can only be one instance of GameObject.
             Destroy(gameObject);
 
-        //Set SoundManager to DontDestroyOnLoad so that it won't be destroyed when reloading our scene.
+        //Set GameObject to DontDestroyOnLoad so that it won't be destroyed when reloading our scene.
         DontDestroyOnLoad(gameObject);
     }
 

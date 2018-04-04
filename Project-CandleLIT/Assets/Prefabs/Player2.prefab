@@ -75,6 +75,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1764592942637286
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4176907180357700}
+  m_Layer: 10
+  m_Name: LaserSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1871411480528398
 GameObject:
   m_ObjectHideFlags: 0
@@ -93,14 +108,15 @@ GameObject:
   - component: {fileID: 114136064047611668}
   - component: {fileID: 114197614324588240}
   - component: {fileID: 82980495298054612}
-  - component: {fileID: 114412202022375668}
   - component: {fileID: 114462398225747462}
   - component: {fileID: 114923508904716636}
-  - component: {fileID: 114550760441036040}
   - component: {fileID: 114621804940835776}
   - component: {fileID: 82579024876227716}
   - component: {fileID: 114383336113827784}
   - component: {fileID: 114794992021576398}
+  - component: {fileID: 114188185586141734}
+  - component: {fileID: 114978498351706728}
+  - component: {fileID: 114875531732462122}
   m_Layer: 10
   m_Name: Player2
   m_TagString: Player
@@ -150,6 +166,19 @@ Transform:
   m_Father: {fileID: 4253730940518342}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4176907180357700
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1764592942637286}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.47, y: 0.21, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4253730940518342}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4253730940518342
 Transform:
   m_ObjectHideFlags: 1
@@ -157,7 +186,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1871411480528398}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -24.7, y: 11.08, z: 0}
+  m_LocalPosition: {x: -7.2, y: 11.7, z: 0}
   m_LocalScale: {x: 1.7715329, y: 1.7715304, z: 1}
   m_Children:
   - {fileID: 4868896531191672}
@@ -165,6 +194,7 @@ Transform:
   - {fileID: 4033487881928874}
   - {fileID: 4673499338156546}
   - {fileID: 4923836621858250}
+  - {fileID: 4176907180357700}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -175,7 +205,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1896920222152960}
   m_LocalRotation: {x: -0.003961987, y: 0.63271886, z: -0.0032372656, w: 0.77436477}
-  m_LocalPosition: {x: -0.08, y: -0.24, z: -0.36}
+  m_LocalPosition: {x: -0.08, y: -0.24, z: -0.5}
   m_LocalScale: {x: 0.98265547, y: 0.56452924, z: 0.5817824}
   m_Children: []
   m_Father: {fileID: 4253730940518342}
@@ -274,7 +304,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.1169043, y: -0.1308088}
+  m_Offset: {x: 0.8744704, y: -0.1308088}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -285,7 +315,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.2275872, y: 0.7383824}
+  m_Size: {x: 2.251059, y: 0.7383824}
   m_EdgeRadius: 0
 --- !u!61 &61704913381611070
 BoxCollider2D:
@@ -323,7 +353,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 243175539370577826, guid: 5cd80abbc87704249b8abbf32ab1f185,
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 55f2c52673aad45fcae2edceb22ae162, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -503,7 +533,7 @@ Light:
   m_Color: {r: 0.9191176, g: 0.9163211, b: 0.8177444, a: 1}
   m_Intensity: 4.96
   m_Range: 5
-  m_SpotAngle: 82
+  m_SpotAngle: 100
   m_CookieSize: 10
   m_Shadows:
     m_Type: 0
@@ -516,7 +546,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -538,7 +568,7 @@ Light:
   m_Type: 0
   m_Color: {r: 0.92046297, g: 0.9411765, b: 0.7266436, a: 1}
   m_Intensity: 0
-  m_Range: 15
+  m_Range: 20
   m_SpotAngle: 54
   m_CookieSize: 10
   m_Shadows:
@@ -552,7 +582,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -574,6 +604,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7d2281b46125624e844b4492cc81b7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  heartRechargeVal: 20
   healthbar: {fileID: 0}
 --- !u!114 &114142385645849396
 MonoBehaviour:
@@ -592,6 +623,18 @@ MonoBehaviour:
     type: 2}
   enemyPosition: {fileID: 0}
   disableTime: 10
+--- !u!114 &114188185586141734
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1871411480528398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51426708d04b92646aea662fa6bd0363, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  instance: {fileID: 0}
 --- !u!114 &114197614324588240
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -606,7 +649,7 @@ MonoBehaviour:
   maxHealth: 2000
   energyBar: {fileID: 0}
   flLight: {fileID: 108675488427553992}
-  flIntensity: 35
+  flIntensity: 30
   drainVal: 1
   rechargeVal: 0.5
   batteryRechargeVal: 500
@@ -625,20 +668,6 @@ MonoBehaviour:
   ground:
     serializedVersion: 2
     m_Bits: 256
---- !u!114 &114412202022375668
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1871411480528398}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e5d0f126a791544ab58523b7f4472ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damageAmount: 20
-  recentlyHitTimeout: 3
-  flickerInterval: 0.07
 --- !u!114 &114462398225747462
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -651,26 +680,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentKey: {fileID: 0}
-  collision: {fileID: 0}
   currentInterObjScript: {fileID: 0}
   inventory: {fileID: 114923508904716636}
   DoorWithKeyText: {fileID: 0}
---- !u!114 &114550760441036040
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1871411480528398}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b83ff5510f88ef54d81a987d71a583e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentKey: {fileID: 0}
-  collision: {fileID: 0}
-  currentInterObjScript: {fileID: 0}
-  inventory: {fileID: 0}
-  DoorWithKeyText: {fileID: 0}
+  LevelToLoad: 5
 --- !u!114 &114621804940835776
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -695,7 +708,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd484fcf6254443cba86cbe153922f5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 20
+  defaultDamageAmount: 10
   recentlyHitTimeout: 3
   flickerInterval: 0.07
 --- !u!114 &114798505187927972
@@ -709,6 +722,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3d7b34a3bb2d4e4b926e7e729d3d410, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114875531732462122
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1871411480528398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e787efcabf80d46ea93897082c0602ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPos: {fileID: 4176907180357700}
+  projectilePrefab: {fileID: 1950853543130688, guid: b5a1fcc30bf934644a173afca03102d7,
+    type: 2}
+  force: 1000
 --- !u!114 &114923508904716636
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -726,6 +754,26 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  inventorybutton:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+--- !u!114 &114978498351706728
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1871411480528398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd484fcf6254443cba86cbe153922f5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultDamageAmount: 10
+  recentlyHitTimeout: 3
+  flickerInterval: 0.07
 --- !u!114 &114991735481916760
 MonoBehaviour:
   m_ObjectHideFlags: 1
