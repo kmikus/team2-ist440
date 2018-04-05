@@ -924,6 +924,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   twoPlayerObjectsToDelete:
   - {fileID: 1294202773}
+  - {fileID: 936737505}
+  - {fileID: 1304264933}
+  - {fileID: 860291214}
+  - {fileID: 2000323909}
   mainCamera: {fileID: 1777555618}
 --- !u!4 &182083478
 Transform:
