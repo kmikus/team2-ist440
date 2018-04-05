@@ -23,12 +23,15 @@ public class ShootLasers : MonoBehaviour {
 
     public void FireProjectile()
     {
-        instantiationPos = new Vector3(spawnPos.position.x, spawnPos.position.y, spawnPos.position.z);
-        var xScale = playerTransform.localScale.x;
-        direction = xScale / Mathf.Abs(xScale);
-        var proj = Instantiate(projectilePrefab, instantiationPos, Quaternion.identity);
-        var projBody = proj.GetComponent<Rigidbody2D>();
-        projBody.AddForce(new Vector2(force * direction, 0));
-        flashlight.Drain(drainValue);
+        if (flashlight.CurrentHealth >= drainValue)
+        {
+            instantiationPos = new Vector3(spawnPos.position.x, spawnPos.position.y, spawnPos.position.z);
+            var xScale = playerTransform.localScale.x;
+            direction = xScale / Mathf.Abs(xScale);
+            var proj = Instantiate(projectilePrefab, instantiationPos, Quaternion.identity);
+            var projBody = proj.GetComponent<Rigidbody2D>();
+            projBody.AddForce(new Vector2(force * direction, 0));
+            flashlight.Drain(drainValue);
+        }
     }
 }

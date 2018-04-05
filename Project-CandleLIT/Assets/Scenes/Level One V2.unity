@@ -9659,17 +9659,7 @@ Prefab:
       propertyPath: m_Name
       value: Ghost1 (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: MaxDistance
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 212686469836640616, guid: c0e0342b4f983214193b31fd64acd13b,
-        type: 2}
-      propertyPath: m_SortingOrder
-      value: 10
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 0}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c0e0342b4f983214193b31fd64acd13b, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &786293331
