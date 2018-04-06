@@ -1485,6 +1485,14 @@ Prefab:
       propertyPath: ShapeModule.radiusThickness
       value: 1.0000
       objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: 7461a7b0cf97947fd9b9e4502fd2d07b, type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: 7461a7b0cf97947fd9b9e4502fd2d07b, type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7461a7b0cf97947fd9b9e4502fd2d07b, type: 2}
   m_IsPrefabParent: 0
@@ -2680,7 +2688,9 @@ MonoBehaviour:
     Jithin Koshy
 
 
-    <i>Additional sound effects from https://www.zapsplat.com</i>'
+    <i>Additional sound effects from https://www.zapsplat.com
+
+    Music: http://www.purple-planet.com</i>'
 --- !u!222 &708220966
 CanvasRenderer:
   m_ObjectHideFlags: 0
