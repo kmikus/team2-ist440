@@ -8333,6 +8333,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 487622886}
+  - component: {fileID: 487622887}
   m_Layer: 11
   m_Name: Enemies
   m_TagString: Untagged
@@ -8361,6 +8362,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &487622887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 487622885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08ddd44967b4c475592fee32c461ba68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  respawnTimer: 30
+  respawnParticles: {fileID: 1518381401331266, guid: 6c5cc6e8565be3c47b32c28b9c681515,
+    type: 2}
 --- !u!4 &488793880 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4781267404881100, guid: 23833dcbfff0927459d8ab93fa5119e5,
@@ -14794,6 +14809,11 @@ Prefab:
       propertyPath: gameOver
       value: 
       objectReference: {fileID: 8300000, guid: ca7ac136f9278004094a93e505193920, type: 3}
+    - target: {fileID: 82375784618348384, guid: 692ece9a6b7f4f340afdd00e2e49b228,
+        type: 2}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 692ece9a6b7f4f340afdd00e2e49b228, type: 2}
   m_IsPrefabParent: 0

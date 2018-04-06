@@ -19,6 +19,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4118096242812528}
+  - component: {fileID: 114442760925135922}
   m_Layer: 0
   m_Name: Knight
   m_TagString: Untagged
@@ -378,6 +379,20 @@ MonoBehaviour:
   dashInterval: 3
   dashTimer: 0
   dashingEnemy: {fileID: 1354558343371898}
+--- !u!114 &114442760925135922
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1238733858232154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08ddd44967b4c475592fee32c461ba68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  respawnTimer: 30
+  respawnParticles: {fileID: 1518381401331266, guid: 6c5cc6e8565be3c47b32c28b9c681515,
+    type: 2}
 --- !u!114 &114643461227185392
 MonoBehaviour:
   m_ObjectHideFlags: 1

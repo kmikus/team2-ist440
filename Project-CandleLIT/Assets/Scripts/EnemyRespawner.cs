@@ -2,86 +2,45 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyRespawner : MonoBehaviour {
+public class EnemyRespawner : MonoBehaviour
+{
+    private List<Enemy> enemies;
 
-    public Transform[] enemies;
-    public List<int> disabledIndexes;
-    private float[] t;
-    private bool atLeastOneEnemyDisabled = false;
+    public float respawnTimer = 30f;
+    public GameObject respawnParticles;
 
-    public bool respawningOn = true;
-    public float respawnTimer = 20f;
+    void Start()
+    {
+        enemies = new List<Enemy>();
 
-	// Use this for initialization
-	void Start () {
-
-        t = new float[enemies.Length];
-
-        for (int i = 0; i < enemies.Length; i++) {
-            Debug.Log(enemies[i].gameObject.ToString());
-            t[i] = 0;
-        }
-	}
-	
-	// Update is called once per frame
-	void Update () {
-        if (!respawningOn) {
-            return;
-        }
-
-        if (!atLeastOneEnemyDisabled) {
-            return;
-        }
-
-        foreach (int index in disabledIndexes) {
-            t[index] += Time.deltaTime;
-            if (t[index] > respawnTimer) {
-                enableEnemyAtIndex(index);
-            }
-            disabledIndexes.Remove(index);
-        }
-	}
-
-    public int getIndexOfEnemy(GameObject enemy) {
-        for (int i = 0; i < enemies.Length; i++) {
-            if (enemy == enemies[i]) {
-                return i;
+        foreach (Transform t in transform) {
+            if (t.parent == transform)
+            {
+                Enemy enemy = new Enemy(t.gameObject);
+                enemies.Add(enemy);
             }
         }
 
-        //return -1 if no enemy is found
-        return -1;
-    }
-
-    public void disableEnemyAtIndex(int index) {
-        if (index > -1 && index < enemies.Length)
-        {
-            enemies[index].gameObject.SetActive(false);
-            atLeastOneEnemyDisabled = true;
-            disabledIndexes.Add(index);
-        }
-        else
-        {
-            Debug.LogError("Failed to enable enemy: index out of range- " + index);
+        foreach (Enemy enemy in enemies) {
+            Debug.Log(enemy.getEnemyGameObject());
         }
     }
 
-    public void enableEnemyAtIndex(int index) {
-        if (index > -1 && index < enemies.Length)
-        {
-            enemies[index].gameObject.SetActive(true);
-        } else {
-            Debug.LogError("Failed to enable enemy: index out of range- " + index);
-        }
-    }
+    void Update()
+    {
+        foreach (Enemy enemy in enemies) {
+            if (!enemy.getEnemyGameObject().activeSelf) {
+                enemy.increaseTimer(Time.deltaTime);
 
-    public bool areAllEnemiesEnabled() {
-        foreach (Transform enemy in enemies) {
-            if (!enemy.gameObject.activeSelf) {
-                return false;
+                if (enemy.getRespawnTimer() > respawnTimer) {
+                    enemy.getEnemyGameObject().SetActive(true);
+                    var pos = enemy.getEnemyGameObject().transform.position;
+                    var rp = Instantiate(respawnParticles, new Vector3(pos.x, pos.y, pos.z), Quaternion.identity);
+                    Destroy(rp, 2f);
+                    enemy.resetTimer();
+                }
             }
         }
-
-        return true;
     }
+
 }
