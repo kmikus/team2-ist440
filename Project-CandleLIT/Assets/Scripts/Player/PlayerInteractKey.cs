@@ -35,7 +35,7 @@ public class PlayerInteractKey : MonoBehaviour {
                         // Found item needed now unlock door
                         currentInterObjScript.locked = false;
                         Debug.Log(currentInterObjScript.name + " was unlocked");
-                        DoorWithKeyText.text = ("You've unlocked the door! Press [p] to enter");
+                        DoorWithKeyText.text = ("ENTER LEVEL " + (LevelToLoad - 3));
 
                         // Remove key from inventory since it was used to unlock door
                         if (currentKey != null)
