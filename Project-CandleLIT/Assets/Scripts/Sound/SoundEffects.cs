@@ -17,4 +17,9 @@ public class SoundEffects : MonoBehaviour {
 	public AudioClip KeyPickup;
     public AudioClip Thunder;
     public AudioClip gameOver;
+    public AudioClip enemyKilled;
+    public AudioClip enemyRespawned;
+    public AudioClip shootLaser;
+    public AudioClip knightCharge;
+    public AudioClip spiderDrop;
 }

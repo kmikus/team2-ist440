@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyRespawner : MonoBehaviour
 {
     private List<Enemy> enemies;
+    private SoundEffects sfx;
 
     public float respawnTimer = 30f;
     public GameObject respawnParticles;
@@ -12,6 +13,7 @@ public class EnemyRespawner : MonoBehaviour
     void Start()
     {
         enemies = new List<Enemy>();
+        sfx = SoundManager.instance.GetComponent<SoundEffects>();
 
         foreach (Transform t in transform) {
             if (t.parent == transform)
@@ -33,6 +35,7 @@ public class EnemyRespawner : MonoBehaviour
                 enemy.increaseTimer(Time.deltaTime);
 
                 if (enemy.getRespawnTimer() > respawnTimer) {
+                    SoundManager.instance.PlaySingle(sfx.enemyRespawned);
                     enemy.getEnemyGameObject().SetActive(true);
                     var pos = enemy.getEnemyGameObject().transform.position;
                     var rp = Instantiate(respawnParticles, new Vector3(pos.x, pos.y, pos.z), Quaternion.identity);

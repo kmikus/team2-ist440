@@ -10782,6 +10782,86 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!82 &941553469
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 941553467}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!1 &950370485
 GameObject:
   m_ObjectHideFlags: 0
@@ -14814,6 +14894,26 @@ Prefab:
       propertyPath: Loop
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114288813036938000, guid: 692ece9a6b7f4f340afdd00e2e49b228,
+        type: 2}
+      propertyPath: laserBeamSource
+      value: 
+      objectReference: {fileID: 941553469}
+    - target: {fileID: 114621432340935602, guid: 692ece9a6b7f4f340afdd00e2e49b228,
+        type: 2}
+      propertyPath: shootLaser
+      value: 
+      objectReference: {fileID: 8300000, guid: 359d81607b08347528904ac09c2c6a38, type: 3}
+    - target: {fileID: 114621432340935602, guid: 692ece9a6b7f4f340afdd00e2e49b228,
+        type: 2}
+      propertyPath: enemyKilled
+      value: 
+      objectReference: {fileID: 8300000, guid: e519cfc3cb7e04b14a515b51f9fc440e, type: 3}
+    - target: {fileID: 114621432340935602, guid: 692ece9a6b7f4f340afdd00e2e49b228,
+        type: 2}
+      propertyPath: enemyRespawned
+      value: 
+      objectReference: {fileID: 8300000, guid: e668ee00144c2494cbeb6b459412c89c, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 692ece9a6b7f4f340afdd00e2e49b228, type: 2}
   m_IsPrefabParent: 0

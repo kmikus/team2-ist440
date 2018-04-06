@@ -14,17 +14,20 @@ public class ShootLasers : MonoBehaviour {
     private float direction;
     private Vector3 instantiationPos;
     private Flashlight flashlight;
+    private SoundEffects sfx;
 
 	// Use this for initialization
 	void Start () {
         playerTransform = GetComponent<Transform>();
         flashlight = GetComponent<Flashlight>();
+        sfx = GameObject.Find("SoundManager").GetComponent<SoundEffects>();
 	}
 
     public void FireProjectile()
     {
         if (flashlight.CurrentHealth >= drainValue)
         {
+            SoundManager.instance.PlayerLaser(sfx.shootLaser);
             instantiationPos = new Vector3(spawnPos.position.x, spawnPos.position.y, spawnPos.position.z);
             var xScale = playerTransform.localScale.x;
             direction = xScale / Mathf.Abs(xScale);
