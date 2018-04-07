@@ -38861,6 +38861,26 @@ Prefab:
       propertyPath: m_Name
       value: Spider (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 61237379538283738, guid: 7f28f9ce5c141114da9ccb0f1317f756,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: -3.2616942
+      objectReference: {fileID: 0}
+    - target: {fileID: 61237379538283738, guid: 7f28f9ce5c141114da9ccb0f1317f756,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 7.5233884
+      objectReference: {fileID: 0}
+    - target: {fileID: 61916030307215544, guid: 7f28f9ce5c141114da9ccb0f1317f756,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: -6.493533
+      objectReference: {fileID: 0}
+    - target: {fileID: 61916030307215544, guid: 7f28f9ce5c141114da9ccb0f1317f756,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 0.85073614
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7f28f9ce5c141114da9ccb0f1317f756, type: 2}
   m_IsPrefabParent: 0
