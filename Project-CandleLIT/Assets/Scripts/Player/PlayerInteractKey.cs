@@ -11,8 +11,9 @@ public class PlayerInteractKey : MonoBehaviour {
     public Inventory inventory;
     public Text DoorWithKeyText;
     public int LevelToLoad = 5;
+    private Animator doorAnim;
 
-    void Update()
+	void Update()
     {
         if (Input.GetButtonDown("KeyPickup") && currentKey)
         {
@@ -33,6 +34,8 @@ public class PlayerInteractKey : MonoBehaviour {
                     if (inventory.FindItem(currentInterObjScript.itemNeeded))
                     {
                         // Found item needed now unlock door
+                        doorAnim = GameObject.Find("doorForTestingKey").GetComponent<Animator>();
+                        doorAnim.SetBool("Open", true);
                         currentInterObjScript.locked = false;
                         Debug.Log(currentInterObjScript.name + " was unlocked");
                         DoorWithKeyText.text = ("ENTER LEVEL " + (LevelToLoad - 3));
@@ -62,6 +65,7 @@ public class PlayerInteractKey : MonoBehaviour {
                     bonus.addLevelCompletionBonus();
                     Debug.Log(currentInterObjScript.name + " is unlocked");
                     SceneManager.LoadScene(LevelToLoad);
+                    //doorAnim.SetBool("Open", false);
                     DoorWithKeyText.text = "";
                     LevelToLoad++;
                     //next level's timer

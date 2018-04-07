@@ -590,6 +590,11 @@ Prefab:
       propertyPath: energyBar
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 114758180065442916, guid: 145f1d7b5e53d477185614c130eab5c0,
+        type: 2}
+      propertyPath: doorAnimator
+      value: 
+      objectReference: {fileID: 1699502030}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 145f1d7b5e53d477185614c130eab5c0, type: 2}
   m_IsPrefabParent: 0
@@ -7765,7 +7770,7 @@ Prefab:
     - target: {fileID: 95259406739820426, guid: 6493cb72087837e49bb66e6d03ccb539,
         type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6493cb72087837e49bb66e6d03ccb539, type: 2}
@@ -15418,6 +15423,11 @@ CanvasRenderer:
 --- !u!1 &1699502028 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1575858457213148, guid: 6493cb72087837e49bb66e6d03ccb539,
+    type: 2}
+  m_PrefabInternal: {fileID: 401733343}
+--- !u!95 &1699502030 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 95259406739820426, guid: 6493cb72087837e49bb66e6d03ccb539,
     type: 2}
   m_PrefabInternal: {fileID: 401733343}
 --- !u!1 &1723524672
