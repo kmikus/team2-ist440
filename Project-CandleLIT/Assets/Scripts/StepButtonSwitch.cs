@@ -7,12 +7,20 @@ public class StepButtonSwitch : MonoBehaviour {
     public BarrierDoor door;
     public bool isOpen;
 
-    void OnTriggerEnter2D(Collider2D collision)
+    private Animator anim;
+
+    private void Start()
+    {
+        anim = GetComponent<Animator>();
+    }
+
+    void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.tag == "Player")
         {
             door.DoorOpens();
             isOpen = true;
+            anim.SetBool("steppedOn", true);
         }
         else
         {
@@ -25,6 +33,7 @@ public class StepButtonSwitch : MonoBehaviour {
     {
         door.DoorCloses();
         isOpen = false;
+        anim.SetBool("steppedOn", false);
     }
 
 
