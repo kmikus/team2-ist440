@@ -18,6 +18,12 @@ public class PlayerInteractKey : MonoBehaviour {
 
 	void Update()
     {
+        // FOR TESTING ONLY
+        if (Input.GetKeyDown("n")) {
+            SceneManager.LoadScene(LevelToLoad);
+            LevelToLoad++;
+        }
+
         if (startDoorTextResetTimer) {
             doorTextResetTimer += Time.deltaTime;
 

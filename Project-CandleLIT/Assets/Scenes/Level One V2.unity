@@ -905,53 +905,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
---- !u!1 &182083476
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 182083478}
-  - component: {fileID: 182083477}
-  m_Layer: 0
-  m_Name: NumPlayerManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &182083477
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 182083476}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b7f855354f00479d876d7dd50c44c8a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  twoPlayerObjectsToDelete:
-  - {fileID: 1294202773}
-  - {fileID: 936737505}
-  - {fileID: 1526923766}
-  - {fileID: 860291214}
-  - {fileID: 2000323909}
-  mainCamera: {fileID: 1777555618}
---- !u!4 &182083478
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 182083476}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 475.97363, y: 394.1035, z: -14.665617}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 18
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &185842296
 GameObject:
   m_ObjectHideFlags: 0
@@ -16386,6 +16339,78 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   instance: {fileID: 0}
+--- !u!1001 &1853478554
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4470225225004194, guid: 1bc6ae5d6269544d89a994b06487d93f, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 475.97363
+      objectReference: {fileID: 0}
+    - target: {fileID: 4470225225004194, guid: 1bc6ae5d6269544d89a994b06487d93f, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 394.1035
+      objectReference: {fileID: 0}
+    - target: {fileID: 4470225225004194, guid: 1bc6ae5d6269544d89a994b06487d93f, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -14.665617
+      objectReference: {fileID: 0}
+    - target: {fileID: 4470225225004194, guid: 1bc6ae5d6269544d89a994b06487d93f, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4470225225004194, guid: 1bc6ae5d6269544d89a994b06487d93f, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4470225225004194, guid: 1bc6ae5d6269544d89a994b06487d93f, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4470225225004194, guid: 1bc6ae5d6269544d89a994b06487d93f, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4470225225004194, guid: 1bc6ae5d6269544d89a994b06487d93f, type: 2}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 114313092841074376, guid: 1bc6ae5d6269544d89a994b06487d93f,
+        type: 2}
+      propertyPath: twoPlayerObjectsToDelete.Array.data[0]
+      value: 
+      objectReference: {fileID: 1294202773}
+    - target: {fileID: 114313092841074376, guid: 1bc6ae5d6269544d89a994b06487d93f,
+        type: 2}
+      propertyPath: twoPlayerObjectsToDelete.Array.data[1]
+      value: 
+      objectReference: {fileID: 936737505}
+    - target: {fileID: 114313092841074376, guid: 1bc6ae5d6269544d89a994b06487d93f,
+        type: 2}
+      propertyPath: twoPlayerObjectsToDelete.Array.data[2]
+      value: 
+      objectReference: {fileID: 1526923766}
+    - target: {fileID: 114313092841074376, guid: 1bc6ae5d6269544d89a994b06487d93f,
+        type: 2}
+      propertyPath: twoPlayerObjectsToDelete.Array.data[3]
+      value: 
+      objectReference: {fileID: 860291214}
+    - target: {fileID: 114313092841074376, guid: 1bc6ae5d6269544d89a994b06487d93f,
+        type: 2}
+      propertyPath: twoPlayerObjectsToDelete.Array.data[4]
+      value: 
+      objectReference: {fileID: 2000323909}
+    - target: {fileID: 114313092841074376, guid: 1bc6ae5d6269544d89a994b06487d93f,
+        type: 2}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1777555618}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 1bc6ae5d6269544d89a994b06487d93f, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1862747633
 GameObject:
   m_ObjectHideFlags: 0

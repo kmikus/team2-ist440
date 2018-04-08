@@ -11,15 +11,18 @@ public class NumPlayersManager : MonoBehaviour {
 	void Start () {
         
         Debug.Log("num of players: " + NumPlayersChecker.numOfPlayers);
-        if (NumPlayersChecker.numOfPlayers == 1) {
+        if (NumPlayersChecker.numOfPlayers == 1)
+        {
 
             // Delete all game objects specified to be 2 player only
-            foreach (var gameObj in twoPlayerObjectsToDelete) {
+            foreach (var gameObj in twoPlayerObjectsToDelete)
+            {
                 Destroy(gameObj);
             }
 
             // Disable the camera panning script
-            mainCamera.GetComponent<ChangeCameraSizeDynamic>().enabled = false;
+            if (mainCamera != null)
+                mainCamera.GetComponent<ChangeCameraSizeDynamic>().enabled = false;
         }
 	}
 	
