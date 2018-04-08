@@ -99,9 +99,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01af114009e4949c298d8deeb5713dd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  aliveTime: 0.65
   deathParticle: {fileID: 1476739399110890, guid: 65a77d90cd561254da9c051229198c34,
     type: 2}
-  disableTime: 10
 --- !u!212 &212191838548235208
 SpriteRenderer:
   m_ObjectHideFlags: 1

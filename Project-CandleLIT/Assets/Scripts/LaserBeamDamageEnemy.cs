@@ -8,12 +8,25 @@ public class LaserBeamDamageEnemy : MonoBehaviour {
     private bool particleAdded = false;
     private GameObject respawnParticle;
     private SoundEffects sfx;
+    private float t = 0;
+
+    public float aliveTime = 2f;
 
     public GameObject deathParticle;
 
 	private void Start()
 	{
         sfx = SoundManager.instance.GetComponent<SoundEffects>();
+	}
+
+	private void Update()
+	{
+        if (t > aliveTime)
+        {
+            Destroy(gameObject);
+        }
+
+        t += Time.deltaTime;
 	}
 
 	public void OnTriggerEnter2D(Collider2D collision)
@@ -31,5 +44,6 @@ public class LaserBeamDamageEnemy : MonoBehaviour {
             Destroy(dp, 2f);
             Destroy(gameObject);
         }
+
 	}
 }
