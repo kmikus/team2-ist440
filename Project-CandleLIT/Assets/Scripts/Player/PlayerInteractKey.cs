@@ -12,9 +12,22 @@ public class PlayerInteractKey : MonoBehaviour {
     public Text DoorWithKeyText;
     public int LevelToLoad = 5;
     private Animator doorAnim;
+    private float doorTextResetTimer = 0f;
+    private bool startDoorTextResetTimer = false;
+    public float amountOfTimeToDisplayYouNeedKeyText = 2.5f;
 
 	void Update()
     {
+        if (startDoorTextResetTimer) {
+            doorTextResetTimer += Time.deltaTime;
+
+            if (doorTextResetTimer > amountOfTimeToDisplayYouNeedKeyText) {
+                DoorWithKeyText.text = "";
+                doorTextResetTimer = 0f;
+                startDoorTextResetTimer = false;
+            }
+        }
+
         if (Input.GetButtonDown("KeyPickup") && currentKey)
         {
             // Check to see if should be stored in inventory
@@ -52,6 +65,7 @@ public class PlayerInteractKey : MonoBehaviour {
                     {
                         Debug.Log(currentInterObjScript.name + " is locked");
                         DoorWithKeyText.text = ("You need a key to unlock the door!");
+                        startDoorTextResetTimer = true;
                     }
                 }
                 else
