@@ -10,7 +10,6 @@ public class NumPlayersManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         
-        Debug.Log("num of players: " + NumPlayersChecker.numOfPlayers);
         if (NumPlayersChecker.numOfPlayers == 1)
         {
 

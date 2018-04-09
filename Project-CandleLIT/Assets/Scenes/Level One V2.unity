@@ -595,6 +595,11 @@ Prefab:
       propertyPath: doorAnimator
       value: 
       objectReference: {fileID: 1699502030}
+    - target: {fileID: 61255590838388278, guid: 145f1d7b5e53d477185614c130eab5c0,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 145f1d7b5e53d477185614c130eab5c0, type: 2}
   m_IsPrefabParent: 0
@@ -1631,7 +1636,6 @@ GameObject:
   - component: {fileID: 308162883}
   - component: {fileID: 308162886}
   - component: {fileID: 308162885}
-  - component: {fileID: 308162884}
   m_Layer: 5
   m_Name: DoorText
   m_TagString: Untagged
@@ -1658,18 +1662,6 @@ RectTransform:
   m_AnchoredPosition: {x: -221, y: -391}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &308162884
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114631353568430894, guid: 366520817c30f4c4f8c130506a50023c,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 308162882}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &308162885
 MonoBehaviour:
   m_ObjectHideFlags: 0

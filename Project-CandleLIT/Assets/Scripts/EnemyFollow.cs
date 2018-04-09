@@ -41,7 +41,6 @@ public class EnemyFollow : MonoBehaviour {
         {
             if (Vector2.Distance(transform.position, startingPosition) > stoppingDistance)
             {
-                Debug.Log("yoyoyo");
                 transform.position = Vector2.MoveTowards(transform.position, startingPosition, speed * Time.deltaTime);
             }
         }

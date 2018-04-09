@@ -18,7 +18,8 @@ public class StartPlayerLocation : MonoBehaviour {
             } else if (startTransform.gameObject.name == "Player2Start")
             {
                 var p2 = GameObject.Find("Player2");
-                p2.transform.position = startTransform.position;
+                if (p2 != null)
+                    p2.transform.position = startTransform.position;
             }
         }
 	}

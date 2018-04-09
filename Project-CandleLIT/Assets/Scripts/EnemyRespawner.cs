@@ -22,10 +22,6 @@ public class EnemyRespawner : MonoBehaviour
                 enemies.Add(enemy);
             }
         }
-
-        foreach (Enemy enemy in enemies) {
-            Debug.Log(enemy.getEnemyGameObject());
-        }
     }
 
     void Update()
