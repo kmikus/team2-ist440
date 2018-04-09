@@ -33,6 +33,7 @@ public class MovingPlatformVertical : MonoBehaviour {
 	{
         if (collision.gameObject.tag == "Player") {
             collision.transform.parent = null;
+            DontDestroyOnLoad(collision.gameObject);
         }
 	}
 }
