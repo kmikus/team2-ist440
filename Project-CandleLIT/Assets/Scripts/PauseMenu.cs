@@ -21,14 +21,14 @@ public class PauseMenu : MonoBehaviour {
     void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.Escape) && mainPanel.active == false)
+        if (Input.GetButtonDown("Cancel") && mainPanel.active == false)
         {
             mainPanel.SetActive(true);
             controlpanel.SetActive(false);
             volume.SetActive(false);
             Time.timeScale = 0;
         }
-        else if (Input.GetKeyDown(KeyCode.Escape) && mainPanel.active == true)
+        else if (Input.GetButtonDown("Cancel") && mainPanel.active == true)
         {
             Time.timeScale = 1;
             mainPanel.SetActive(false);
