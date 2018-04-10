@@ -8,7 +8,7 @@ public class FinalDoor : MonoBehaviour {
 
     public Text DoorText;
     public int LevelToLoad;
-    public GameObject wonGame;
+    public GameObject gamewon;
 
 
     void OnTriggerEnter2D(Collider2D collision)
@@ -19,7 +19,7 @@ public class FinalDoor : MonoBehaviour {
 
             if (Input.GetKeyDown("t"))
             {
-                wonGame.SetActive(true);
+                gamewon.SetActive(true);
             }
         }
     }
@@ -32,7 +32,7 @@ public class FinalDoor : MonoBehaviour {
 
             if (Input.GetKeyDown("t"))
             {
-                wonGame.SetActive(true);
+                gamewon.SetActive(true);
             }
         }
     }

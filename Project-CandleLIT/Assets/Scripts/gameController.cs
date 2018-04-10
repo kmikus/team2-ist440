@@ -7,13 +7,20 @@ using UnityEngine.UI;
 public class gameController : MonoBehaviour {
 
     public static gameController instance;
+    public GameObject player1;
+    public GameObject player2;
     public GameObject gameover;
     public bool gameOver = false;
     public Scene scene;
 
+    public Text gameoverText;
+
+    public PlayerHealth ph1;
+    public PlayerHealth ph2;
+
     //public InputField playerName;
-	// Use this for initialization
-	void Awake () {
+    // Use this for initialization
+    void Awake () {
 		if(instance == null)
         {
             instance = this;
@@ -22,24 +29,29 @@ public class gameController : MonoBehaviour {
             Destroy(gameObject);
         }
 	}
-	
-	// Update is called once per frame
-	void Update () {
 
+    // Update is called once per frame
+    void Update () {
+        if(ph1.CurrentHealth <= 0)
+        {
+            player1.SetActive(false);
+            gameover.SetActive(true);
+            gameoverText.text = ("Player Two Wins!");
+        }
+
+        if(ph2.CurrentHealth <= 0)
+        {
+            player2.SetActive(false);
+            gameover.SetActive(true);
+            gameoverText.text = ("Player One Wins!");
+        }
 	}
 
     public void EndGame()
     {
         gameover.SetActive(true);
         gameOver = true;
-
-        //Time.timeScale = 0f;
-        
+     
     }
-
-    //public void InitialsEntered()
-    //{
-    //    GetComponent<inputfield>().CheckForHighScore(Scoring.score, playerName.text);
-    //}
 
 }
