@@ -11,8 +11,7 @@ public class gamewon : MonoBehaviour {
     {
         if (Input.anyKeyDown)
         {
-            SceneManager.LoadScene("MainMenu");
-            Time.timeScale = 1f;
+            SceneManager.LoadScene("HighScore");
         }
     }
 }
