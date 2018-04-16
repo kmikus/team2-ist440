@@ -20,6 +20,7 @@ namespace UnityStandardAssets._2D
         private Rigidbody2D m_Rigidbody2D;
         private bool m_FacingRight = true;  // For determining which way the player is currently facing.
         private selectplayer selectplayer;
+        public float maxVertSpeed = 25f;
 
         private void Awake()
         {
@@ -48,6 +49,7 @@ namespace UnityStandardAssets._2D
 
             // Set the vertical animation
             m_Anim.SetFloat("vSpeed", m_Rigidbody2D.velocity.y);
+
         }
 
 
