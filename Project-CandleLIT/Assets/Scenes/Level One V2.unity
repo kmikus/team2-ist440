@@ -8876,9 +8876,10 @@ GameObject:
   m_Component:
   - component: {fileID: 554460879}
   - component: {fileID: 554460878}
-  m_Layer: 0
+  - component: {fileID: 554460880}
+  m_Layer: 8
   m_Name: barrel
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8940,6 +8941,31 @@ Transform:
   m_Father: {fileID: 963822941}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &554460880
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 554460877}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: 187e75f0a4368f248a3589089610d2ff, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.04, y: 1.13}
+    newSize: {x: 1.04, y: 1.13}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.04, y: 1.13}
+  m_EdgeRadius: 0
 --- !u!1 &562075997
 GameObject:
   m_ObjectHideFlags: 0
@@ -16996,7 +17022,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4869484417266094, guid: ae8ce40b4f50adb44ac8e1df26e7d405, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.34
+      value: -0.52
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ae8ce40b4f50adb44ac8e1df26e7d405, type: 2}
