@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 
 public class menuController : MonoBehaviour {
+    
 
     public void loadLevel1()
     {
@@ -21,6 +22,18 @@ public class menuController : MonoBehaviour {
     public void loadSplash()
     {
         Application.LoadLevel("PSUScreen");
+        Time.timeScale = 1f;
+    }
+
+    public void main()
+    {
+        Application.LoadLevel("MainMenu");
+        Time.timeScale = 1f;
+    }
+
+    public void versus()
+    {
+        Application.LoadLevel("Versus Mode");
         Time.timeScale = 1f;
     }
 }

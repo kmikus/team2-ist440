@@ -14,7 +14,7 @@ public class gameController : MonoBehaviour {
     public Scene scene;
 
     public Text gameoverText;
-
+    public Button restar1t;
     public PlayerHealth ph1;
     public PlayerHealth ph2;
 
@@ -52,6 +52,13 @@ public class gameController : MonoBehaviour {
         gameover.SetActive(true);
         gameOver = true;
      
+    }
+
+    public void restart()
+    {
+        Application.LoadLevel("Versus Mode");
+        gameover.SetActive(false);
+        Time.timeScale = 1f;
     }
 
 }

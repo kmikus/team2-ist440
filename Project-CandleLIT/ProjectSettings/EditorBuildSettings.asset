@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 526ca8fa75a2341498763d218433d221
   - enabled: 1
+    path: Assets/Scenes/Versus Mode.unity
+    guid: 4ffbe7145e0c83044873d3b380b0c293
+  - enabled: 1
     path: Assets/Scenes/instructions.unity
     guid: 064e837b845680e43ba608882683f9e8
   - enabled: 1
