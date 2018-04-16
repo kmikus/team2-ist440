@@ -29,6 +29,7 @@ public class PlayerHitDetection : MonoBehaviour
     bool isCollidingWithKey;
     bool isCollidingWithHealth;
 
+
     AudioSource[] allSource;
 
     void Start()
@@ -117,6 +118,7 @@ public class PlayerHitDetection : MonoBehaviour
             }
         }
 
+        //Health Case
         if (col.gameObject.tag == "Heart")
         {
             if (!(ph.CurrentHealth == ph.MaxHealth))

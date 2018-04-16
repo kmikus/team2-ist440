@@ -7,13 +7,14 @@ public class PlayerHealth : MonoBehaviour
 {
 
     public float CurrentHealth { get; set; }
-    public float MaxHealth { get; set; }
+    // public float MaxHealth { get; set; }
+    public float MaxHealth = 200f;
     public float heartRechargeVal = 20f;
     public Slider healthbar;
 
     void Start()
     {
-        MaxHealth = 200f;
+        //MaxHealth = 200f;
         CurrentHealth = MaxHealth;
 
         healthbar.value = CalculateHealth();
