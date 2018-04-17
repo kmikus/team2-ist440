@@ -7740,11 +7740,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4863780962499280, guid: c0e0342b4f983214193b31fd64acd13b, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 39.31
+      value: 43.69
       objectReference: {fileID: 0}
     - target: {fileID: 4863780962499280, guid: c0e0342b4f983214193b31fd64acd13b, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -10
+      value: -10.1
       objectReference: {fileID: 0}
     - target: {fileID: 4863780962499280, guid: c0e0342b4f983214193b31fd64acd13b, type: 2}
       propertyPath: m_LocalPosition.z
@@ -13102,6 +13102,7 @@ MonoBehaviour:
   gameover: {fileID: 2142555195}
   gameOver: 0
   gameoverText: {fileID: 0}
+  restar1t: {fileID: 0}
   ph1: {fileID: 0}
   ph2: {fileID: 0}
 --- !u!4 &1188645818
