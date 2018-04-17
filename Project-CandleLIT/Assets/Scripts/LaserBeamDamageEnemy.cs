@@ -35,15 +35,15 @@ public class LaserBeamDamageEnemy : MonoBehaviour {
             Destroy(this.gameObject);
         }
 
-        if (collision.gameObject.tag == "Enemy") {
-            SoundManager.instance.PlaySingle(sfx.enemyKilled);
-            var enemy = collision.gameObject;
-            var enemyPosition = enemy.GetComponent<Transform>();
-            var dp = Instantiate(deathParticle, new Vector3(enemyPosition.position.x, enemyPosition.position.y, enemyPosition.position.z), Quaternion.identity);
-            enemy.SetActive(false);
-            Destroy(dp, 2f);
-            Destroy(gameObject);
-        }
+        //if (collision.gameObject.tag == "Enemy") {
+        //    SoundManager.instance.PlaySingle(sfx.enemyKilled);
+        //    var enemy = collision.gameObject;
+        //    var enemyPosition = enemy.GetComponent<Transform>();
+        //    var dp = Instantiate(deathParticle, new Vector3(enemyPosition.position.x, enemyPosition.position.y, enemyPosition.position.z), Quaternion.identity);
+        //    enemy.SetActive(false);
+        //    Destroy(dp, 2f);
+        //    Destroy(gameObject);
+        //}
 
 	}
 }

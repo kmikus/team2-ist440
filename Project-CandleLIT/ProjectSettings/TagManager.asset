@@ -15,6 +15,7 @@ TagManager:
   - Key
   - Heart
   - Lava
+  - PlayerLaser
   layers:
   - Default
   - TransparentFX

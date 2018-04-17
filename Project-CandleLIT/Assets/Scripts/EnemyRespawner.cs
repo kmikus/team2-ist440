@@ -33,6 +33,7 @@ public class EnemyRespawner : MonoBehaviour
                 if (enemy.getRespawnTimer() > respawnTimer) {
                     SoundManager.instance.PlaySingle(sfx.enemyRespawned);
                     enemy.getEnemyGameObject().SetActive(true);
+                    enemy.getEnemyGameObject().GetComponent<EnemyHealth>().ResetHealth();
                     var pos = enemy.getEnemyGameObject().transform.position;
                     var rp = Instantiate(respawnParticles, new Vector3(pos.x, pos.y, pos.z), Quaternion.identity);
                     Destroy(rp, 2f);
