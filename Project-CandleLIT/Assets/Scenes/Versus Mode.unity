@@ -276,7 +276,7 @@ Prefab:
     - target: {fileID: 114889044934084882, guid: 145f1d7b5e53d477185614c130eab5c0,
         type: 2}
       propertyPath: drainValue
-      value: 200
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 108732276860030470, guid: 145f1d7b5e53d477185614c130eab5c0,
         type: 2}
@@ -325,7 +325,7 @@ Prefab:
     - target: {fileID: 114925988131115830, guid: 145f1d7b5e53d477185614c130eab5c0,
         type: 2}
       propertyPath: drainVal
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114925988131115830, guid: 145f1d7b5e53d477185614c130eab5c0,
         type: 2}
@@ -386,12 +386,12 @@ Prefab:
     - target: {fileID: 114685426015663598, guid: 145f1d7b5e53d477185614c130eab5c0,
         type: 2}
       propertyPath: MaxHealth
-      value: 75
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 114685426015663598, guid: 145f1d7b5e53d477185614c130eab5c0,
         type: 2}
       propertyPath: heartRechargeVal
-      value: 75
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 114620136379473146, guid: 145f1d7b5e53d477185614c130eab5c0,
         type: 2}
@@ -404,6 +404,18 @@ Prefab:
       value: 
       objectReference: {fileID: 1910321026008524, guid: e086e0fa6f9a43947922a37a2caa92ad,
         type: 2}
+    - target: {fileID: 4236153853068894, guid: 145f1d7b5e53d477185614c130eab5c0, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -0.076
+      objectReference: {fileID: 0}
+    - target: {fileID: 4236153853068894, guid: 145f1d7b5e53d477185614c130eab5c0, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.219
+      objectReference: {fileID: 0}
+    - target: {fileID: 4236153853068894, guid: 145f1d7b5e53d477185614c130eab5c0, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.503
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114758180065442916, guid: 145f1d7b5e53d477185614c130eab5c0, type: 2}
     - {fileID: 114481898300117710, guid: 145f1d7b5e53d477185614c130eab5c0, type: 2}
@@ -1408,7 +1420,7 @@ Prefab:
     - target: {fileID: 114875531732462122, guid: 73dcd60b04503714fabdca8d4bbfd202,
         type: 2}
       propertyPath: drainValue
-      value: 200
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 212075324009134586, guid: 73dcd60b04503714fabdca8d4bbfd202,
         type: 2}
@@ -1474,7 +1486,7 @@ Prefab:
     - target: {fileID: 114197614324588240, guid: 73dcd60b04503714fabdca8d4bbfd202,
         type: 2}
       propertyPath: drainVal
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114197614324588240, guid: 73dcd60b04503714fabdca8d4bbfd202,
         type: 2}
@@ -1535,12 +1547,24 @@ Prefab:
     - target: {fileID: 114136064047611668, guid: 73dcd60b04503714fabdca8d4bbfd202,
         type: 2}
       propertyPath: MaxHealth
-      value: 75
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 114136064047611668, guid: 73dcd60b04503714fabdca8d4bbfd202,
         type: 2}
       propertyPath: heartRechargeVal
-      value: 75
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4673499338156546, guid: 73dcd60b04503714fabdca8d4bbfd202, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.211
+      objectReference: {fileID: 0}
+    - target: {fileID: 4673499338156546, guid: 73dcd60b04503714fabdca8d4bbfd202, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -0.098
+      objectReference: {fileID: 0}
+    - target: {fileID: 4673499338156546, guid: 73dcd60b04503714fabdca8d4bbfd202, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.51
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114923508904716636, guid: 73dcd60b04503714fabdca8d4bbfd202, type: 2}
