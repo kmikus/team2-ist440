@@ -111,25 +111,37 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 2
         time: 0
-        value: -634.53955
+        value: -649
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
         time: 2
-        value: -374
-        inSlope: 129.29701
-        outSlope: 129.29701
+        value: -347
+        inSlope: 128.88805
+        outSlope: 128.88805
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 3.4833333
+        value: -200.04
+        inSlope: 0
+        outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
         time: 3.5
-        value: -182
-        inSlope: 0.3805306
-        outSlope: 0.3805306
+        value: -200.04
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 5.983333
+        value: -200.04
+        inSlope: 0
+        outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
         time: 6
-        value: -181.61948
+        value: -201
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -145,21 +157,33 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 2
         time: 0
-        value: 0
+        value: -125
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
         time: 2
-        value: 50
+        value: -125.9
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 3.4833333
+        value: -125
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
         time: 3.5
-        value: 0.000015259
-        inSlope: -0.000014901161
-        outSlope: -0.000014901161
+        value: -125.9
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 5.983333
+        value: -125
+        inSlope: 1.4400024
+        outSlope: 1.4400024
         tangentMode: 136
       - serializedVersion: 2
         time: 6
@@ -334,25 +358,37 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 2
         time: 0
-        value: -634.53955
+        value: -649
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
         time: 2
-        value: -374
-        inSlope: 129.29701
-        outSlope: 129.29701
+        value: -347
+        inSlope: 128.88805
+        outSlope: 128.88805
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 3.4833333
+        value: -200.04
+        inSlope: 0
+        outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
         time: 3.5
-        value: -182
-        inSlope: 0.3805306
-        outSlope: 0.3805306
+        value: -200.04
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 5.983333
+        value: -200.04
+        inSlope: 0
+        outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
         time: 6
-        value: -181.61948
+        value: -201
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -368,21 +404,33 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 2
         time: 0
-        value: 0
+        value: -125
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
         time: 2
-        value: 50
+        value: -125.9
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 3.4833333
+        value: -125
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
         time: 3.5
-        value: 0.000015259
-        inSlope: -0.000014901161
-        outSlope: -0.000014901161
+        value: -125.9
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 5.983333
+        value: -125
+        inSlope: 1.4400024
+        outSlope: 1.4400024
         tangentMode: 136
       - serializedVersion: 2
         time: 6
