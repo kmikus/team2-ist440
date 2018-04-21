@@ -11,7 +11,10 @@ public class PlayerHitDetection : MonoBehaviour
     private PlayerHealth ph;
     private Flashlight fl;
 
+    public GameObject batteryVM;
+
     public float defaultDamageAmount = 10f;
+    public float batteryVMtimer = 2f;
 
     private float recentlyHitTimer = 0f;
     public float recentlyHitTimeout = 3f;
@@ -28,6 +31,7 @@ public class PlayerHitDetection : MonoBehaviour
     bool isCollidingWithTrapDoor;
     bool isCollidingWithKey;
     bool isCollidingWithHealth;
+
 
 
     AudioSource[] allSource;
@@ -118,6 +122,17 @@ public class PlayerHitDetection : MonoBehaviour
             }
         }
 
+        //BatteryVM Case
+        if (col.gameObject.tag == "BatteryVM")
+        {
+            if(!(fl.CurrentHealth == fl.maxHealth))
+            {
+                SoundManager.instance.PlaySingle(sfx.batteryPickup);
+                fl.Recharge(fl.batteryRechargeVal);
+                StartCoroutine("BatteryVMresp");                
+            }
+        }
+
         //Health Case
         if (col.gameObject.tag == "Heart")
         {
@@ -202,6 +217,16 @@ public class PlayerHitDetection : MonoBehaviour
             isCollidingWithKey = true;
 
         }
+    }
+
+    IEnumerator BatteryVMresp()
+    {
+        batteryVM.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+        batteryVM.GetComponent<BoxCollider2D>().enabled = false;
+        yield return new WaitForSeconds(batteryVMtimer);
+        batteryVM.GetComponent<SpriteRenderer>().enabled = true;
+        batteryVM.GetComponent<BoxCollider2D>().enabled = true;
+
     }
 
     void OnTriggerExit2D(Collider2D col)
@@ -292,4 +317,5 @@ public class PlayerHitDetection : MonoBehaviour
 
         }
     }
+
 }

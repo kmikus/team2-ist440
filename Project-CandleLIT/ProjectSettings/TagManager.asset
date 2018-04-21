@@ -16,6 +16,7 @@ TagManager:
   - Heart
   - Lava
   - PlayerLaser
+  - BatteryVM
   layers:
   - Default
   - TransparentFX
