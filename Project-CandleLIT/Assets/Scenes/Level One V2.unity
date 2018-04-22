@@ -630,6 +630,21 @@ Prefab:
       propertyPath: m_Color.g
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114925988131115830, guid: 145f1d7b5e53d477185614c130eab5c0,
+        type: 2}
+      propertyPath: maxHealth
+      value: 20000
+      objectReference: {fileID: 0}
+    - target: {fileID: 114925988131115830, guid: 145f1d7b5e53d477185614c130eab5c0,
+        type: 2}
+      propertyPath: rechargeVal
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114925988131115830, guid: 145f1d7b5e53d477185614c130eab5c0,
+        type: 2}
+      propertyPath: batteryRechargeVal
+      value: 5000
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114620136379473146, guid: 145f1d7b5e53d477185614c130eab5c0, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 145f1d7b5e53d477185614c130eab5c0, type: 2}

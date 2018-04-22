@@ -16,6 +16,13 @@ public class PlayerInteractKey : MonoBehaviour {
     private float doorTextResetTimer = 0f;
     private bool startDoorTextResetTimer = false;
     public float amountOfTimeToDisplayYouNeedKeyText = 2.5f;
+    private Flashlight flashlight;
+    public bool rechargeAfterLevel = true;
+
+	private void Start()
+	{
+        flashlight = GetComponent<Flashlight>();
+	}
 
 	void Update()
     {
@@ -101,7 +108,10 @@ public class PlayerInteractKey : MonoBehaviour {
                         var newTime = levelTimer.GetComponent<LevelTimer>().amountOfTime;
                         GameObject.Find("Timer").GetComponent<TimeManager>().UpdateTime(newTime);
                     }
-
+                    //recharge players flashlight
+                    if (rechargeAfterLevel) {
+                        flashlight.Recharge(flashlight.maxHealth - flashlight.CurrentHealth);
+                    }
 
                     //currentInterObjScript.Open(); --> add animation for door opening here
 
