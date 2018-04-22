@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 61587744526937856}
   - component: {fileID: 114203188104947158}
   - component: {fileID: 114861533305567522}
+  - component: {fileID: 114871460295644360}
   m_Layer: 0
   m_Name: flying cat_0
   m_TagString: Enemy
@@ -210,6 +211,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageAmount: 10
+--- !u!114 &114871460295644360
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1039171439687786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab57d2bd6c0ee448b987e32764eaf956, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHealth: 3
+  deathParticlePrefab: {fileID: 1476739399110890, guid: 65a77d90cd561254da9c051229198c34,
+    type: 2}
 --- !u!212 &212439590460836478
 SpriteRenderer:
   m_ObjectHideFlags: 1

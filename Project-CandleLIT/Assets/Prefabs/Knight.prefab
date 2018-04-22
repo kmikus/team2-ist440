@@ -57,6 +57,7 @@ GameObject:
   - component: {fileID: 114994987128423826}
   - component: {fileID: 114643461227185392}
   - component: {fileID: 70363170574834406}
+  - component: {fileID: 114168534183515684}
   m_Layer: 0
   m_Name: Knight Guard
   m_TagString: Enemy
@@ -364,6 +365,20 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114168534183515684
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1354558343371898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab57d2bd6c0ee448b987e32764eaf956, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHealth: 8
+  deathParticlePrefab: {fileID: 1476739399110890, guid: 65a77d90cd561254da9c051229198c34,
+    type: 2}
 --- !u!114 &114274702163468652
 MonoBehaviour:
   m_ObjectHideFlags: 1

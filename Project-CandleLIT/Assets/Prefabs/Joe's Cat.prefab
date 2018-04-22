@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 61465303975678012}
   - component: {fileID: 50243432405189000}
   - component: {fileID: 114708285579424392}
+  - component: {fileID: 114300795321725234}
   m_Layer: 0
   m_Name: Joe's Cat
   m_TagString: Enemy
@@ -106,6 +107,20 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114300795321725234
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1266123404392176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab57d2bd6c0ee448b987e32764eaf956, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHealth: 3
+  deathParticlePrefab: {fileID: 1476739399110890, guid: 65a77d90cd561254da9c051229198c34,
+    type: 2}
 --- !u!114 &114708285579424392
 MonoBehaviour:
   m_ObjectHideFlags: 1

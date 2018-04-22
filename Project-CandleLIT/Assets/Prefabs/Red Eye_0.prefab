@@ -54,6 +54,7 @@ GameObject:
   - component: {fileID: 50597984695806470}
   - component: {fileID: 114533762475493354}
   - component: {fileID: 61990459543821820}
+  - component: {fileID: 114341299324714022}
   m_Layer: 0
   m_Name: Red Eye_0
   m_TagString: Enemy
@@ -164,6 +165,20 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114341299324714022
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1522948696965458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab57d2bd6c0ee448b987e32764eaf956, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHealth: 2
+  deathParticlePrefab: {fileID: 1476739399110890, guid: 65a77d90cd561254da9c051229198c34,
+    type: 2}
 --- !u!114 &114533762475493354
 MonoBehaviour:
   m_ObjectHideFlags: 1

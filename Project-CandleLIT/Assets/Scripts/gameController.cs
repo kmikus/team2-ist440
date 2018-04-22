@@ -32,14 +32,14 @@ public class gameController : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        if(ph1.CurrentHealth <= 0)
+        if(ph1 != null && ph1.CurrentHealth <= 0)
         {
             player1.SetActive(false);
             gameover.SetActive(true);
             gameoverText.text = ("Player Two Wins!");
         }
 
-        if(ph2.CurrentHealth <= 0)
+        if(ph2 != null && ph2.CurrentHealth <= 0)
         {
             player2.SetActive(false);
             gameover.SetActive(true);
