@@ -60802,7 +60802,7 @@ Prefab:
     - target: {fileID: 95259406739820426, guid: 6493cb72087837e49bb66e6d03ccb539,
         type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6493cb72087837e49bb66e6d03ccb539, type: 2}
@@ -66086,20 +66086,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1575858457213148, guid: 6493cb72087837e49bb66e6d03ccb539,
     type: 2}
   m_PrefabInternal: {fileID: 1392235386}
---- !u!114 &1816977070
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1816977069}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9613e2cb7737c2040bf6c247eeef4728, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DoorText: {fileID: 0}
-  LevelToLoad: 0
-  gamewon: {fileID: 1315961808551572, guid: ee7732b2f0bdee44f934cc48948bc7a4, type: 2}
 --- !u!1 &1824715020
 GameObject:
   m_ObjectHideFlags: 0

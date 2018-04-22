@@ -5,10 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class gameoverSkip : MonoBehaviour {
 
-    // Update is called once per frame
-    void Update()
+    private float t = 0f;
+    public float delayTime = 2f;
+
+	// Update is called once per frame
+	void Update()
     {
-        if (Input.GetKeyDown(KeyCode.X))
+        t += Time.fixedUnscaledDeltaTime;
+        Debug.Log("t: " + t);
+        if (Input.GetButtonDown("Submit") && t > delayTime)
             {
             SceneManager.LoadScene("Highscore");
         }

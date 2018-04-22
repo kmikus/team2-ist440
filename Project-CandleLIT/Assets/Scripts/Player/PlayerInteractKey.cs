@@ -11,6 +11,7 @@ public class PlayerInteractKey : MonoBehaviour {
     public Inventory inventory;
     public Text DoorWithKeyText;
     public int LevelToLoad = 5;
+    public int numOfLevels = 7;
     private Animator doorAnim;
     private float doorTextResetTimer = 0f;
     private bool startDoorTextResetTimer = false;
@@ -57,7 +58,12 @@ public class PlayerInteractKey : MonoBehaviour {
                         doorAnim.SetBool("Open", true);
                         currentInterObjScript.locked = false;
                         Debug.Log(currentInterObjScript.name + " was unlocked");
-                        DoorWithKeyText.text = ("ENTER LEVEL " + (LevelToLoad - 3));
+                        if (LevelToLoad - 3 <= numOfLevels)
+                        {
+                            DoorWithKeyText.text = ("ENTER LEVEL " + (LevelToLoad - 3));
+                        } else {
+                            DoorWithKeyText.text = ("ESCAPE!");
+                        }
 
                         // Remove key from inventory since it was used to unlock door
                         if (currentKey != null)
