@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 114879939783513444}
   - component: {fileID: 61599822966664490}
   - component: {fileID: 114727063697089604}
+  - component: {fileID: 114014523017752244}
   m_Layer: 11
   m_Name: Red Eye_0(Follow)
   m_TagString: Enemy
@@ -70,7 +71,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1070134080951208}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 40.300003, y: -3, z: 0}
+  m_LocalPosition: {x: -94.479996, y: 24.08, z: 0}
   m_LocalScale: {x: 0.67657393, y: 0.65120226, z: 0.6765738}
   m_Children:
   - {fileID: 4171148725581420}
@@ -166,7 +167,7 @@ Animator:
   m_GameObject: {fileID: 1070134080951208}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a3b75c940629b4adbbcafaa2d59fe160, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -174,6 +175,20 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114014523017752244
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1070134080951208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab57d2bd6c0ee448b987e32764eaf956, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHealth: 5
+  deathParticlePrefab: {fileID: 1476739399110890, guid: 65a77d90cd561254da9c051229198c34,
+    type: 2}
 --- !u!114 &114155521413417076
 MonoBehaviour:
   m_ObjectHideFlags: 1
