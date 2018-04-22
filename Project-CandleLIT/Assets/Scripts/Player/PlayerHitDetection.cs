@@ -129,7 +129,7 @@ public class PlayerHitDetection : MonoBehaviour
             {
                 SoundManager.instance.PlaySingle(sfx.batteryPickup);
                 fl.Recharge(fl.batteryRechargeVal);
-                StartCoroutine("BatteryVMresp");                
+                col.gameObject.SetActive(false);                
             }
         }
 
@@ -219,15 +219,15 @@ public class PlayerHitDetection : MonoBehaviour
         }
     }
 
-    IEnumerator BatteryVMresp()
-    {
-        batteryVM.gameObject.GetComponent<SpriteRenderer>().enabled = false;
-        batteryVM.GetComponent<BoxCollider2D>().enabled = false;
-        yield return new WaitForSeconds(batteryVMtimer);
-        batteryVM.GetComponent<SpriteRenderer>().enabled = true;
-        batteryVM.GetComponent<BoxCollider2D>().enabled = true;
+    //IEnumerator BatteryVMresp()
+    //{
+    //    batteryVM.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+    //    batteryVM.GetComponent<BoxCollider2D>().enabled = false;
+    //    yield return new WaitForSeconds(batteryVMtimer);
+    //    batteryVM.GetComponent<SpriteRenderer>().enabled = true;
+    //    batteryVM.GetComponent<BoxCollider2D>().enabled = true;
 
-    }
+    //}
 
     void OnTriggerExit2D(Collider2D col)
     {
