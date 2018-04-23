@@ -39,9 +39,11 @@ public class EyeballActivation : MonoBehaviour {
                 fireTimer = 0f;
             }
         }
+
+        active = false;
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
         if(collision.gameObject.tag == "Player")
         {
