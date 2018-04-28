@@ -14104,6 +14104,11 @@ Prefab:
       propertyPath: m_Layer
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 212439590460836478, guid: 88c9ab857cc14304a9856ee31b922c2d,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bcb93f4c9ebc6604684430dfb0c76d26, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 88c9ab857cc14304a9856ee31b922c2d, type: 2}
   m_IsPrefabParent: 0
@@ -16453,6 +16458,11 @@ Prefab:
       propertyPath: m_Layer
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 212439590460836478, guid: 88c9ab857cc14304a9856ee31b922c2d,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bcb93f4c9ebc6604684430dfb0c76d26, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 88c9ab857cc14304a9856ee31b922c2d, type: 2}
   m_IsPrefabParent: 0
@@ -16520,6 +16530,11 @@ Prefab:
       propertyPath: m_Layer
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 212439590460836478, guid: 88c9ab857cc14304a9856ee31b922c2d,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bcb93f4c9ebc6604684430dfb0c76d26, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 88c9ab857cc14304a9856ee31b922c2d, type: 2}
   m_IsPrefabParent: 0
@@ -17385,7 +17400,7 @@ Transform:
   m_Children:
   - {fileID: 1634737995}
   m_Father: {fileID: 2054353948}
-  m_RootOrder: 40
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &519751079
 MonoBehaviour:
@@ -17501,7 +17516,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: bcb93f4c9ebc6604684430dfb0c76d26, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -18578,6 +18593,11 @@ Prefab:
       propertyPath: m_Layer
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 212439590460836478, guid: 88c9ab857cc14304a9856ee31b922c2d,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bcb93f4c9ebc6604684430dfb0c76d26, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 88c9ab857cc14304a9856ee31b922c2d, type: 2}
   m_IsPrefabParent: 0
@@ -68422,14 +68442,14 @@ Transform:
   - {fileID: 427830050}
   - {fileID: 654091323}
   - {fileID: 744913790}
+  - {fileID: 519751078}
   - {fileID: 452017021}
   - {fileID: 36389439}
+  - {fileID: 442743557}
   - {fileID: 142627346}
   - {fileID: 2014339667}
   - {fileID: 2008319557}
   - {fileID: 166485840}
-  - {fileID: 442743557}
-  - {fileID: 519751078}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -68569,7 +68589,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: bcb93f4c9ebc6604684430dfb0c76d26, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

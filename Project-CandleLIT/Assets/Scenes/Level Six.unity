@@ -4637,7 +4637,7 @@ Transform:
   m_Children:
   - {fileID: 941124064}
   m_Father: {fileID: 1628724430}
-  m_RootOrder: 16
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &373954155
 MonoBehaviour:
@@ -28588,7 +28588,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: bcb93f4c9ebc6604684430dfb0c76d26, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -28630,7 +28630,7 @@ Transform:
   m_Children:
   - {fileID: 726798191}
   m_Father: {fileID: 1628724430}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &799819669
 MonoBehaviour:
@@ -30640,6 +30640,11 @@ Prefab:
       propertyPath: m_Layer
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 212439590460836478, guid: 88c9ab857cc14304a9856ee31b922c2d,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bcb93f4c9ebc6604684430dfb0c76d26, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 88c9ab857cc14304a9856ee31b922c2d, type: 2}
   m_IsPrefabParent: 0
@@ -44770,30 +44775,30 @@ Transform:
   m_Children:
   - {fileID: 1279741118}
   - {fileID: 1927577301}
+  - {fileID: 2074678365}
   - {fileID: 1962886018}
   - {fileID: 825327767}
   - {fileID: 458851965}
   - {fileID: 652035630}
   - {fileID: 1595807064}
   - {fileID: 1199125714}
-  - {fileID: 2074678365}
-  - {fileID: 1305182026}
   - {fileID: 799819668}
+  - {fileID: 1305182026}
+  - {fileID: 373954154}
   - {fileID: 1648262104}
   - {fileID: 1432271620}
   - {fileID: 987077539}
   - {fileID: 1067671615}
   - {fileID: 1160053163}
-  - {fileID: 373954154}
   - {fileID: 638277585}
   - {fileID: 1145583464}
   - {fileID: 1661685817}
   - {fileID: 953851069}
   - {fileID: 885578386}
+  - {fileID: 1702647828}
   - {fileID: 902983089}
   - {fileID: 953974111}
   - {fileID: 690013843}
-  - {fileID: 1702647828}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -45807,7 +45812,7 @@ Transform:
   m_Children:
   - {fileID: 472486414}
   m_Father: {fileID: 1628724430}
-  m_RootOrder: 25
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1702647829
 MonoBehaviour:
@@ -45924,7 +45929,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: bcb93f4c9ebc6604684430dfb0c76d26, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -48074,7 +48079,7 @@ Transform:
   m_LocalScale: {x: 0.6874023, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1628724430}
-  m_RootOrder: 8
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2074678366
 MonoBehaviour:
