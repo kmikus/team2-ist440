@@ -43,6 +43,7 @@ public class PlayerHitDetection : MonoBehaviour
         isCollidingWithTrapDoor = false;
         isCollidingDoor = false;
         isDoorOpened = false;
+        visible = GetComponent<SpriteRenderer>().color;
 
         allSource = GetComponents<AudioSource>();
 

@@ -426,6 +426,21 @@ Prefab:
       propertyPath: batteryVM
       value: 
       objectReference: {fileID: 52338485}
+    - target: {fileID: 212081602379762992, guid: 145f1d7b5e53d477185614c130eab5c0,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 212081602379762992, guid: 145f1d7b5e53d477185614c130eab5c0,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 0.5588235
+      objectReference: {fileID: 0}
+    - target: {fileID: 212081602379762992, guid: 145f1d7b5e53d477185614c130eab5c0,
+        type: 2}
+      propertyPath: m_Color.b
+      value: 0.5588235
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114758180065442916, guid: 145f1d7b5e53d477185614c130eab5c0, type: 2}
     - {fileID: 114481898300117710, guid: 145f1d7b5e53d477185614c130eab5c0, type: 2}
@@ -1680,6 +1695,21 @@ Prefab:
       value: 
       objectReference: {fileID: 1937175315748594, guid: 8993627e8a579f34bab83619783d0672,
         type: 2}
+    - target: {fileID: 212075324009134586, guid: 73dcd60b04503714fabdca8d4bbfd202,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 0.53676474
+      objectReference: {fileID: 0}
+    - target: {fileID: 212075324009134586, guid: 73dcd60b04503714fabdca8d4bbfd202,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 212075324009134586, guid: 73dcd60b04503714fabdca8d4bbfd202,
+        type: 2}
+      propertyPath: m_Color.b
+      value: 0.9424949
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114923508904716636, guid: 73dcd60b04503714fabdca8d4bbfd202, type: 2}
     - {fileID: 114462398225747462, guid: 73dcd60b04503714fabdca8d4bbfd202, type: 2}
