@@ -1,0 +1,14 @@
+﻿<Properties StartupConfiguration="{97BBB756-DC15-CB06-E48A-96CCDE45BC16}|">
+  <MonoDevelop.Ide.ItemProperties.GameSelector PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GameSelector.cs">
+    <Files>
+      <File FileName="Assets/Scripts/GameSelector.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
